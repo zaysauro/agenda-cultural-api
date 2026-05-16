@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
-URL = "http://www.fundacaoculturaldecuritiba.com.br/agenda/todas/"
+URL = "https://COLE-AQUI-O-SITE-DA-AGENDA"
 
 def clean_text(element):
     if not element:
@@ -13,12 +13,24 @@ def clean_text(element):
     return element.get_text(" ", strip=True)
 
 def scrape_events():
-    response = requests.get(
+    session = requests.Session()
+
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/124.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+        "Connection": "keep-alive",
+    }
+
+    response = session.get(
         URL,
-        timeout=20,
-        headers={
-            "User-Agent": "Mozilla/5.0 AgendaCulturalBot/1.0"
-        }
+        timeout=30,
+        headers=headers,
+        allow_redirects=True
     )
 
     response.raise_for_status()
@@ -27,9 +39,6 @@ def scrape_events():
 
     events = []
 
-    # ATENÇÃO:
-    # Esta parte precisa ser adaptada para o site real.
-    # Por enquanto ela procura blocos genéricos de eventos.
     for item in soup.select("article, .evento, .event, .card, .agenda-item"):
         title_element = item.select_one("h1, h2, h3, .titulo, .title")
         date_element = item.select_one(".data, .date, time")
@@ -55,12 +64,11 @@ def scrape_events():
 
     return events
 
-def main():
-    events = scrape_events()
-
+def write_json(events, error=None):
     data = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),
         "count": len(events),
+        "error": error,
         "events": events
     }
 
@@ -73,6 +81,15 @@ def main():
     )
 
     print(f"Arquivo gerado com {len(events)} eventos.")
+    if error:
+        print(f"Erro registrado no JSON: {error}")
+
+def main():
+    try:
+        events = scrape_events()
+        write_json(events)
+    except Exception as error:
+        write_json([], str(error))
 
 if __name__ == "__main__":
     main()
