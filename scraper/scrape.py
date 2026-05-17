@@ -16,7 +16,7 @@ CATEGORIES = [
     "literatura"
 ]
 
-DAYS_AHEAD = 30
+DAYS_AHEAD = 3
 
 def clean_text(element):
     if not element:
