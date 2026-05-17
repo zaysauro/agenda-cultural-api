@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
-URL = "https://COLE-AQUI-O-SITE-DA-AGENDA"
+URL = "http://www.fundacaoculturaldecuritiba.com.br/agenda/"
 
 def clean_text(element):
     if not element:
