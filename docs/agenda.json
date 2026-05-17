@@ -1,5 +1,134 @@
 {
-  "updatedAt": "2026-05-17T10:31:40.670375+00:00",
+  "updatedAt": "2026-05-17T10:59:08.091338+00:00",
   "count": 0,
+  "sources": [
+    {
+      "title": "Artes Visuais",
+      "slug": "artes-visuais",
+      "group": "categoria",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/artes-visuais/"
+    },
+    {
+      "title": "Cinema",
+      "slug": "cinema",
+      "group": "categoria",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/cinema/"
+    },
+    {
+      "title": "Dança",
+      "slug": "danca",
+      "group": "categoria",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/danca/"
+    },
+    {
+      "title": "Literatura",
+      "slug": "literatura",
+      "group": "categoria",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/literatura/"
+    },
+    {
+      "title": "Música",
+      "slug": "musica",
+      "group": "categoria",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/musica/"
+    },
+    {
+      "title": "Patrimônio Cultural",
+      "slug": "patrimonio-cultural",
+      "group": "categoria",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/patrimonio-cultural/"
+    },
+    {
+      "title": "Teatro e Circo",
+      "slug": "teatro-e-circo",
+      "group": "categoria",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/teatro-e-circo/"
+    },
+    {
+      "title": "Agenda",
+      "slug": "agenda",
+      "group": "conteudo",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/agenda/"
+    },
+    {
+      "title": "Notícias",
+      "slug": "noticias",
+      "group": "conteudo",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/noticias/"
+    },
+    {
+      "title": "Cursos e Oficinas",
+      "slug": "cursos",
+      "group": "conteudo",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/cursos/"
+    },
+    {
+      "title": "Grandes Eventos",
+      "slug": "grandes-eventos",
+      "group": "conteudo",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/grandes-eventos/"
+    },
+    {
+      "title": "Espaços Culturais",
+      "slug": "espacos-culturais",
+      "group": "conteudo",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/"
+    },
+    {
+      "title": "Faça, Curta e Confira Cultura em Curitiba",
+      "slug": "faca-curta-confira",
+      "group": "conteudo",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/faca-curta-e-confira-cultura/"
+    },
+    {
+      "title": "Núcleos Regionais",
+      "slug": "nucleos-regionais",
+      "group": "conteudo",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/nucleos-regionais/"
+    },
+    {
+      "title": "Institucional",
+      "slug": "institucional",
+      "group": "institucional",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/historia/inicio/"
+    },
+    {
+      "title": "Galeria",
+      "slug": "galeria",
+      "group": "institucional",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/galeria/"
+    },
+    {
+      "title": "Lei de Incentivo",
+      "slug": "lei-de-incentivo",
+      "group": "institucional",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/leideincentivo/avisos/"
+    },
+    {
+      "title": "Editais FCC",
+      "slug": "editais",
+      "group": "institucional",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/editais/"
+    },
+    {
+      "title": "Apoie a Cultura",
+      "slug": "apoie-a-cultura",
+      "group": "institucional",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/apoie-a-cultura/"
+    },
+    {
+      "title": "Transparência",
+      "slug": "transparencia",
+      "group": "institucional",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/institucional/transparencia/"
+    },
+    {
+      "title": "Contato",
+      "slug": "contato",
+      "group": "institucional",
+      "url": "http://www.fundacaoculturaldecuritiba.com.br/contato/"
+    }
+  ],
+  "items": [],
   "events": []
 }
