@@ -1,22 +1,38 @@
 import json
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
-BASE_URL = "http://www.fundacaoculturaldecuritiba.com.br"
+SOURCES = [
+    # Categorias culturais principais
+    {"title": "Artes Visuais", "slug": "artes-visuais", "group": "categoria", "url": "http://www.fundacaoculturaldecuritiba.com.br/artes-visuais/"},
+    {"title": "Cinema", "slug": "cinema", "group": "categoria", "url": "http://www.fundacaoculturaldecuritiba.com.br/cinema/"},
+    {"title": "Dança", "slug": "danca", "group": "categoria", "url": "http://www.fundacaoculturaldecuritiba.com.br/danca/"},
+    {"title": "Literatura", "slug": "literatura", "group": "categoria", "url": "http://www.fundacaoculturaldecuritiba.com.br/literatura/"},
+    {"title": "Música", "slug": "musica", "group": "categoria", "url": "http://www.fundacaoculturaldecuritiba.com.br/musica/"},
+    {"title": "Patrimônio Cultural", "slug": "patrimonio-cultural", "group": "categoria", "url": "http://www.fundacaoculturaldecuritiba.com.br/patrimonio-cultural/"},
+    {"title": "Teatro e Circo", "slug": "teatro-e-circo", "group": "categoria", "url": "http://www.fundacaoculturaldecuritiba.com.br/teatro-e-circo/"},
 
-CATEGORIES = [
-    "cinema",
-    "musica",
-    "teatro-e-circo",
-    "artes-visuais",
-    "danca",
-    "literatura"
+    # Conteúdo principal
+    {"title": "Agenda", "slug": "agenda", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/agenda/"},
+    {"title": "Notícias", "slug": "noticias", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/noticias/"},
+    {"title": "Cursos e Oficinas", "slug": "cursos", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/cursos/"},
+    {"title": "Grandes Eventos", "slug": "grandes-eventos", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/grandes-eventos/"},
+    {"title": "Espaços Culturais", "slug": "espacos-culturais", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/espacos-culturais/"},
+    {"title": "Faça, Curta e Confira Cultura em Curitiba", "slug": "faca-curta-confira", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/faca-curta-e-confira-cultura/"},
+    {"title": "Núcleos Regionais", "slug": "nucleos-regionais", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/nucleos-regionais/"},
+
+    # Institucional
+    {"title": "Institucional", "slug": "institucional", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/historia/inicio/"},
+    {"title": "Galeria", "slug": "galeria", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/galeria/"},
+    {"title": "Lei de Incentivo", "slug": "lei-de-incentivo", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/leideincentivo/avisos/"},
+    {"title": "Editais FCC", "slug": "editais", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/editais/"},
+    {"title": "Apoie a Cultura", "slug": "apoie-a-cultura", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/apoie-a-cultura/"},
+    {"title": "Transparência", "slug": "transparencia", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/institucional/transparencia/"},
+    {"title": "Contato", "slug": "contato", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/contato/"},
 ]
-
-DAYS_AHEAD = 3
 
 def clean_text(element):
     if not element:
@@ -24,81 +40,71 @@ def clean_text(element):
     return element.get_text(" ", strip=True)
 
 def fetch_html(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0"
-    }
-
-    response = requests.get(url, headers=headers, timeout=30)
+    response = requests.get(
+        url,
+        timeout=30,
+        headers={"User-Agent": "Mozilla/5.0"}
+    )
     response.raise_for_status()
     return response.text
 
-def extract_events(html, url, category, date_text):
-    soup = BeautifulSoup(html, "html.parser")
-    events = []
+def extract_items(source):
+    try:
+        html = fetch_html(source["url"])
+        soup = BeautifulSoup(html, "html.parser")
 
-    items = soup.select("article, .evento, .event, .card, .item, li")
+        items = []
+        candidates = soup.select("article, .post, .noticia, .evento, .item, .card, li")
 
-    for item in items:
-        title_element = item.select_one("h1, h2, h3, h4, a")
-        link_element = item.select_one("a")
+        for candidate in candidates:
+            title_element = candidate.select_one("h1, h2, h3, h4, a")
+            link_element = candidate.select_one("a")
+            title = clean_text(title_element)
 
-        title = clean_text(title_element)
+            if not title or len(title) < 4:
+                continue
 
-        if not title or len(title) < 4:
-            continue
+            url = source["url"]
+            if link_element and link_element.has_attr("href"):
+                url = urljoin(source["url"], link_element["href"])
 
-        link = url
-        if link_element and link_element.has_attr("href"):
-            link = urljoin(BASE_URL, link_element["href"])
+            items.append({
+                "title": title,
+                "category": source["title"],
+                "categorySlug": source["slug"],
+                "group": source["group"],
+                "url": url,
+                "sourceUrl": source["url"]
+            })
 
-        events.append({
-            "title": title,
-            "dateText": date_text,
-            "category": category,
-            "location": "",
-            "url": link,
-            "source": url
-        })
+        return items
 
-    return events
-
-def scrape_events():
-    all_events = []
-    today = datetime.now().date()
-
-    for category in CATEGORIES:
-        for offset in range(DAYS_AHEAD):
-            date = today + timedelta(days=offset)
-            date_string = date.isoformat()
-
-            url = f"{BASE_URL}/agenda/{category}/{date_string}?o=1"
-
-            try:
-                print(f"Buscando: {url}")
-                html = fetch_html(url)
-                events = extract_events(html, url, category, date_string)
-                all_events.extend(events)
-            except Exception as error:
-                print(f"Erro em {url}: {error}")
-
-    unique_events = []
-    seen = set()
-
-    for event in all_events:
-        key = event["title"] + event["dateText"] + event["url"]
-        if key not in seen:
-            seen.add(key)
-            unique_events.append(event)
-
-    return unique_events
+    except Exception as error:
+        print(f"Erro em {source['title']}: {error}")
+        return []
 
 def main():
-    events = scrape_events()
+    all_items = []
+
+    for source in SOURCES:
+        print(f"Coletando: {source['title']}")
+        all_items.extend(extract_items(source))
+
+    unique_items = []
+    seen = set()
+
+    for item in all_items:
+        key = item["title"] + item["url"]
+        if key not in seen:
+            seen.add(key)
+            unique_items.append(item)
 
     data = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),
-        "count": len(events),
-        "events": events
+        "count": len(unique_items),
+        "sources": SOURCES,
+        "items": unique_items,
+        "events": unique_items
     }
 
     output_path = Path("docs/agenda.json")
@@ -109,7 +115,7 @@ def main():
         encoding="utf-8"
     )
 
-    print(f"agenda.json gerado com {len(events)} eventos.")
+    print(f"agenda.json gerado com {len(unique_items)} itens.")
 
 if __name__ == "__main__":
     main()
