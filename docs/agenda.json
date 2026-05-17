@@ -1,14 +1,5 @@
 {
-  "updatedAt": "2026-05-17T00:15:52.719299+00:00",
-  "count": 1,
-  "error": null,
-  "events": [
-    {
-      "title": "Evento de teste",
-      "dateText": "Hoje",
-      "location": "Curitiba",
-      "url": "https://www.fundacaoculturaldecuritiba.com.br/agenda/",
-      "source": "teste"
-    }
-  ]
+  "updatedAt": "2026-05-17T00:48:09.554917+00:00",
+  "count": 0,
+  "events": []
 }
