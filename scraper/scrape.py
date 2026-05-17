@@ -2,12 +2,20 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-def write_json(events, error=None):
+def main():
     data = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),
-        "count": len(events),
-        "error": error,
-        "events": events
+        "count": 1,
+        "error": None,
+        "events": [
+            {
+                "title": "Evento de teste",
+                "dateText": "Hoje",
+                "location": "Curitiba",
+                "url": "https://www.fundacaoculturaldecuritiba.com.br/agenda/",
+                "source": "teste"
+            }
+        ]
     }
 
     output_path = Path("docs/agenda.json")
@@ -18,11 +26,6 @@ def write_json(events, error=None):
         encoding="utf-8"
     )
 
-def main():
-    write_json(
-        [],
-        "Teste OK: GitHub Actions funcionando. O scraping real será configurado depois."
-    )
     print("agenda.json gerado com sucesso.")
 
 if __name__ == "__main__":
