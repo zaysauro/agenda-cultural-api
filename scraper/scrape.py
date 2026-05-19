@@ -24,6 +24,10 @@ SOURCES = [
     {"title": "Faça, Curta e Confira Cultura em Curitiba", "slug": "faca-curta-confira", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/faca-curta-e-confira-cultura/"},
     {"title": "Núcleos Regionais", "slug": "nucleos-regionais", "group": "conteudo", "url": "http://www.fundacaoculturaldecuritiba.com.br/nucleos-regionais/"},
 
+    # Notícias e informações da Prefeitura de Curitiba
+    {"title": "Notícias da Prefeitura", "slug": "noticias-prefeitura", "group": "noticias_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
+    {"title": "Prefeitura de Curitiba", "slug": "prefeitura-curitiba", "group": "informacoes_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
+
     # Institucional
     {"title": "Institucional", "slug": "institucional", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/historia/inicio/"},
     {"title": "Galeria", "slug": "galeria", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/galeria/"},
@@ -43,7 +47,10 @@ def fetch_html(url):
     response = requests.get(
         url,
         timeout=30,
-        headers={"User-Agent": "Mozilla/5.0"}
+        headers={
+            "User-Agent": "Mozilla/5.0",
+            "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8"
+        }
     )
     response.raise_for_status()
     return response.text
@@ -59,7 +66,11 @@ def extract_items(source):
         for candidate in candidates:
             title_element = candidate.select_one("h1, h2, h3, h4, a")
             link_element = candidate.select_one("a")
+            summary_element = candidate.select_one("p, .resumo, .summary, .descricao")
+            image_element = candidate.select_one("img")
+
             title = clean_text(title_element)
+            summary = clean_text(summary_element)
 
             if not title or len(title) < 4:
                 continue
@@ -68,12 +79,18 @@ def extract_items(source):
             if link_element and link_element.has_attr("href"):
                 url = urljoin(source["url"], link_element["href"])
 
+            image_url = ""
+            if image_element and image_element.has_attr("src"):
+                image_url = urljoin(source["url"], image_element["src"])
+
             items.append({
                 "title": title,
+                "summary": summary,
                 "category": source["title"],
                 "categorySlug": source["slug"],
                 "group": source["group"],
                 "url": url,
+                "imageUrl": image_url,
                 "sourceUrl": source["url"]
             })
 
