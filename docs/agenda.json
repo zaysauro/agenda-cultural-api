@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T12:22:20.601041+00:00",
+  "updatedAt": "2026-05-19T20:16:51.727707+00:00",
   "count": 0,
   "sources": [
     {
@@ -85,6 +85,18 @@
       "slug": "nucleos-regionais",
       "group": "conteudo",
       "url": "http://www.fundacaoculturaldecuritiba.com.br/nucleos-regionais/"
+    },
+    {
+      "title": "Notícias da Prefeitura",
+      "slug": "noticias-prefeitura",
+      "group": "noticias_prefeitura",
+      "url": "https://www.curitiba.pr.gov.br/"
+    },
+    {
+      "title": "Prefeitura de Curitiba",
+      "slug": "prefeitura-curitiba",
+      "group": "informacoes_prefeitura",
+      "url": "https://www.curitiba.pr.gov.br/"
     },
     {
       "title": "Institucional",
