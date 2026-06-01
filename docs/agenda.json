@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-01T15:31:59.052216+00:00",
-  "count": 78,
+  "updatedAt": "2026-06-01T23:04:43.696128+00:00",
+  "count": 83,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -479,6 +479,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Yasmin Santos",
+      "summary": "05/07/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Titãs",
       "summary": "18/07/2026",
       "category": "Curitibacult",
@@ -531,6 +541,26 @@
     {
       "title": "Edson & Hudson",
       "summary": "31/07/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Panda",
+      "summary": "01/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Histórias do Porchat",
+      "summary": "06/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -769,6 +799,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Mumuzinho",
+      "summary": "17/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Maiara & Maraisa",
       "summary": "23/10/2026",
       "category": "Curitibacult",
@@ -841,6 +881,16 @@
     {
       "title": "Zeca Pagodinho, Alcione e Jorge Aragão",
       "summary": "07/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Xande de Pilares & Revelação",
+      "summary": "14/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1261,6 +1311,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Yasmin Santos",
+      "summary": "05/07/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Titãs",
       "summary": "18/07/2026",
       "category": "Curitibacult",
@@ -1313,6 +1373,26 @@
     {
       "title": "Edson & Hudson",
       "summary": "31/07/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Panda",
+      "summary": "01/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Histórias do Porchat",
+      "summary": "06/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1551,6 +1631,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Mumuzinho",
+      "summary": "17/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Maiara & Maraisa",
       "summary": "23/10/2026",
       "category": "Curitibacult",
@@ -1623,6 +1713,16 @@
     {
       "title": "Zeca Pagodinho, Alcione e Jorge Aragão",
       "summary": "07/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Xande de Pilares & Revelação",
+      "summary": "14/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
