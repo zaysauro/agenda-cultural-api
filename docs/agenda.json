@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01T23:04:43.696128+00:00",
+  "updatedAt": "2026-06-02T12:44:38.829482+00:00",
   "count": 83,
   "sources": [
     {
@@ -399,16 +399,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Marina Lima",
-      "summary": "20/06/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "O Céu da Língua com Gregório Duvivier",
       "summary": "22/06/2026",
       "category": "Curitibacult",
@@ -870,6 +860,16 @@
     },
     {
       "title": "Os Garotin",
+      "summary": "07/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Marina Lima",
       "summary": "07/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1231,16 +1231,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Marina Lima",
-      "summary": "20/06/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "O Céu da Língua com Gregório Duvivier",
       "summary": "22/06/2026",
       "category": "Curitibacult",
@@ -1702,6 +1692,16 @@
     },
     {
       "title": "Os Garotin",
+      "summary": "07/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Marina Lima",
       "summary": "07/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
