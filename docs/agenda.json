@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-02T12:44:38.829482+00:00",
-  "count": 83,
+  "updatedAt": "2026-06-02T23:05:14.395214+00:00",
+  "count": 86,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -749,6 +749,26 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Angra",
+      "summary": "25/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Detonautas",
+      "summary": "25/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Xuxa",
       "summary": "26/09/2026",
       "category": "Curitibacult",
@@ -921,6 +941,16 @@
     {
       "title": "Universo Alegria",
       "summary": "28/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Luan Santana",
+      "summary": "05/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1581,6 +1611,26 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Angra",
+      "summary": "25/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Detonautas",
+      "summary": "25/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Xuxa",
       "summary": "26/09/2026",
       "category": "Curitibacult",
@@ -1753,6 +1803,16 @@
     {
       "title": "Universo Alegria",
       "summary": "28/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Luan Santana",
+      "summary": "05/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
