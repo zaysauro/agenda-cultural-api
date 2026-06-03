@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-03T13:20:38.501097+00:00",
-  "count": 86,
+  "updatedAt": "2026-06-03T23:07:42.922125+00:00",
+  "count": 88,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -679,6 +679,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Terno Rei",
+      "summary": "29/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Sorriso Maroto",
       "summary": "29/08/2026",
       "category": "Curitibacult",
@@ -830,6 +840,16 @@
     },
     {
       "title": "Fábio Jr.",
+      "summary": "24/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Filipe Ret",
       "summary": "24/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1541,6 +1561,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Terno Rei",
+      "summary": "29/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Sorriso Maroto",
       "summary": "29/08/2026",
       "category": "Curitibacult",
@@ -1692,6 +1722,16 @@
     },
     {
       "title": "Fábio Jr.",
+      "summary": "24/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Filipe Ret",
       "summary": "24/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
