@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T12:30:38.216334+00:00",
+  "updatedAt": "2026-06-12T22:27:12.774949+00:00",
   "count": 86,
   "sources": [
     {
@@ -389,8 +389,8 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Rodrigo Teaser",
-      "summary": "25/06/2026",
+      "title": "Rodrigo Teaser – Tributo ao Rei do POP",
+      "summary": "24/06/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -401,16 +401,6 @@
     {
       "title": "Maria Gadú",
       "summary": "26/06/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Rodrigo Teaser – Tributo ao Rei do POP",
-      "summary": "27/06/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -611,6 +601,16 @@
     {
       "title": "Marisa Monte",
       "summary": "27/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jota.pê",
+      "summary": "28/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1251,8 +1251,8 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Rodrigo Teaser",
-      "summary": "25/06/2026",
+      "title": "Rodrigo Teaser – Tributo ao Rei do POP",
+      "summary": "24/06/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1263,16 +1263,6 @@
     {
       "title": "Maria Gadú",
       "summary": "26/06/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Rodrigo Teaser – Tributo ao Rei do POP",
-      "summary": "27/06/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1473,6 +1463,16 @@
     {
       "title": "Marisa Monte",
       "summary": "27/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jota.pê",
+      "summary": "28/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
