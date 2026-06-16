@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-16T13:30:09.535124+00:00",
-  "count": 84,
+  "updatedAt": "2026-06-16T22:54:57.238355+00:00",
+  "count": 87,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -419,8 +419,8 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Yasmin Santos",
-      "summary": "05/07/2026",
+      "title": "Titãs",
+      "summary": "18/07/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -429,8 +429,8 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Titãs",
-      "summary": "18/07/2026",
+      "title": "Honey Dijon",
+      "summary": "25/07/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -679,6 +679,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Karol Conka",
+      "summary": "18/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Marcos & Belutti",
       "summary": "18/09/2026",
       "category": "Curitibacult",
@@ -761,6 +771,16 @@
     {
       "title": "Guilherme Arantes",
       "summary": "02/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Samba 90 Graus",
+      "summary": "03/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -941,6 +961,16 @@
     {
       "title": "Rosa de Saron",
       "summary": "05/12/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Alok",
+      "summary": "19/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1261,8 +1291,8 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Yasmin Santos",
-      "summary": "05/07/2026",
+      "title": "Titãs",
+      "summary": "18/07/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1271,8 +1301,8 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Titãs",
-      "summary": "18/07/2026",
+      "title": "Honey Dijon",
+      "summary": "25/07/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1521,6 +1551,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Karol Conka",
+      "summary": "18/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Marcos & Belutti",
       "summary": "18/09/2026",
       "category": "Curitibacult",
@@ -1603,6 +1643,16 @@
     {
       "title": "Guilherme Arantes",
       "summary": "02/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Samba 90 Graus",
+      "summary": "03/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1783,6 +1833,16 @@
     {
       "title": "Rosa de Saron",
       "summary": "05/12/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Alok",
+      "summary": "19/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
