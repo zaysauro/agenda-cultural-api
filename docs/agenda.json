@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-22T14:43:07.002366+00:00",
-  "count": 86,
+  "updatedAt": "2026-06-22T22:49:52.025823+00:00",
+  "count": 87,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -560,6 +560,16 @@
     },
     {
       "title": "Marisa Monte",
+      "summary": "27/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Letrux",
       "summary": "27/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1422,6 +1432,16 @@
     },
     {
       "title": "Marisa Monte",
+      "summary": "27/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Letrux",
       "summary": "27/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
