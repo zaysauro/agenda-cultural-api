@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-25T11:42:32.142350+00:00",
-  "count": 86,
+  "updatedAt": "2026-06-25T22:23:35.436534+00:00",
+  "count": 87,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -441,6 +441,16 @@
     {
       "title": "Eagle-Eye Cherry",
       "summary": "28/07/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Cícero",
+      "summary": "30/07/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1303,6 +1313,16 @@
     {
       "title": "Eagle-Eye Cherry",
       "summary": "28/07/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Cícero",
+      "summary": "30/07/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
