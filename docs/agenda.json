@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-02T11:44:01.778179+00:00",
-  "count": 91,
+  "updatedAt": "2026-07-02T22:08:11.279146+00:00",
+  "count": 92,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -919,6 +919,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Paulo Ricardo",
+      "summary": "07/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Marina Lima",
       "summary": "07/11/2026",
       "category": "Curitibacult",
@@ -1822,6 +1832,16 @@
     },
     {
       "title": "Os Garotin",
+      "summary": "07/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Paulo Ricardo",
       "summary": "07/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
