@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-03T11:34:19.051876+00:00",
-  "count": 92,
+  "updatedAt": "2026-07-03T22:06:13.781669+00:00",
+  "count": 94,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -769,6 +769,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "MOMIX em Botanica",
+      "summary": "06/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Kid Abelha",
       "summary": "10/10/2026",
       "category": "Curitibacult",
@@ -801,6 +811,16 @@
     {
       "title": "João Bosco",
       "summary": "16/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Os Barbixas – Improvável",
+      "summary": "17/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1691,6 +1711,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "MOMIX em Botanica",
+      "summary": "06/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Kid Abelha",
       "summary": "10/10/2026",
       "category": "Curitibacult",
@@ -1723,6 +1753,16 @@
     {
       "title": "João Bosco",
       "summary": "16/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Os Barbixas – Improvável",
+      "summary": "17/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
