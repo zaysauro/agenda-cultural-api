@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-10T22:04:50.998095+00:00",
-  "count": 92,
+  "updatedAt": "2026-07-11T10:24:53.813484+00:00",
+  "count": 93,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -481,6 +481,16 @@
     {
       "title": "O Figurante com Mateus Solano",
       "summary": "14/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jorge Aragão",
+      "summary": "22/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1403,6 +1413,16 @@
     {
       "title": "O Figurante com Mateus Solano",
       "summary": "14/08/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jorge Aragão",
+      "summary": "22/08/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
