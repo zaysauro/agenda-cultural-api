@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-13T12:08:05.862029+00:00",
-  "count": 93,
+  "updatedAt": "2026-07-13T21:58:59.797915+00:00",
+  "count": 94,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -379,16 +379,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Livinho",
-      "summary": "26/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "O Teatro Mágico",
       "summary": "26/07/2026",
       "category": "Curitibacult",
@@ -749,6 +739,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Livinho",
+      "summary": "03/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Samba 90 Graus",
       "summary": "03/10/2026",
       "category": "Curitibacult",
@@ -781,6 +781,16 @@
     {
       "title": "Tim Bernardes",
       "summary": "10/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Beatles Para Crianças",
+      "summary": "11/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1311,16 +1321,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Livinho",
-      "summary": "26/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "O Teatro Mágico",
       "summary": "26/07/2026",
       "category": "Curitibacult",
@@ -1681,6 +1681,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Livinho",
+      "summary": "03/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Samba 90 Graus",
       "summary": "03/10/2026",
       "category": "Curitibacult",
@@ -1713,6 +1723,16 @@
     {
       "title": "Tim Bernardes",
       "summary": "10/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Beatles Para Crianças",
+      "summary": "11/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
