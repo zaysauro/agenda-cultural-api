@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-14T10:48:34.883271+00:00",
-  "count": 94,
+  "updatedAt": "2026-07-14T21:59:53.854211+00:00",
+  "count": 96,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -999,6 +999,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Maria Rita",
+      "summary": "27/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Universo Alegria",
       "summary": "28/11/2026",
       "category": "Curitibacult",
@@ -1021,6 +1031,16 @@
     {
       "title": "Rosa de Saron",
       "summary": "05/12/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Martinho da Vila e Mart’nália",
+      "summary": "11/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1941,6 +1961,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Maria Rita",
+      "summary": "27/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Universo Alegria",
       "summary": "28/11/2026",
       "category": "Curitibacult",
@@ -1963,6 +1993,16 @@
     {
       "title": "Rosa de Saron",
       "summary": "05/12/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Martinho da Vila e Mart’nália",
+      "summary": "11/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
