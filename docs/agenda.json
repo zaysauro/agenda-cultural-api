@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-17T10:57:01.695424+00:00",
-  "count": 96,
+  "updatedAt": "2026-07-17T21:56:10.468990+00:00",
+  "count": 97,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -769,16 +769,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Kid Abelha",
-      "summary": "10/10/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "Tim Bernardes",
       "summary": "10/10/2026",
       "category": "Curitibacult",
@@ -831,6 +821,16 @@
     {
       "title": "Mumuzinho",
       "summary": "17/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jovem Dionísio",
+      "summary": "18/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1081,6 +1081,16 @@
     {
       "title": "Dominguinho – João Gomes, Mestrinho e Jota.pê",
       "summary": "31/01/2027",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Kid Abelha",
+      "summary": "17/04/2027",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1731,16 +1741,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Kid Abelha",
-      "summary": "10/10/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "Tim Bernardes",
       "summary": "10/10/2026",
       "category": "Curitibacult",
@@ -1793,6 +1793,16 @@
     {
       "title": "Mumuzinho",
       "summary": "17/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jovem Dionísio",
+      "summary": "18/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -2043,6 +2053,16 @@
     {
       "title": "Dominguinho – João Gomes, Mestrinho e Jota.pê",
       "summary": "31/01/2027",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Kid Abelha",
+      "summary": "17/04/2027",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
