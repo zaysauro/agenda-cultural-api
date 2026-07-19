@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-18T21:53:19.806255+00:00",
-  "count": 97,
+  "updatedAt": "2026-07-19T10:30:10.352592+00:00",
+  "count": 95,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -335,26 +335,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Titãs",
-      "summary": "18/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Um Dia Muito Especial com Reynaldo Gianecchini e Maria Casadevall",
-      "summary": "18/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
@@ -1307,26 +1287,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Titãs",
-      "summary": "18/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Um Dia Muito Especial com Reynaldo Gianecchini e Maria Casadevall",
-      "summary": "18/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
