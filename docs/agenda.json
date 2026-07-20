@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T11:47:04.932063+00:00",
+  "updatedAt": "2026-07-20T22:10:05.716331+00:00",
   "count": 95,
   "sources": [
     {
@@ -909,16 +909,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Os Garotin",
-      "summary": "07/11/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "Paulo Ricardo",
       "summary": "07/11/2026",
       "category": "Curitibacult",
@@ -981,6 +971,16 @@
     {
       "title": "Maria Rita",
       "summary": "27/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Os Garotin",
+      "summary": "28/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1861,16 +1861,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Os Garotin",
-      "summary": "07/11/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "Paulo Ricardo",
       "summary": "07/11/2026",
       "category": "Curitibacult",
@@ -1933,6 +1923,16 @@
     {
       "title": "Maria Rita",
       "summary": "27/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Os Garotin",
+      "summary": "28/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
