@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-22T11:11:50.879328+00:00",
-  "count": 95,
+  "updatedAt": "2026-07-22T22:05:18.234772+00:00",
+  "count": 96,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -730,6 +730,16 @@
     },
     {
       "title": "Samba 90 Graus",
+      "summary": "03/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Ana Cañas",
       "summary": "03/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1682,6 +1692,16 @@
     },
     {
       "title": "Samba 90 Graus",
+      "summary": "03/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Ana Cañas",
       "summary": "03/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
