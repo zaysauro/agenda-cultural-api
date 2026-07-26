@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-25T21:57:48.525822+00:00",
-  "count": 96,
+  "updatedAt": "2026-07-26T10:46:20.949076+00:00",
+  "count": 94,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -335,26 +335,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Honey Dijon",
-      "summary": "25/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Nazareth",
-      "summary": "25/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
@@ -1297,26 +1277,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Honey Dijon",
-      "summary": "25/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Nazareth",
-      "summary": "25/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
