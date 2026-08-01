@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-31T22:07:33.859150+00:00",
-  "count": 90,
+  "updatedAt": "2026-08-01T10:41:44.108031+00:00",
+  "count": 89,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -335,16 +335,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Edson & Hudson",
-      "summary": "31/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
@@ -1237,16 +1227,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Edson & Hudson",
-      "summary": "31/07/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
