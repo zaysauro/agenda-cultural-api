@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T11:22:48.302428+00:00",
-  "count": 88,
+  "updatedAt": "2026-08-05T22:14:23.870396+00:00",
+  "count": 87,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -389,16 +389,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Jorge Aragão",
-      "summary": "22/08/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "NandaTsunami",
       "summary": "22/08/2026",
       "category": "Curitibacult",
@@ -640,16 +630,6 @@
     },
     {
       "title": "Livinho",
-      "summary": "03/10/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Samba 90 Graus",
       "summary": "03/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -971,6 +951,16 @@
     {
       "title": "Curitiba Folia",
       "summary": "12/12/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Lagum",
+      "summary": "13/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1271,16 +1261,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Jorge Aragão",
-      "summary": "22/08/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "NandaTsunami",
       "summary": "22/08/2026",
       "category": "Curitibacult",
@@ -1522,16 +1502,6 @@
     },
     {
       "title": "Livinho",
-      "summary": "03/10/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Samba 90 Graus",
       "summary": "03/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1853,6 +1823,16 @@
     {
       "title": "Curitiba Folia",
       "summary": "12/12/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Lagum",
+      "summary": "13/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
