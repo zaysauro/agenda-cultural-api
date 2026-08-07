@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-06T11:24:41.330034+00:00",
-  "count": 87,
+  "updatedAt": "2026-08-07T01:02:30.825325+00:00",
+  "count": 92,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -569,6 +569,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Hungria",
+      "summary": "19/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Fernando & Sorocaba",
       "summary": "19/09/2026",
       "category": "Curitibacult",
@@ -699,6 +709,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Murilo Huff",
+      "summary": "16/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Roberto Carlos",
       "summary": "17/10/2026",
       "category": "Curitibacult",
@@ -819,6 +839,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Marrom, o Musical",
+      "summary": "01/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Ana Carolina",
       "summary": "06/11/2026",
       "category": "Curitibacult",
@@ -879,8 +909,28 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Social Distortion",
+      "summary": "15/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Gilsons",
       "summary": "19/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Matuê e Brandão",
+      "summary": "21/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1441,6 +1491,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Hungria",
+      "summary": "19/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Fernando & Sorocaba",
       "summary": "19/09/2026",
       "category": "Curitibacult",
@@ -1571,6 +1631,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Murilo Huff",
+      "summary": "16/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Roberto Carlos",
       "summary": "17/10/2026",
       "category": "Curitibacult",
@@ -1691,6 +1761,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Marrom, o Musical",
+      "summary": "01/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Ana Carolina",
       "summary": "06/11/2026",
       "category": "Curitibacult",
@@ -1751,8 +1831,28 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Social Distortion",
+      "summary": "15/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Gilsons",
       "summary": "19/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Matuê e Brandão",
+      "summary": "21/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
