@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-15T21:22:26.426919+00:00",
-  "count": 88,
+  "updatedAt": "2026-08-16T09:28:42.577417+00:00",
+  "count": 87,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -335,16 +335,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "O Figurante com Mateus Solano",
-      "summary": "15/08/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
@@ -1217,16 +1207,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "O Figurante com Mateus Solano",
-      "summary": "15/08/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
