@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T09:42:38.366622+00:00",
-  "count": 88,
+  "updatedAt": "2026-08-17T21:27:44.008324+00:00",
+  "count": 94,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -469,6 +469,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Celebração a Belchior",
+      "summary": "11/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "CHOQUE! Procurando Sinais de Vida Inteligente com Danielle Winits",
       "summary": "11/09/2026",
       "category": "Curitibacult",
@@ -490,6 +500,16 @@
     },
     {
       "title": "Karol Conka",
+      "summary": "18/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Mateus Asato",
       "summary": "18/09/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -709,6 +729,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Dani Black",
+      "summary": "18/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Dionne Warwick",
       "summary": "22/10/2026",
       "category": "Curitibacult",
@@ -729,6 +759,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Zeca Veloso",
+      "summary": "23/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Fábio Jr.",
       "summary": "24/10/2026",
       "category": "Curitibacult",
@@ -740,6 +780,16 @@
     },
     {
       "title": "Filipe Ret",
+      "summary": "24/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jaloo",
       "summary": "24/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -921,6 +971,16 @@
     {
       "title": "Universo Alegria",
       "summary": "28/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Tom na Fazenda",
+      "summary": "29/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1351,6 +1411,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Celebração a Belchior",
+      "summary": "11/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "CHOQUE! Procurando Sinais de Vida Inteligente com Danielle Winits",
       "summary": "11/09/2026",
       "category": "Curitibacult",
@@ -1372,6 +1442,16 @@
     },
     {
       "title": "Karol Conka",
+      "summary": "18/09/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Mateus Asato",
       "summary": "18/09/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1591,6 +1671,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Dani Black",
+      "summary": "18/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Dionne Warwick",
       "summary": "22/10/2026",
       "category": "Curitibacult",
@@ -1611,6 +1701,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Zeca Veloso",
+      "summary": "23/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Fábio Jr.",
       "summary": "24/10/2026",
       "category": "Curitibacult",
@@ -1622,6 +1722,16 @@
     },
     {
       "title": "Filipe Ret",
+      "summary": "24/10/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Jaloo",
       "summary": "24/10/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1803,6 +1913,16 @@
     {
       "title": "Universo Alegria",
       "summary": "28/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Tom na Fazenda",
+      "summary": "29/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
