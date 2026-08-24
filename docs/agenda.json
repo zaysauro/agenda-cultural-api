@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-23T21:23:12.045422+00:00",
-  "count": 93,
+  "updatedAt": "2026-08-24T09:49:13.435224+00:00",
+  "count": 92,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -335,16 +335,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "NandaTsunami",
-      "summary": "23/08/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
@@ -1267,16 +1257,6 @@
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
       "url": "https://curitibacult.com.br/revistinha/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "NandaTsunami",
-      "summary": "23/08/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
       "imageUrl": "",
       "sourceUrl": "https://curitibacult.com.br/"
     },
