@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T09:49:13.435224+00:00",
-  "count": 92,
+  "updatedAt": "2026-08-24T21:30:22.124041+00:00",
+  "count": 93,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -880,6 +880,16 @@
     },
     {
       "title": "Xande de Pilares & Revelação",
+      "summary": "14/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Pitty",
       "summary": "14/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
@@ -1802,6 +1812,16 @@
     },
     {
       "title": "Xande de Pilares & Revelação",
+      "summary": "14/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Pitty",
       "summary": "14/11/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
