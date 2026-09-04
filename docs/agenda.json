@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-04T13:13:04.785704+00:00",
-  "count": 84,
+  "updatedAt": "2026-09-04T22:50:17.757698+00:00",
+  "count": 83,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -929,16 +929,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Alok",
-      "summary": "19/12/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "Dominguinho – João Gomes, Mestrinho e Jota.pê",
       "summary": "31/01/2027",
       "category": "Curitibacult",
@@ -1763,16 +1753,6 @@
     {
       "title": "Lagum",
       "summary": "13/12/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
-      "title": "Alok",
-      "summary": "19/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
