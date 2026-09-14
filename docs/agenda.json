@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-14T15:44:00.816372+00:00",
-  "count": 79,
+  "updatedAt": "2026-09-14T23:52:07.717424+00:00",
+  "count": 80,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -659,16 +659,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Samba 90 Graus",
-      "summary": "31/10/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "Solomun e Vintage Culture",
       "summary": "31/10/2026",
       "category": "Curitibacult",
@@ -789,6 +779,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Inter Alia com Drica Moraes e Caco Ciocler",
+      "summary": "21/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Matuê e Brandão",
       "summary": "21/11/2026",
       "category": "Curitibacult",
@@ -831,6 +831,16 @@
     {
       "title": "Tom na Fazenda",
       "summary": "29/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Prime Rock Brasil",
+      "summary": "05/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
@@ -1451,16 +1461,6 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
-      "title": "Samba 90 Graus",
-      "summary": "31/10/2026",
-      "category": "Curitibacult",
-      "categorySlug": "curitibacult",
-      "group": "noticias_culturais",
-      "url": "https://curitibacult.com.br/",
-      "imageUrl": "",
-      "sourceUrl": "https://curitibacult.com.br/"
-    },
-    {
       "title": "Solomun e Vintage Culture",
       "summary": "31/10/2026",
       "category": "Curitibacult",
@@ -1581,6 +1581,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Inter Alia com Drica Moraes e Caco Ciocler",
+      "summary": "21/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Matuê e Brandão",
       "summary": "21/11/2026",
       "category": "Curitibacult",
@@ -1623,6 +1633,16 @@
     {
       "title": "Tom na Fazenda",
       "summary": "29/11/2026",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Prime Rock Brasil",
+      "summary": "05/12/2026",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
