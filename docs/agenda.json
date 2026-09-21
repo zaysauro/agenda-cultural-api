@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-21T15:43:43.105061+00:00",
-  "count": 75,
+  "updatedAt": "2026-09-21T23:52:53.182037+00:00",
+  "count": 76,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -849,6 +849,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Placebo",
+      "summary": "26/02/2027",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Ney Matogrosso",
       "summary": "03/04/2027",
       "category": "Curitibacult",
@@ -1593,6 +1603,16 @@
     {
       "title": "Dominguinho – João Gomes, Mestrinho e Jota.pê",
       "summary": "31/01/2027",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Placebo",
+      "summary": "26/02/2027",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
