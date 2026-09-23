@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T23:40:39.934512+00:00",
-  "count": 76,
+  "updatedAt": "2026-09-23T14:07:47.792156+00:00",
+  "count": 77,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -889,6 +889,16 @@
       "sourceUrl": "https://curitibacult.com.br/"
     },
     {
+      "title": "Adriana Calcanhotto e Arnaldo Antunes",
+      "summary": "24/04/2027",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
       "title": "Clube Cult",
       "summary": "",
       "category": "Curitibacult",
@@ -1643,6 +1653,16 @@
     {
       "title": "Criolo",
       "summary": "23/04/2027",
+      "category": "Curitibacult",
+      "categorySlug": "curitibacult",
+      "group": "noticias_culturais",
+      "url": "https://curitibacult.com.br/",
+      "imageUrl": "",
+      "sourceUrl": "https://curitibacult.com.br/"
+    },
+    {
+      "title": "Adriana Calcanhotto e Arnaldo Antunes",
+      "summary": "24/04/2027",
       "category": "Curitibacult",
       "categorySlug": "curitibacult",
       "group": "noticias_culturais",
