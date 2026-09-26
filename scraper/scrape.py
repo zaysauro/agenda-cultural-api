@@ -28,6 +28,12 @@ SOURCES = [
     # Notícias e informações da Prefeitura de Curitiba
     {"title": "Notícias da Prefeitura", "slug": "noticias-prefeitura", "group": "noticias_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
     {"title": "Prefeitura de Curitiba", "slug": "prefeitura-curitiba", "group": "informacoes_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
+    # Guia Curitiba — eventos públicos, parques, praças e lazer ao ar livre.
+    # Imagens ficam desligadas por enquanto; imageUrl continua no contrato para ativação futura.
+    {"title": "Prefeitura — Parques", "slug": "prefeitura-parques", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=27"},
+    {"title": "Prefeitura — Esportes", "slug": "prefeitura-esportes", "group": "prefeitura_eventos", "category": "Esporte", "categorySlug": "esporte", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=1"},
+    {"title": "Prefeitura — Passeios e Tours", "slug": "prefeitura-passeios", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=30"},
+    {"title": "Prefeitura — Feiras", "slug": "prefeitura-feiras", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=12"},
 
     # Esporte — programação oficial dos clubes e eventos nos estádios
     {"title": "Coritiba — Couto Pereira", "slug": "coritiba", "group": "esporte", "category": "Esporte", "venue": "Couto Pereira", "sports_only": True, "url": "https://www.coritiba.com.br"},
@@ -229,6 +235,119 @@ def extract_date_time(text):
     return "", ""
 
 
+
+def extract_month_day(text):
+    """Extrai datas em formatos como 'domingo (05)' quando possível."""
+    if not text:
+        return ""
+    match = re.search(r"\\b(?:segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo)?\\s*\\(?([0-3]?\\d)[/-]([01]?\\d)\\)?\\b", text, re.I)
+    if not match:
+        return ""
+    day, month = map(int, match.groups())
+    if not (1 <= day <= 31 and 1 <= month <= 12):
+        return ""
+    return f"{datetime.now().year:04d}-{month:02d}-{day:02d}"
+
+
+def classify_public_event(text, source):
+    lowered = clean_text(text).casefold()
+    public_space_keywords = (
+        "parque", "praça", "praca", "bosque", "jardim", "regional",
+        "calçadão", "calcadao", "largo", "quadra pública", "quadra publica",
+        "pista", "ciclovia"
+    )
+    free_keywords = (
+        "gratuito", "gratuita", "grátis", "gratis", "entrada franca",
+        "sem custo", "livre", "de graça", "gratuitamente"
+    )
+    outdoor = any(k in lowered for k in public_space_keywords) or source.get("outdoor", False)
+    public_space = outdoor or source.get("public_space", False)
+    free = any(k in lowered for k in free_keywords)
+
+    return {
+        "publicSpace": bool(public_space),
+        "outdoor": bool(outdoor),
+        "free": bool(free),
+        "organizer": "Prefeitura de Curitiba"
+    }
+
+
+def extract_prefeitura_events(source):
+    """Coleta eventos do Guia Curitiba, priorizando espaços públicos."""
+    urls = [source["url"]]
+    for page in range(2, 6):
+        separator = "&" if "?" in source["url"] else "?"
+        urls.append(f"{source['url']}{separator}pagina={page}")
+
+    items = []
+    seen_urls = set()
+
+    for page_url in urls:
+        try:
+            html = fetch_html(page_url)
+            soup = BeautifulSoup(html, "html.parser")
+        except Exception as error:
+            print(f"Erro no Guia Curitiba ({page_url}): {error}")
+            continue
+
+        candidates = soup.select(
+            "article, .evento, .event, .card, .item, "
+            "[class*='evento'], [class*='event'], [class*='card']"
+        )
+
+        for candidate in candidates:
+            title_element = candidate.select_one(
+                "h1, h2, h3, h4, h5, .titulo, .title, [class*='titulo'], [class*='title']"
+            )
+            link_element = candidate.select_one("a[href]")
+            title = clean_text(title_element) or (clean_text(link_element) if link_element else "")
+
+            if not title or len(title) < 4:
+                continue
+
+            url = page_url
+            if link_element:
+                url = urljoin(page_url, link_element.get("href", ""))
+
+            if not url or url in seen_urls:
+                continue
+
+            text = clean_text(candidate)
+            if len(text) < 12:
+                continue
+
+            noise = ("filtre por categoria", "limpar filtro", "compartilhe com seus amigos")
+            if any(n in text.casefold() for n in noise) and len(text) < 250:
+                continue
+
+            event_date, event_time = extract_date_time(text)
+            if not event_date:
+                event_date = extract_month_day(text)
+
+            classification = classify_public_event(text, source)
+
+            image_url = ""
+            if source.get("images_enabled", False):
+                image_url = candidate_image(candidate, page_url)
+
+            items.append({
+                "title": title,
+                "summary": text[:500],
+                "category": source.get("category", "Cidade"),
+                "categorySlug": source.get("categorySlug", "cidade"),
+                "startDate": event_date,
+                "startTime": event_time,
+                "venue": source.get("venue", ""),
+                "group": source["group"],
+                "url": url,
+                "imageUrl": image_url,
+                "sourceUrl": source["url"],
+                **classification
+            })
+            seen_urls.add(url)
+
+    return items
+
 def is_sports_candidate(candidate):
     text = clean_text(candidate)
     lowered = text.casefold()
@@ -295,7 +414,11 @@ def extract_items(source):
                 "group": source["group"],
                 "url": url,
                 "imageUrl": image_url,
-                "sourceUrl": source["url"]
+                "sourceUrl": source["url"],
+                "publicSpace": bool(source.get("public_space", False)),
+                "outdoor": bool(source.get("outdoor", False)),
+                "free": False,
+                "organizer": source.get("organizer", "")
             })
 
         return items
@@ -309,7 +432,10 @@ def main():
 
     for source in SOURCES:
         print(f"Coletando: {source['title']}")
-        all_items.extend(extract_items(source))
+        if source.get("group") == "prefeitura_eventos":
+            all_items.extend(extract_prefeitura_events(source))
+        else:
+            all_items.extend(extract_items(source))
 
     unique_items = []
     seen = set()
