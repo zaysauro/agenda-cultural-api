@@ -37,13 +37,16 @@ function value(o,keys){
 }
 function normalize(raw,i){
   const e=raw||{};
+  const summary=String(value(e,["summary","description","descricao","resumo"])||"");
+  const explicitDate=String(value(e,["startDate","start_date","date","data","data_inicio","start"])||"");
+  const summaryDate=(summary.match(/\b\d{1,2}\/\d{1,2}\/\d{4}\b/)||[])[0]||"";
   return {
     id:String(value(e,["id","slug"])||value(e,["title","name"])+"-"+i),
     title:String(value(e,["title","name","nome"])||"Evento cultural"),
-    description:String(value(e,["summary","description","descricao","resumo"])||""),
+    description:summary,
     category:String(value(e,["category","categoria","type","tipo"])||"Cultura"),
     categorySlug:String(value(e,["categorySlug","category_slug"])||""),
-    startDate:String(value(e,["startDate","start_date","date","data","data_inicio","start"])||""),
+    startDate:explicitDate||summaryDate,
     startTime:String(value(e,["startTime","start_time","time","horario","hora"])||""),
     venue:String(value(e,["venue","local","location","place","espaco"])||"Curitiba"),
     address:String(value(e,["address","endereco"])||""),
@@ -67,7 +70,9 @@ function parseDate(v){
   if(!v)return null;
   const s=String(v).trim();
   let d;
-  if(/^\d{4}-\d{2}-\d{2}$/.test(s))d=new Date(s+"T12:00:00");
+  const br=s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if(br)d=new Date(Number(br[3]),Number(br[2])-1,Number(br[1]),12);
+  else if(/^\d{4}-\d{2}-\d{2}$/.test(s))d=new Date(s+"T12:00:00");
   else d=new Date(s);
   return Number.isNaN(d.getTime())?null:d;
 }
