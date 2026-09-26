@@ -59,43 +59,114 @@ def fetch_html(url):
     response.raise_for_status()
     return response.text
 
+def is_valid_image_url(value):
+    if not value:
+        return False
+    value = value.strip()
+    if value.startswith("data:image/"):
+        return False
+    if value.lower().startswith(("javascript:", "about:")):
+        return False
+    return bool(re.match(r"^(https?:)?//|^/", value, re.I))
+
 def image_from_element(image_element, base_url):
     if not image_element:
         return ""
 
-    # Sites modernos frequentemente deixam a imagem real em atributos de lazy loading.
+    # Prioriza os atributos de lazy loading, que normalmente apontam para a
+    # imagem original, e deixa src como último recurso porque ele pode ser
+    # apenas um placeholder de baixa resolução.
     for attr in (
-        "src",
-        "data-src",
-        "data-lazy-src",
         "data-original",
+        "data-full",
         "data-image",
+        "data-lazy-src",
+        "data-src",
         "data-url",
-        "data-thumb",
         "data-thumbnail",
+        "data-thumb",
+        "src",
     ):
         value = image_element.get(attr)
-        if value and not value.startswith("data:image/"):
+        if is_valid_image_url(value):
             return urljoin(base_url, value)
 
-    # Tenta o primeiro endereço útil do srcset.
+    # <picture> pode guardar a imagem original em <source>.
+    for source in image_element.find_all("source"):
+        srcset = source.get("srcset") or source.get("data-srcset")
+        if srcset:
+            candidates = []
+            for entry in srcset.split(","):
+                url = entry.strip().split(" ")[0]
+                if is_valid_image_url(url):
+                    candidates.append(url)
+            if candidates:
+                return urljoin(base_url, candidates[-1])
+
+    # Tenta o maior endereço disponível no srcset.
     srcset = image_element.get("srcset") or image_element.get("data-srcset")
     if srcset:
         candidates = []
         for entry in srcset.split(","):
             url = entry.strip().split(" ")[0]
-            if url and not url.startswith("data:image/"):
+            if is_valid_image_url(url):
                 candidates.append(url)
         if candidates:
             return urljoin(base_url, candidates[-1])
 
     # Alguns cards usam background-image em vez de <img>.
     style = image_element.get("style", "")
-    match = re.search(r"background-image\s*:\s*url\(['\"]?([^'\")]+)", style, re.I)
-    if match:
+    match = re.search(r"background-image\s*:\s*url\(['"]?([^'")]+)", style, re.I)
+    if match and is_valid_image_url(match.group(1)):
         return urljoin(base_url, match.group(1))
 
     return ""
+
+def jsonld_images(soup, base_url):
+    images = []
+
+    for script in soup.select('script[type="application/ld+json"]'):
+        raw = script.string or script.get_text(strip=True)
+        if not raw:
+            continue
+
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+
+        stack = data if isinstance(data, list) else [data]
+        while stack:
+            node = stack.pop()
+
+            if isinstance(node, list):
+                stack.extend(node)
+                continue
+
+            if not isinstance(node, dict):
+                continue
+
+            image = node.get("image")
+            if isinstance(image, str) and is_valid_image_url(image):
+                images.append(urljoin(base_url, image))
+            elif isinstance(image, list):
+                for value in image:
+                    if isinstance(value, str) and is_valid_image_url(value):
+                        images.append(urljoin(base_url, value))
+                    elif isinstance(value, dict):
+                        url = value.get("url") or value.get("contentUrl")
+                        if isinstance(url, str) and is_valid_image_url(url):
+                            images.append(urljoin(base_url, url))
+            elif isinstance(image, dict):
+                url = image.get("url") or image.get("contentUrl")
+                if isinstance(url, str) and is_valid_image_url(url):
+                    images.append(urljoin(base_url, url))
+
+            for value in node.values():
+                if isinstance(value, (dict, list)):
+                    stack.append(value)
+
+    return list(dict.fromkeys(images))
 
 def page_preview_image(soup, base_url):
     # Fallback para a imagem Open Graph da própria página.
@@ -105,9 +176,34 @@ def page_preview_image(soup, base_url):
         'meta[name="twitter:image"]',
     ):
         meta = soup.select_one(selector)
-        if meta and meta.get("content"):
+        if meta and is_valid_image_url(meta.get("content")):
             return urljoin(base_url, meta["content"])
+
+    # JSON-LD costuma conter a arte original do evento/filme, quando o site
+    # publica Schema.org.
+    images = jsonld_images(soup, base_url)
+    if images:
+        return images[0]
+
     return ""
+
+def candidate_image(candidate, base_url):
+    # Procura primeiro dentro do próprio card.
+    image = candidate.select_one("img")
+    image_url = image_from_element(image, base_url)
+    if image_url:
+        return image_url
+
+    # Também cobre <picture>, <source> e elementos com background-image.
+    visual = candidate.select_one("picture, source, [style*='background-image']")
+    image_url = image_from_element(visual, base_url)
+    if image_url:
+        return image_url
+
+    # Alguns sites colocam a imagem dentro de um link separado do bloco de
+    # texto; procura uma segunda camada antes de desistir.
+    link_with_image = candidate.select_one("a img")
+    return image_from_element(link_with_image, base_url)
 
 def extract_items(source):
     try:
@@ -122,7 +218,6 @@ def extract_items(source):
             title_element = candidate.select_one("h1, h2, h3, h4, a")
             link_element = candidate.select_one("a")
             summary_element = candidate.select_one("p, .resumo, .summary, .descricao")
-            image_element = candidate.select_one("img")
 
             title = clean_text(title_element)
             summary = clean_text(summary_element)
@@ -134,9 +229,9 @@ def extract_items(source):
             if link_element and link_element.has_attr("href"):
                 url = urljoin(source["url"], link_element["href"])
 
-            image_url = image_from_element(image_element, source["url"])
+            image_url = candidate_image(candidate, source["url"])
 
-            # Se o card não expõe a imagem, usa a prévia da página como fallback.
+            # Se o card não expõe a imagem, usa a prévia original da página.
             if not image_url:
                 image_url = source_preview
 
