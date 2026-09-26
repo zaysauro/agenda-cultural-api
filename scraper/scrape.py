@@ -35,6 +35,10 @@ SOURCES = [
     {"title": "Prefeitura — Passeios e Tours", "slug": "prefeitura-passeios", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=30"},
     {"title": "Prefeitura — Feiras", "slug": "prefeitura-feiras", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=12"},
 
+    # Universidades — eventos e programação pública dos campi de Curitiba
+    {"title": "UTFPR Curitiba — Eventos", "slug": "utfpr-curitiba", "group": "universidade", "category": "Cidade", "categorySlug": "cidade", "organizer": "UTFPR", "images_enabled": False, "url": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos"},
+    {"title": "UFPR — Agenda de Eventos", "slug": "ufpr-eventos", "group": "universidade", "category": "Cidade", "categorySlug": "cidade", "organizer": "UFPR", "images_enabled": False, "url": "https://ufpr.br/agenda-eventos/"},
+
     # Esporte — programação oficial dos clubes e eventos nos estádios
     {"title": "Coritiba — Couto Pereira", "slug": "coritiba", "group": "esporte", "category": "Esporte", "venue": "Couto Pereira", "sports_only": True, "url": "https://www.coritiba.com.br"},
     {"title": "Athletico — Ligga Arena", "slug": "athletico", "group": "esporte", "category": "Esporte", "venue": "Ligga Arena", "sports_only": True, "url": "https://www.athletico.com.br"},
@@ -348,6 +352,103 @@ def extract_prefeitura_events(source):
 
     return items
 
+def extract_university_events(source):
+    """Coleta agendas oficiais das universidades, sem baixar imagens."""
+    items = []
+    seen = set()
+    base_url = source["url"]
+
+    # UTFPR possui uma área própria de agenda; UFPR usa uma listagem paginada.
+    urls = [base_url]
+    if "ufpr.br" in base_url:
+        urls.extend(urljoin(base_url, f"page/{page}/") for page in range(2, 7))
+
+    for page_url in urls:
+        try:
+            html = fetch_html(page_url)
+            soup = BeautifulSoup(html, "html.parser")
+        except Exception as error:
+            print(f"Erro em {source['title']} ({page_url}): {error}")
+            continue
+
+        candidates = soup.select(
+            "article, .item, .card, .event, [class*='event'], "
+            "[class*='evento'], [class*='agenda'], li"
+        )
+
+        for candidate in candidates:
+            link = candidate.select_one("a[href]")
+            title_element = candidate.select_one(
+                "h1, h2, h3, h4, h5, .title, .titulo, "
+                "[class*='title'], [class*='titulo']"
+            )
+            title = clean_text(title_element) or (clean_text(link) if link else "")
+
+            if not title or len(title) < 5:
+                continue
+
+            url = urljoin(page_url, link.get("href", "")) if link else page_url
+            if url in seen:
+                continue
+
+            text = clean_text(candidate)
+            if len(text) < 20:
+                continue
+
+            # Não transformar menus, rodapés e blocos institucionais em eventos.
+            noise = (
+                "universidade federal do paraná",
+                "universidade tecnológica federal do paraná",
+                "sistema de bibliotecas",
+                "eventos e formaturas",
+                "superintendência de comunicação"
+            )
+            if title.casefold() in noise:
+                continue
+
+            event_date, event_time = extract_date_time(text)
+            if not event_date:
+                event_date = extract_month_day(text)
+
+            lower = text.casefold()
+            free = any(word in lower for word in (
+                "gratuito", "gratuita", "grátis", "gratis", "entrada franca",
+                "aberto ao público", "aberta ao público", "acesso livre"
+            ))
+
+            # Só UTFPR/UFPR em Curitiba entram no recorte local.
+            is_curitiba = (
+                "curitiba" in lower
+                or "sede centro" in lower
+                or "sede neoville" in lower
+                or "centro politécnico" in lower
+                or "centro politecnico" in lower
+                or "reitoria" in lower
+            )
+            if "utfpr.edu.br" in base_url and not is_curitiba:
+                continue
+
+            items.append({
+                "title": title,
+                "summary": text[:500],
+                "category": source.get("category", "Cidade"),
+                "categorySlug": source.get("categorySlug", "cidade"),
+                "startDate": event_date,
+                "startTime": event_time,
+                "venue": "",
+                "group": source["group"],
+                "url": url,
+                "imageUrl": "",
+                "sourceUrl": source["url"],
+                "publicSpace": False,
+                "outdoor": False,
+                "free": free,
+                "organizer": source.get("organizer", "")
+            })
+            seen.add(url)
+
+    return items
+
 def is_sports_candidate(candidate):
     text = clean_text(candidate)
     lowered = text.casefold()
@@ -434,6 +535,8 @@ def main():
         print(f"Coletando: {source['title']}")
         if source.get("group") == "prefeitura_eventos":
             all_items.extend(extract_prefeitura_events(source))
+        elif source.get("group") == "universidade":
+            all_items.extend(extract_university_events(source))
         else:
             all_items.extend(extract_items(source))
 
