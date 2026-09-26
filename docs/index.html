@@ -29,15 +29,6 @@
       <span class="eyebrow"><span class="live-dot"></span> Curitiba acontecendo agora</span>
       <h1>O que está<br><em>em foco</em> na cidade.</h1>
       <p>Um ponto de encontro para descobrir o que está acontecendo em Curitiba — de filmes em cartaz e exposições a shows, teatro, eventos em parques e programação pública.</p>
-      <div class="discovery-pills" aria-label="O que você pode encontrar">
-        <button type="button" data-discovery="eventos">Eventos</button>
-        <button type="button" data-discovery="filmes">Filmes em cartaz</button>
-        <button type="button" data-discovery="exposicoes">Exposições</button>
-        <button type="button" data-discovery="parques">Parques e espaços públicos</button>
-        <button type="button" data-discovery="universidade">UFPR e UTFPR</button>
-      </div>
-      <div class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Pesquise por evento, filme, local, parque, universidade..." autocomplete="off"><kbd>⌘ K</kbd></div>
-      <div class="search-hint">Pesquise por <b>nome, local, categoria ou fonte</b>. Ex.: “Barigui”, “cinema”, “UFPR”, “gratuito”.</div>
       <div class="intro-meta"><span id="event-count">— eventos</span><span>•</span><span id="last-update">Atualizando…</span></div>
     </div>
     <aside class="weather-card">
@@ -66,7 +57,7 @@
 
 <section id="agenda" class="agenda-section">
 <div class="container">
-  <div class="section-heading"><div><span class="kicker">Próximos eventos</span><h2>O que vem por aí</h2></div><button id="clear-filters" class="ghost" hidden>Limpar filtros</button></div>
+  <div class="section-heading"><div><span class="kicker">Próximos eventos</span><h2>O que vem por aí</h2></div></div>
   <div class="filter-row">
     <div class="date-tabs">
       <button class="date-tab active" data-range="all">Todos</button>
@@ -75,7 +66,6 @@
       <button class="date-tab" data-range="weekend">Fim de semana</button>
       <button class="date-tab" data-range="week">Próximos 7 dias</button>
     </div>
-    <select id="category-filter" aria-label="Filtrar categoria"><option value="all">Todas</option><option value="cinema">Cinema</option><option value="musica">Música</option><option value="teatro">Teatro</option><option value="esporte">Esporte</option><option value="exposicao">Exposição</option><option value="danca">Dança</option><option value="cidade">Cidade</option></select>
   </div>
   <div id="status" class="status"></div>
   <div id="events" class="event-list"></div>
@@ -104,7 +94,7 @@
 <section id="sobre" class="about-section">
 <div class="container about-grid">
   <div><span class="kicker">Curitiba em Foco</span><h2>Uma janela para o que acontece na cidade.</h2></div>
-  <div><p>A agenda reúne informações publicadas por fontes culturais e transforma tudo em uma experiência simples de busca, filtros e calendário.</p><div class="about-points"><div><b>01</b><span>Eventos organizados por data</span></div><div><b>02</b><span>Busca e filtros rápidos</span></div><div><b>03</b><span>Calendário visual da cidade</span></div></div></div>
+  <div><p>A agenda reúne informações publicadas por fontes culturais e transforma tudo em uma experiência simples de descoberta, filtros e calendário.</p><div class="about-points"><div><b>01</b><span>Eventos organizados por data</span></div><div><b>02</b><span>Programação reunida em um só lugar</span></div><div><b>03</b><span>Calendário visual da cidade</span></div></div></div>
 </div>
 </section>
 </main>
@@ -118,6 +108,6 @@
   <div class="event-action"><span class="price"></span><a class="event-link" target="_blank" rel="noreferrer">Ver evento ↗</a></div>
 </article>
 </template>
-<script src="./app.js?v=8" defer></script>
+<script src="./app.js?v=9" defer></script>
 </body>
 </html>
