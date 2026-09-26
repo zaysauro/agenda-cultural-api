@@ -18,7 +18,7 @@
       <span class="brand-city">Curitiba</span>
       <span class="brand-focus">em <span class="focus-word"><i class="focus-ring" aria-hidden="true"></i><b>Foco</b></span></span>
     </a>
-    <nav><a href="#agenda">Agenda</a><a href="#calendario">Calendário</a><a href="#sobre">Sobre</a><a class="project" href="https://github.com/zaysauro/agenda-cultural-api" target="_blank" rel="noreferrer">Projeto ↗</a></nav>
+    <nav><a href="#agenda">Agenda</a><a href="#cinema">Cinema</a><a href="#calendario">Calendário</a><a href="#sobre">Sobre</a><a class="project" href="https://github.com/zaysauro/agenda-cultural-api" target="_blank" rel="noreferrer">Projeto ↗</a></nav>
   </div>
 </header>
 
@@ -53,6 +53,17 @@
       <div class="weather-orbit orbit-one"></div><div class="weather-orbit orbit-two"></div>
     </aside>
   </div>
+</section>
+
+<section id="cinema" class="cinema-section">
+<div class="container">
+  <div class="section-heading cinema-heading">
+    <div><span class="kicker">Agora nos cinemas</span><h2>Filmes em cartaz</h2></div>
+    <span id="cinema-date" class="cinema-date">Sessões de hoje</span>
+  </div>
+  <div id="cinema-films" class="cinema-films"></div>
+  <div id="cinema-empty" class="cinema-empty" hidden>Não conseguimos carregar a programação de cinema agora.</div>
+</div>
 </section>
 
 <section id="agenda" class="agenda-section">
@@ -108,6 +119,6 @@
   <div class="event-action"><span class="price"></span><a class="event-link" target="_blank" rel="noreferrer">Ver evento ↗</a></div>
 </article>
 </template>
-<script src="./app.js?v=11" defer></script>
+<script src="./app.js?v=12" defer></script>
 </body>
 </html>
