@@ -10,7 +10,8 @@ function normalize(raw,i){const e=raw||{},title=String(value(e,["title","name","
 function extract(payload){if(Array.isArray(payload))return{items:payload,updatedAt:null};if(payload&&Array.isArray(payload.items))return{items:payload.items,updatedAt:payload.updatedAt};if(payload&&Array.isArray(payload.events))return{items:payload.events,updatedAt:payload.updatedAt};if(payload&&Array.isArray(payload.data))return{items:payload.data,updatedAt:payload.updatedAt};return{items:[],updatedAt:null}}
 function parseDate(v){if(!v)return null;const d=new Date(/^\d{4}-\d{2}-\d{2}$/.test(v)?v+"T12:00:00":v);return isNaN(d)?null:d}
 function keyDate(d){return d?d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"):""}
-function curitibaNow(){const parts=new Intl.DateTimeFormat("en-US",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).formatToParts(new Date());const get=t=>Number(parts.find(p=>p.type===t)?.value||0);return new Date(get("year"),get("month")-1,get("day"),get("hour"),get("minute"),get("second"))}\nfunction today(){const d=curitibaNow();d.setHours(0,0,0,0);return d}
+function curitibaNow(){const parts=new Intl.DateTimeFormat("en-US",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).formatToParts(new Date());const get=t=>Number(parts.find(p=>p.type===t)?.value||0);return new Date(get("year"),get("month")-1,get("day"),get("hour"),get("minute"),get("second"))}
+function today(){const d=curitibaNow();d.setHours(0,0,0,0);return d}
 function inRange(e){if(range==="all")return true;const d=parseDate(e.startDate),t=today();if(!d)return false;const n=Math.round((d-t)/86400000);if(range==="today")return n===0;if(range==="tomorrow")return n===1;if(range==="week")return n>=0&&n<=7;if(range==="weekend"){const start=(6-t.getDay()+7)%7;return n>=start&&n<=start+1}return true}
 function norm(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
 function dateParts(v){const d=parseDate(v);if(!d)return{day:"—",month:"data",weekday:""};return{day:d.toLocaleDateString("pt-BR",{day:"2-digit"}),month:d.toLocaleDateString("pt-BR",{month:"short"}).replace(".",""),weekday:d.toLocaleDateString("pt-BR",{weekday:"short"})}}
@@ -78,4 +79,4 @@ els.retry.addEventListener("click",load);
 $("#prev-month").addEventListener("click",()=>{calendarDate.setMonth(calendarDate.getMonth()-1);renderCalendar()});$("#next-month").addEventListener("click",()=>{calendarDate.setMonth(calendarDate.getMonth()+1);renderCalendar()});
 
 load();weather();
-})();\n
+})();
