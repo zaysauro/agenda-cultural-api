@@ -2,6 +2,7 @@
 "use strict";
 
 const DATA_URL="./agenda.json";
+const CINEMA_URL="./cinema.json";
 const WEATHER_URL="https://api.open-meteo.com/v1/forecast?latitude=-25.4284&longitude=-49.2733&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&forecast_days=4&timezone=America%2FSao_Paulo";
 const $=s=>document.querySelector(s);
 
@@ -11,7 +12,8 @@ const els={
   template:$("#event-template"),weather:$("#weather-temp"),weatherDetail:$("#weather-detail"),
   weatherIcon:$("#weather-icon"),weatherForecast:$("#weather-forecast"),
   calendarMonth:$("#calendar-month"),calendarYear:$("#calendar-year"),
-  calendarGrid:$("#calendar-grid"),selected:$("#selected-date"),dayEvents:$("#day-events")
+  calendarGrid:$("#calendar-grid"),selected:$("#selected-date"),dayEvents:$("#day-events"),
+  cinemaFilms:$("#cinema-films"),cinemaEmpty:$("#cinema-empty"),cinemaDate:$("#cinema-date")
 };
 
 let allEvents=[];
@@ -194,6 +196,67 @@ function renderWeekend(){
   empty.hidden=list.length>0;
 }
 
+function formatSessionTime(value){
+  if(!value)return "";
+  const d=new Date(value);
+  if(Number.isNaN(d.getTime()))return String(value).match(/\\b\\d{1,2}:\\d{2}\\b/)?.[0]||String(value);
+  return d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+}
+function renderCinema(data){
+  if(!els.cinemaFilms)return;
+  const films=data?.filmes_em_cartaz||[];
+  const sessions=data?.sessoes_hoje||[];
+  const byFilm=new Map();
+  for(const s of sessions){
+    const key=String(s.filme||"").trim();
+    if(!key)continue;
+    if(!byFilm.has(key))byFilm.set(key,[]);
+    byFilm.get(key).push(s);
+  }
+  els.cinemaFilms.innerHTML=films.map((film,index)=>{
+    const title=escapeHtml(film.titulo||"Filme em cartaz");
+    const sessionsForFilm=byFilm.get(film.titulo)||[];
+    const grouped=new Map();
+    sessionsForFilm.forEach(s=>{
+      const cinema=s.cinema||"Cinema";
+      if(!grouped.has(cinema))grouped.set(cinema,[]);
+      grouped.get(cinema).push(s);
+    });
+    const sessionHtml=[...grouped.entries()].slice(0,4).map(([cinema,list])=>{
+      const times=list.slice(0,8).map(s=>'<a class="cinema-time" href="'+escapeHtml(s.url_compra||"#")+'" target="_blank" rel="noreferrer">'+escapeHtml(formatSessionTime(s.horario))+'</a>').join("");
+      return '<div class="cinema-theater"><strong>'+escapeHtml(cinema)+'</strong><div class="cinema-times">'+times+'</div></div>';
+    }).join("");
+    const meta=[
+      film.classificacao?escapeHtml(film.classificacao):"",
+      film.duracao?escapeHtml(String(film.duracao).replace("min"," min")):"",
+      (film.generos||[]).slice(0,2).map(escapeHtml).join(" · ")
+    ].filter(Boolean).join(" · ");
+    return '<article class="cinema-card"><div class="cinema-poster-wrap">'+
+      (film.poster?'<img class="cinema-poster" src="'+escapeHtml(film.poster)+'" alt="Pôster de '+title+'" loading="lazy">':'<div class="cinema-poster cinema-poster-empty">Cinema</div>')+
+      '<div class="cinema-card-body"><span class="cinema-index">'+String(index+1).padStart(2,"0")+'</span><h3>'+title+'</h3>'+
+      (meta?'<p class="cinema-meta">'+meta+'</p>':"")+
+      (film.sinopse?'<p class="cinema-synopsis">'+escapeHtml(film.sinopse)+'</p>':"")+
+      '<div class="cinema-sessions">'+(sessionHtml||'<span class="cinema-no-sessions">Sessões de hoje não encontradas.</span>')+'</div>'+
+      '</div></article>';
+  }).join("");
+  els.cinemaEmpty.hidden=films.length>0;
+  if(els.cinemaDate&&data?.data_sessoes){
+    const d=parseDate(data.data_sessoes);
+    els.cinemaDate.textContent=d?"Sessões de "+d.toLocaleDateString("pt-BR",{day:"2-digit",month:"long"}):"Sessões de hoje";
+  }
+}
+async function cinema(){
+  try{
+    const response=await fetch(CINEMA_URL+"?v="+Date.now(),{cache:"no-store"});
+    if(!response.ok)throw new Error("HTTP "+response.status);
+    renderCinema(await response.json());
+  }catch(error){
+    console.error("Cinema:",error);
+    if(els.cinemaFilms)els.cinemaFilms.innerHTML="";
+    if(els.cinemaEmpty)els.cinemaEmpty.hidden=false;
+  }
+}
+
 async function load(){
   try{
     const response=await fetch(DATA_URL+"?v="+Date.now(),{cache:"no-store"});
@@ -267,5 +330,6 @@ $("#prev-month")?.addEventListener("click",()=>{calendarDate.setMonth(calendarDa
 $("#next-month")?.addEventListener("click",()=>{calendarDate.setMonth(calendarDate.getMonth()+1);renderCalendar()});
 
 load();
+cinema();
 weather();
 })();
