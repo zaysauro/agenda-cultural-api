@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-09-26T10:35:38.952638+00:00",
+  "gerado_em": "2026-09-26T14:48:07.354989+00:00",
   "data_sessoes": "2026-09-26",
   "filmes_em_cartaz": [
     {
@@ -436,21 +436,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87125323&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=acampamento-miasma-adolescencia-sexo-e-morte"
     },
     {
-      "filme": "Os Trapaceiros De Garibaldi",
-      "filme_id": "33390",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/os-trapaceiros-de-garibaldi/c696bc2d-c9d1-416c-be73-f76dfc5edb1c.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "10:30",
-      "data": "2026-09-26",
-      "sala": "Sala 2",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87125287&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-trapaceiros-de-garibaldi"
-    },
-    {
       "filme": "Aloha, Malandro",
       "filme_id": "33693",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/aloha-malandro/0fdc2f8c-f6ef-4772-9bb1-7b66a8dee981.webp",
@@ -833,21 +818,6 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "11:30",
-      "data": "2026-09-26",
-      "sala": "Sala 3",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87128893&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=resident-evil"
-    },
-    {
-      "filme": "Resident Evil",
-      "filme_id": "29835",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/resident-evil/e99616a3-f45b-4144-8b08-d70f8777de3d.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "13:45",
       "data": "2026-09-26",
       "sala": "Sala 3",
@@ -974,21 +944,6 @@
       "tipo": "Vip, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87128568&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "11:40",
-      "data": "2026-09-26",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87128865&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
     },
     {
       "filme": "Minha Melhor Amiga",
@@ -1313,21 +1268,6 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "11:40",
-      "data": "2026-09-26",
-      "sala": "Sala 7",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87131365&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=resident-evil"
-    },
-    {
-      "filme": "Resident Evil",
-      "filme_id": "29835",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/resident-evil/e99616a3-f45b-4144-8b08-d70f8777de3d.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "14:00",
       "data": "2026-09-26",
       "sala": "Sala 7",
@@ -1379,21 +1319,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87131395&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=resident-evil"
-    },
-    {
-      "filme": "Homem-Aranha: Um Novo Dia",
-      "filme_id": "29922",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/homem-aranha-um-novo-dia/257f9c31-7c31-4bfd-b903-2b398f4830dc.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "11:15",
-      "data": "2026-09-26",
-      "sala": "Sala 3",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87131367&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=homem-aranha-um-novo-dia"
     },
     {
       "filme": "Homem-Aranha: Um Novo Dia",
@@ -1523,21 +1448,6 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "11:20",
-      "data": "2026-09-26",
-      "sala": "Sala 1",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87131389&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=a-ilha-esquecida"
-    },
-    {
-      "filme": "A Ilha Esquecida",
-      "filme_id": "32131",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-ilha-esquecida/d6d20680-65f3-40d7-8377-2cc565417696.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "14:10",
       "data": "2026-09-26",
       "sala": "Sala 1",
@@ -1634,21 +1544,6 @@
       "tipo": "XD, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=86522205&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=vingadores-ultimato-encore-relancamento"
-    },
-    {
-      "filme": "Coração Selvagem",
-      "filme_id": "32825",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/coracao-selvagem/33ad141b-4e55-42f5-bd43-7cde886bc6a7.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "11:30",
-      "data": "2026-09-26",
-      "sala": "Sala 2",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87131363&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=coracao-selvagem"
     },
     {
       "filme": "Coração Selvagem",
@@ -1784,21 +1679,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87131414&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=marido-de-aluguel"
-    },
-    {
-      "filme": "Marido De Aluguel",
-      "filme_id": "33564",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/marido-de-aluguel/52119b5e-ad42-4247-be53-b0d48ab3a6a5.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "11:10",
-      "data": "2026-09-26",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87131385&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=marido-de-aluguel"
     },
     {
       "filme": "Marido De Aluguel",
