@@ -1057,7 +1057,7 @@ def scrape_ingresso_cinema():
     # O endpoint antigo /movies/now-playing/{city} não está mais disponível.
     # A API atual documenta templates/nowplaying e events.
     try:
-        payload = api_get(f"/templates/nowplaying/{city_id}", {"partnership": partnership})
+        payload = api_get(f"/templates/nowplaying/{city_id}/partnership/{partnership}")
         if isinstance(payload, dict):
             payload = payload.get("items") or payload.get("events") or []
         for f in payload if isinstance(payload, list) else []:
@@ -1078,7 +1078,7 @@ def scrape_ingresso_cinema():
         print(f"Erro nos filmes do Ingresso.com: {error}")
 
     try:
-        payload = api_get(f"/theaters/city/{city_id}", {"partnership": partnership})
+        payload = api_get(f"/theaters/city/{city_id}/partnership/{partnership}")
         if isinstance(payload, dict):
             payload = payload.get("items") or payload.get("theaters") or []
         for theater in payload if isinstance(payload, list) else []:
@@ -1100,8 +1100,8 @@ def scrape_ingresso_cinema():
             continue
         try:
             payload = api_get(
-                f"/sessions/city/{city_id}/theater/{cinema_id}",
-                {"partnership": partnership},
+                f"/sessions/city/{city_id}/theater/{cinema_id}/partnership/{partnership}",
+                {"date": today},
             )
             if not isinstance(payload, list):
                 payload = payload.get("items") or payload.get("movies") or []
