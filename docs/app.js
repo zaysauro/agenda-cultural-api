@@ -277,6 +277,11 @@ function renderCinema(data){
       return '<div class="cinema-theater"><strong>'+escapeHtml(cinema)+'</strong><div class="cinema-times">'+times+'</div></div>';
     }).join("");
 
+    const theaterNames=[...grouped.keys()].slice(0,5);
+    const theaterNamesHtml=theaterNames.length
+      ? '<p class="cinema-theater-names"><span>Em cartaz em</span> '+theaterNames.map(escapeHtml).join(" · ")+'</p>'
+      : "";
+
     const meta=[
       film.classificacao?escapeHtml(film.classificacao):"",
       film.duracao?escapeHtml(String(film.duracao).replace(/\s*min\b/i," min")):"",
@@ -297,6 +302,7 @@ function renderCinema(data){
       '<h3>'+escapeHtml(filmTitle||"Filme em cartaz")+'</h3>'+
       original+
       (meta?'<p class="cinema-meta">'+meta+'</p>':"")+
+      theaterNamesHtml+
       (film.sinopse?'<p class="cinema-synopsis">'+escapeHtml(film.sinopse)+'</p>':"")+
       '<div class="cinema-sessions">'+
       (sessionHtml||'<span class="cinema-no-sessions">Sem sessões disponíveis para hoje.</span>')+
