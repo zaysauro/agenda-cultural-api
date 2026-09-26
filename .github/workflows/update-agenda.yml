@@ -2,6 +2,7 @@ name: Update Agenda
 
 on:
   push:
+    branches: ["main"]
     paths:
       - "scraper/scrape.py"
       - ".github/workflows/update-agenda.yml"
