@@ -1,6 +1,10 @@
 name: Update Agenda
 
 on:
+  push:
+    paths:
+      - "scraper/scrape.py"
+      - ".github/workflows/update-agenda.yml"
   schedule:
     - cron: "0 9,21 * * *"
   workflow_dispatch:
