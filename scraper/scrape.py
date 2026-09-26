@@ -28,12 +28,14 @@ SOURCES = [
     # Notícias e informações da Prefeitura de Curitiba
     {"title": "Notícias da Prefeitura", "slug": "noticias-prefeitura", "group": "noticias_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
     {"title": "Prefeitura de Curitiba", "slug": "prefeitura-curitiba", "group": "informacoes_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
-    # Guia Curitiba — eventos públicos, parques, praças e lazer ao ar livre.
-    # Imagens ficam desligadas por enquanto; imageUrl continua no contrato para ativação futura.
-    {"title": "Prefeitura — Parques", "slug": "prefeitura-parques", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=27"},
-    {"title": "Prefeitura — Esportes", "slug": "prefeitura-esportes", "group": "prefeitura_eventos", "category": "Esporte", "categorySlug": "esporte", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=1"},
-    {"title": "Prefeitura — Passeios e Tours", "slug": "prefeitura-passeios", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=30"},
-    {"title": "Prefeitura — Feiras", "slug": "prefeitura-feiras", "group": "prefeitura_eventos", "category": "Cidade", "categorySlug": "cidade", "public_space": True, "outdoor": True, "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/?categoriaid=12"},
+    # Guia Curitiba — fonte geral. A categoria é extraída do próprio card do evento.
+    {"title": "Prefeitura — Guia de Eventos", "slug": "prefeitura-guia", "group": "prefeitura_guia", "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/"},
+
+    # Cinemas — filmes em cartaz e programação local.
+    {"title": "Cine Passeio — Programação", "slug": "cine-passeio", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "Cine Passeio", "cinema": True, "images_enabled": False, "url": "https://www.cinepasseio.org/programacao"},
+    {"title": "Shopping Estação — Cinema", "slug": "shopping-estacao-cinema", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "Shopping Estação", "cinema": True, "images_enabled": False, "url": "https://shoppingestacao.com.br/cinema/"},
+    {"title": "UCI Estação", "slug": "uci-estacao", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "UCI Estação", "cinema": True, "images_enabled": False, "url": "https://www.ucicinemas.com.br/Filmes/FiltroCinema/0%2C15%2C1"},
+    {"title": "Cine Lido Curitiba", "slug": "cine-lido-curitiba", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "Cine Lido", "cinema": True, "images_enabled": False, "url": "https://www.cinelidocuritiba.com.br"},
 
     # Universidades — eventos e programação pública dos campi de Curitiba
     {"title": "UTFPR Curitiba — Eventos", "slug": "utfpr-curitiba", "group": "universidade", "category": "Cidade", "categorySlug": "cidade", "organizer": "UTFPR", "images_enabled": False, "url": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos"},
@@ -251,6 +253,309 @@ def extract_month_day(text):
     if not (1 <= day <= 31 and 1 <= month <= 12):
         return ""
     return f"{datetime.now().year:04d}-{month:02d}-{day:02d}"
+
+
+
+def portuguese_month_number(value):
+    months = {
+        "jan": 1, "janeiro": 1, "fev": 2, "fevereiro": 2,
+        "mar": 3, "março": 3, "marco": 3, "abr": 4, "abril": 4,
+        "mai": 5, "maio": 5, "jun": 6, "junho": 6,
+        "jul": 7, "julho": 7, "ago": 8, "agosto": 8,
+        "set": 9, "setembro": 9, "out": 10, "outubro": 10,
+        "nov": 11, "novembro": 11, "dez": 12, "dezembro": 12
+    }
+    return months.get(norm_text(value))
+
+
+def norm_text(value):
+    return re.sub(r"[^a-z0-9]+", " ", str(value or "").casefold()).strip()
+
+
+def extract_portuguese_dates(text):
+    """Extrai todas as datas DD/Mon e horários de uma programação."""
+    if not text:
+        return []
+
+    current_year = datetime.now().year
+    results = []
+    pattern = re.compile(
+        r"\b([0-3]?\d)[/.-]([A-Za-zÀ-ÿ]+)\b[^0-9]{0,45}"
+        r"\b([01]?\d|2[0-3])h(?:([0-5]\d))?\b",
+        re.I
+    )
+
+    for match in pattern.finditer(text):
+        day = int(match.group(1))
+        month = portuguese_month_number(match.group(2)[:3])
+        if not month or not (1 <= day <= 31):
+            continue
+        hour = int(match.group(3))
+        minute = int(match.group(4) or 0)
+        results.append((
+            f"{current_year:04d}-{month:02d}-{day:02d}",
+            f"{hour:02d}:{minute:02d}"
+        ))
+
+    # Formato numérico usado pelo Cine Passeio: 26/09 (SÁB) - 13h30
+    numeric = re.compile(
+        r"\b([0-3]?\d)/([01]?\d)\b[^0-9]{0,45}"
+        r"\b([01]?\d|2[0-3])h(?:([0-5]\d))?\b",
+        re.I
+    )
+    for match in numeric.finditer(text):
+        day, month = int(match.group(1)), int(match.group(2))
+        if not (1 <= day <= 31 and 1 <= month <= 12):
+            continue
+        results.append((
+            f"{current_year:04d}-{month:02d}-{day:02d}",
+            f"{int(match.group(3)):02d}:{int(match.group(4) or 0):02d}"
+        ))
+
+    return list(dict.fromkeys(results))
+
+
+def guide_category(text):
+    lowered = norm_text(text)
+    categories = (
+        ("cinema", ("cinema", "filme", "filmes", "cine")),
+        ("teatro", ("teatro", "espetaculo", "espetaculos", "peca teatral", "circo")),
+        ("musica", ("musica", "show", "concerto", "festival", "banda")),
+        ("esporte", ("esporte", "esportes", "futebol", "corrida", "copa", "campeonato", "bmx")),
+        ("exposicao", ("exposicao", "exposicoes", "mostra", "galeria")),
+        ("danca", ("danca", "ballet", "balé")),
+    )
+    for slug, words in categories:
+        if any(word in lowered for word in words):
+            return slug
+    return "cidade"
+
+
+def guide_category_label(slug):
+    return {
+        "cinema": "Cinema",
+        "musica": "Música",
+        "teatro": "Teatro",
+        "esporte": "Esporte",
+        "exposicao": "Exposição",
+        "danca": "Dança",
+        "cidade": "Cidade",
+    }.get(slug, "Cidade")
+
+
+def extract_guia_events(source):
+    """Extrai eventos do Guia Curitiba e preserva a categoria exibida em cada card."""
+    items = []
+    seen = set()
+
+    urls = [source["url"]]
+    for page in range(2, 7):
+        urls.append(f"{source['url']}?pagina={page}")
+
+    for page_url in urls:
+        try:
+            soup = BeautifulSoup(fetch_html(page_url), "html.parser")
+        except Exception as error:
+            print(f"Erro no Guia Curitiba ({page_url}): {error}")
+            continue
+
+        candidates = soup.select(
+            "article, .evento, .event, .card, .item, "
+            "[class*='evento'], [class*='event'], [class*='card'], li"
+        )
+
+        for candidate in candidates:
+            text = clean_text(candidate)
+            if len(text) < 25:
+                continue
+
+            link = candidate.select_one("a[href]")
+            title_element = candidate.select_one("h1, h2, h3, h4, h5, .titulo, .title")
+            title = clean_text(title_element) or (clean_text(link) if link else "")
+            if not title or len(title) < 4:
+                continue
+
+            lowered = norm_text(title)
+            if lowered in {"ver mais", "aplicar filtros", "limpar filtro", "filtre por categoria"}:
+                continue
+
+            url = urljoin(page_url, link.get("href", "")) if link else page_url
+            key = (norm_text(title), url)
+            if key in seen:
+                continue
+
+            dates = extract_portuguese_dates(text)
+            if not dates:
+                date, time = extract_date_time(text)
+                dates = [(date, time)] if date else []
+
+            category_slug = guide_category(text)
+            public = any(word in norm_text(text) for word in (
+                "parque", "praça", "praca", "bosque", "rua da cidadania", "regional"
+            ))
+
+            free = any(word in norm_text(text) for word in (
+                "gratuito", "gratuita", "gratis", "entrada franca", "acesso livre"
+            ))
+
+            # Cada sessão/data vira um item próprio. Isso permite o filtro
+            # de calendário e evita esconder um evento que ocorre em vários dias.
+            if dates:
+                for event_date, event_time in dates:
+                    items.append({
+                        "title": title,
+                        "summary": text[:500],
+                        "category": guide_category_label(category_slug),
+                        "categorySlug": category_slug,
+                        "startDate": event_date,
+                        "startTime": event_time,
+                        "venue": "",
+                        "group": source["group"],
+                        "url": url,
+                        "imageUrl": "",
+                        "sourceUrl": source["url"],
+                        "publicSpace": public,
+                        "outdoor": public,
+                        "free": free,
+                        "organizer": "Prefeitura de Curitiba"
+                    })
+            else:
+                items.append({
+                    "title": title,
+                    "summary": text[:500],
+                    "category": guide_category_label(category_slug),
+                    "categorySlug": category_slug,
+                    "startDate": "",
+                    "startTime": "",
+                    "venue": "",
+                    "group": source["group"],
+                    "url": url,
+                    "imageUrl": "",
+                    "sourceUrl": source["url"],
+                    "publicSpace": public,
+                    "outdoor": public,
+                    "free": free,
+                    "organizer": "Prefeitura de Curitiba"
+                })
+
+            seen.add(key)
+
+    return items
+
+
+def extract_cinema_events(source):
+    """Extrai filmes de cinemas com estruturas HTML diferentes."""
+    try:
+        soup = BeautifulSoup(fetch_html(source["url"]), "html.parser")
+    except Exception as error:
+        print(f"Erro em {source['title']}: {error}")
+        return []
+
+    items = []
+    seen = set()
+
+    # Primeiro tentamos blocos semânticos. Depois usamos headings/links como
+    # fallback, pois cada cinema possui um HTML completamente diferente.
+    candidates = soup.select(
+        "article, .filme, .filme-card, .movie, .movie-card, "
+        "[class*='filme'], [class*='movie'], [class*='cinema'], li"
+    )
+
+    for candidate in candidates:
+        text = clean_text(candidate)
+        if len(text) < 12:
+            continue
+
+        title_element = candidate.select_one("h1, h2, h3, h4, h5")
+        link = candidate.select_one("a[href]")
+        title = clean_text(title_element) or (clean_text(link) if link else "")
+        if not title or len(title) < 3:
+            continue
+
+        if norm_text(title) in {
+            "filmes em cartaz", "programacao", "cinema", "mais detalhes",
+            "comprar ingressos", "ver mais"
+        }:
+            continue
+
+        # O card precisa parecer realmente um filme, não um bloco de navegação.
+        movie_signal = any(token in norm_text(text) for token in (
+            "min", "filme", "filmes", "movie", "cinema", "access time", "comprar ingresso"
+        ))
+        if not movie_signal and source["slug"] != "uci-estacao":
+            continue
+
+        url = urljoin(source["url"], link.get("href", "")) if link else source["url"]
+        key = (norm_text(title), source["slug"])
+        if key in seen:
+            continue
+
+        dates = extract_portuguese_dates(text)
+        if not dates:
+            date, time = extract_date_time(text)
+            dates = [(date, time)] if date else []
+
+        # Para "filmes em cartaz" sem sessão na página, mantemos a data vazia:
+        # eles continuam aparecendo em Todos/Cinema sem inventar uma data.
+        if not dates:
+            dates = [("", "")]
+
+        for event_date, event_time in dates:
+            items.append({
+                "title": title,
+                "summary": text[:700],
+                "category": "Cinema",
+                "categorySlug": "cinema",
+                "startDate": event_date,
+                "startTime": event_time,
+                "venue": source.get("venue", "Cinema"),
+                "group": source["group"],
+                "url": url,
+                "imageUrl": "",
+                "sourceUrl": source["url"],
+                "publicSpace": False,
+                "outdoor": False,
+                "free": False,
+                "organizer": source.get("venue", "")
+            })
+
+        seen.add(key)
+
+    # Fallback específico para páginas como o UCI, onde o título é um H1 e
+    # os cards não possuem uma classe de filme confiável.
+    if not items:
+        for heading in soup.select("h1, h2, h3, h4"):
+            title = clean_text(heading)
+            if len(title) < 3 or norm_text(title) in {"programacao", "resultado de pesquisa"}:
+                continue
+            if any(x in norm_text(title) for x in ("cinema:", "veja mais", "comprar ingressos")):
+                continue
+            text = clean_text(heading.parent or heading)
+            if len(text) < len(title) + 5:
+                continue
+            key = norm_text(title)
+            if key in seen:
+                continue
+            items.append({
+                "title": title,
+                "summary": text[:700],
+                "category": "Cinema",
+                "categorySlug": "cinema",
+                "startDate": "",
+                "startTime": "",
+                "venue": source.get("venue", "Cinema"),
+                "group": source["group"],
+                "url": source["url"],
+                "imageUrl": "",
+                "sourceUrl": source["url"],
+                "publicSpace": False,
+                "outdoor": False,
+                "free": False,
+                "organizer": source.get("venue", "")
+            })
+            seen.add(key)
+
+    return items
 
 
 def classify_public_event(text, source):
@@ -535,8 +840,12 @@ def main():
         print(f"Coletando: {source['title']}")
         if source.get("group") == "prefeitura_eventos":
             all_items.extend(extract_prefeitura_events(source))
+        elif source.get("group") == "prefeitura_guia":
+            all_items.extend(extract_guia_events(source))
         elif source.get("group") == "universidade":
             all_items.extend(extract_university_events(source))
+        elif source.get("group") == "cinema":
+            all_items.extend(extract_cinema_events(source))
         else:
             all_items.extend(extract_items(source))
 
