@@ -116,7 +116,7 @@ def image_from_element(image_element, base_url):
 
     # Alguns cards usam background-image em vez de <img>.
     style = image_element.get("style", "")
-    match = re.search(r"background-image\s*:\s*url\(['"]?([^'")]+)", style, re.I)
+    match = re.search(r"background-image\s*:\s*url\((?:'|\")?([^'\")]+)", style, re.I)
     if match and is_valid_image_url(match.group(1)):
         return urljoin(base_url, match.group(1))
 
