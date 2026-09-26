@@ -29,8 +29,9 @@ SOURCES = [
     {"title": "Notícias da Prefeitura", "slug": "noticias-prefeitura", "group": "noticias_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
     {"title": "Prefeitura de Curitiba", "slug": "prefeitura-curitiba", "group": "informacoes_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
 
-    # Notícias culturais independentes
-    {"title": "Curitibacult", "slug": "curitibacult", "group": "noticias_culturais", "url": "https://curitibacult.com.br/"},
+    # Esporte — programação oficial dos clubes e eventos nos estádios
+    {"title": "Coritiba — Couto Pereira", "slug": "coritiba", "group": "esporte", "category": "Esporte", "venue": "Couto Pereira", "sports_only": True, "url": "https://www.coritiba.com.br"},
+    {"title": "Athletico — Ligga Arena", "slug": "athletico", "group": "esporte", "category": "Esporte", "venue": "Ligga Arena", "sports_only": True, "url": "https://www.athletico.com.br"},
 
     # Institucional
     {"title": "Institucional", "slug": "institucional", "group": "institucional", "url": "http://www.fundacaoculturaldecuritiba.com.br/historia/inicio/"},
@@ -205,6 +206,39 @@ def candidate_image(candidate, base_url):
     link_with_image = candidate.select_one("a img")
     return image_from_element(link_with_image, base_url)
 
+def extract_date_time(text):
+    if not text:
+        return "", ""
+
+    # Aceita datas comuns em sites brasileiros: DD/MM/YYYY, DD-MM-YYYY e ISO.
+    match = re.search(r"\\b(\\d{1,2})[/-](\\d{1,2})[/-](\\d{2,4})\\b", text)
+    if match:
+        day, month, year = match.groups()
+        if len(year) == 2:
+            year = "20" + year
+        date = f"{year}-{int(month):02d}-{int(day):02d}"
+        time_match = re.search(r"\\b([01]?\\d|2[0-3]):([0-5]\\d)\\b", text)
+        return date, (time_match.group(0) if time_match else "")
+
+    iso = re.search(r"\\b(20\\d{2})-(\\d{2})-(\\d{2})\\b", text)
+    if iso:
+        date = "-".join(iso.groups())
+        time_match = re.search(r"\\b([01]?\\d|2[0-3]):([0-5]\\d)\\b", text)
+        return date, (time_match.group(0) if time_match else "")
+
+    return "", ""
+
+
+def is_sports_candidate(candidate):
+    text = clean_text(candidate)
+    lowered = text.casefold()
+    keywords = (
+        "couto pereira", "ligga arena", "estádio", "estadio", "jogo", "partida",
+        "rodada", "campeonato", "copa", "ingresso", "matchday", "próximo jogo",
+        "proximo jogo", "athletico", "coritiba"
+    )
+    return any(keyword in lowered for keyword in keywords)
+
 def extract_items(source):
     try:
         html = fetch_html(source["url"])
@@ -215,6 +249,9 @@ def extract_items(source):
         candidates = soup.select("article, .post, .noticia, .evento, .item, .card, li")
 
         for candidate in candidates:
+            if source.get("sports_only") and not is_sports_candidate(candidate):
+                continue
+
             title_element = candidate.select_one("h1, h2, h3, h4, a")
             link_element = candidate.select_one("a")
             summary_element = candidate.select_one("p, .resumo, .summary, .descricao")
@@ -230,6 +267,7 @@ def extract_items(source):
                 url = urljoin(source["url"], link_element["href"])
 
             image_url = candidate_image(candidate, source["url"])
+            event_date, event_time = extract_date_time(clean_text(candidate))
 
             # Se o card não expõe a imagem, tenta a página individual do evento.
             # Muitos sites deixam a arte oficial apenas em og:image/JSON-LD da página
@@ -249,8 +287,11 @@ def extract_items(source):
             items.append({
                 "title": title,
                 "summary": summary,
-                "category": source["title"],
-                "categorySlug": source["slug"],
+                "category": source.get("category", source["title"]),
+                "categorySlug": source.get("categorySlug", source.get("slug", "")),
+                "startDate": event_date,
+                "startTime": event_time,
+                "venue": source.get("venue", ""),
                 "group": source["group"],
                 "url": url,
                 "imageUrl": image_url,
