@@ -31,7 +31,7 @@ SOURCES = [
     # Guia Curitiba — fonte geral. A categoria é extraída do próprio card do evento.
     {"title": "Prefeitura — Guia de Eventos", "slug": "prefeitura-guia", "group": "prefeitura_guia", "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/"},
 
-    # Cinemas — filmes em cartaz e programação local.
+    # DiskIngressos — catálogo de eventos e sessões vendidos pela plataforma.\n    # O scraper percorre a vitrine, paginações e páginas individuais para capturar\n    # os eventos publicados, incluindo título, data, horário, local, cidade, categoria e URL de ingresso.\n    {"title": "DiskIngressos — Eventos", "slug": "diskingressos", "group": "diskingressos", "images_enabled": False, "url": "https://www.diskingressos.com.br/"},\n\n    # Cinemas — filmes em cartaz e programação local.
     {"title": "Cine Passeio — Programação", "slug": "cine-passeio", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "Cine Passeio", "cinema": True, "images_enabled": False, "url": "https://www.cinepasseio.org/programacao"},
     {"title": "Shopping Estação — Cinema", "slug": "shopping-estacao-cinema", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "Shopping Estação", "cinema": True, "images_enabled": False, "url": "https://shoppingestacao.com.br/cinema/"},
     {"title": "UCI Estação", "slug": "uci-estacao", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "UCI Estação", "cinema": True, "images_enabled": False, "url": "https://www.ucicinemas.com.br/Filmes/FiltroCinema/0%2C15%2C1"},
@@ -558,6 +558,268 @@ def extract_cinema_events(source):
     return items
 
 
+def disk_category(text):
+    lowered = norm_text(text)
+    categories = (
+        ("cinema", ("cinema", "filme", "filmes", "cine")),
+        ("teatro", ("teatro", "teatral", "espetaculo", "espetáculos", "peca", "peça", "musical", "circo")),
+        ("musica", ("musica", "música", "show", "concerto", "festival", "banda", "sertanejo", "rock", "pagode", "samba")),
+        ("danca", ("danca", "dança", "ballet", "balé")),
+        ("esporte", ("esporte", "esportes", "futebol", "jogo", "partida", "campeonato", "copa", "corrida")),
+        ("exposicao", ("exposicao", "exposição", "mostra", "galeria")),
+    )
+    for slug, words in categories:
+        if any(word in lowered for word in words):
+            return slug
+    return "cidade"
+
+
+def extract_diskingressos_events(source):
+    """
+    Percorre a vitrine do DiskIngressos e as páginas individuais /evento/ e /grupo/.
+    A página inicial expõe eventos em blocos e cada evento possui uma página de detalhe
+    com data, horário, local e descrição. O crawler segue links internos do domínio
+    e também descobre novas páginas através da paginação.
+    """
+    base_url = source["url"]
+    domain = "www.diskingressos.com.br"
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (compatible; CuritibaEmFoco/1.0; +https://zaysauro.github.io/agenda-cultural-api/)",
+        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+    })
+
+    def get_soup(url):
+        try:
+            response = session.get(url, timeout=30)
+            response.raise_for_status()
+            return BeautifulSoup(response.text, "html.parser")
+        except Exception as error:
+            print(f"Erro no DiskIngressos ({url}): {error}")
+            return None
+
+    def internal_url(href, current_url):
+        if not href:
+            return ""
+        absolute = urljoin(current_url, href).split("#")[0]
+        if absolute.startswith("https://diskingressos.com.br/"):
+            absolute = absolute.replace("https://diskingressos.com.br/", "https://www.diskingressos.com.br/")
+        if absolute.startswith("http://diskingressos.com.br/"):
+            absolute = absolute.replace("http://diskingressos.com.br/", "https://www.diskingressos.com.br/")
+        if not absolute.startswith(f"https://{domain}/"):
+            return ""
+        return absolute
+
+    def is_event_url(url):
+        return bool(re.search(r"/(?:evento|event|grupo)/", url, re.I))
+
+    def parse_detail(url, soup):
+        text = clean_text(soup)
+        if len(text) < 20:
+            return None
+
+        title_element = soup.select_one("h1, .event-title, [class*='event-title']")
+        title = clean_text(title_element) if title_element else ""
+
+        if not title:
+            # Nas páginas do DiskIngressos o título aparece antes da data.
+            headings = [clean_text(node) for node in soup.select("h1, h2, h3") if clean_text(node)]
+            for heading in headings:
+                candidate = heading.strip()
+                if len(candidate) >= 4 and norm_text(candidate) not in {
+                    "informacoes do evento", "informações do evento",
+                    "confira os valores e setores", "clique e faça a sua escolha",
+                }:
+                    title = candidate
+                    break
+
+        if not title:
+            return None
+
+        # Remove textos de compra/navegação para deixar a classificação mais precisa.
+        date, time = extract_date_time(text)
+        portuguese_dates = extract_portuguese_dates(text)
+        if portuguese_dates:
+            date, time = portuguese_dates[0]
+
+        if not date:
+            # Formatos como 05.dez.2026 (sábado).
+            match = re.search(
+                r"\b([0-3]?\d)\.([A-Za-zÀ-ÿ]{3,})\.(20\d{2})\b",
+                text,
+                re.I,
+            )
+            if match:
+                day = int(match.group(1))
+                month = portuguese_month_number(match.group(2)[:3])
+                year = int(match.group(3))
+                if month:
+                    date = f"{year:04d}-{month:02d}-{day:02d}"
+
+        # Horários do DiskIngressos aparecem como "Abertura: 19h 00min" e "Evento: 20h 00min".
+        if not time:
+            match = re.search(
+                r"(?:Evento|Início|Inicio)\s*:\s*([01]?\d|2[0-3])h\s*(\d{2})min",
+                text,
+                re.I,
+            )
+            if match:
+                time = f"{int(match.group(1)):02d}:{int(match.group(2)):02d}"
+
+        venue = ""
+        address = ""
+        city = ""
+        state = ""
+
+        # O bloco de serviço normalmente vem imediatamente após a data.
+        service = soup.select_one(
+            ".event-info, .event-detail, .evento-info, [class*='event-info'], "
+            "[class*='event-detail'], [class*='local']"
+        )
+        service_text = clean_text(service) if service else text
+
+        location_patterns = [
+            r"(?:Local|Local do evento)\s*:\s*([^\n]+)",
+            r"(?:Evento)\s*:\s*([^\n]+)",
+        ]
+        for pattern in location_patterns:
+            match = re.search(pattern, service_text, re.I)
+            if match:
+                value = match.group(1).strip()
+                if len(value) < 180 and not re.search(r"\d{1,2}h", value):
+                    venue = value
+                    break
+
+        # Estrutura observada nas páginas públicas: "Teatro Positivo/Curitiba"
+        # seguido de endereço. Também funciona para "Ópera de Arame/Curitiba".
+        if not venue:
+            match = re.search(
+                r"([^\n]{2,100})/([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ .'-]{2,40})\s+"
+                r"(?:Rua|Av\.|Avenida|Praça|Rodovia|Alameda|R\.)",
+                text,
+                re.I,
+            )
+            if match:
+                venue = match.group(1).strip()
+                city = match.group(2).strip()
+
+        # Endereço brasileiro + cidade/UF.
+        address_match = re.search(
+            r"((?:Rua|R\.|Avenida|Av\.|Praça|Pça\.|Alameda|Rodovia|Estrada)\s+"
+            r"[^\n]{3,180}?\s+\d{1,6}[^\n]{0,100}?\b"
+            r"(?:Curitiba|Colombo|Pinhais|São José dos Pinhais|Campo Largo|"
+            r"Campo Magro|Maringá|Londrina|Cascavel|Ponta Grossa|"
+            r"São Paulo|Porto Alegre|Pelotas|Sorocaba|Cajamar)\s*/?\s*"
+            r"([A-Z]{2})\b",
+            text,
+            re.I,
+        )
+        if address_match:
+            address = re.sub(r"\s+", " ", address_match.group(1)).strip()
+            state = address_match.group(2).upper()
+
+        if not city:
+            city_match = re.search(
+                r"/([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ .'-]{2,40})\s+(?:PR|SC|SP|RS|MG|RJ|BA|PE|CE|GO|DF)\b",
+                text,
+                re.I,
+            )
+            if city_match:
+                city = city_match.group(1).strip()
+
+        if not state:
+            state_match = re.search(
+                r"\b([A-Z]{2})\b(?=\s*(?:\n|$))",
+                text,
+            )
+            if state_match:
+                state = state_match.group(1)
+
+        category_slug = disk_category(f"{title} {text}")
+        free = any(word in norm_text(text) for word in (
+            "gratuito", "gratuita", "gratis", "entrada franca", "acesso livre"
+        ))
+
+        # A imagem oficial pode estar em og:image ou JSON-LD na página de detalhe.
+        image_url = page_preview_image(soup, url)
+
+        return {
+            "title": title,
+            "summary": text[:900],
+            "description": text[:900],
+            "category": guide_category_label(category_slug),
+            "categorySlug": category_slug,
+            "startDate": date,
+            "startTime": time,
+            "venue": venue,
+            "address": address,
+            "city": city,
+            "state": state,
+            "group": source["group"],
+            "url": url,
+            "imageUrl": image_url,
+            "sourceUrl": source["url"],
+            "publicSpace": False,
+            "outdoor": False,
+            "free": free,
+            "organizer": "DiskIngressos",
+        }
+
+    # A home atual lista dezenas de eventos. Além dela, seguimos paginações
+    # e links internos de evento/grupo encontrados em cada página.
+    queue = [base_url]
+    visited_pages = set()
+    event_urls = set()
+
+    # Limite alto o suficiente para o catálogo, mas impede loops infinitos.
+    max_listing_pages = 60
+    max_event_pages = 1200
+
+    while queue and len(visited_pages) < max_listing_pages:
+        page_url = queue.pop(0)
+        if page_url in visited_pages or is_event_url(page_url):
+            continue
+        visited_pages.add(page_url)
+
+        soup = get_soup(page_url)
+        if not soup:
+            continue
+
+        for link in soup.select("a[href]"):
+            url = internal_url(link.get("href"), page_url)
+            if not url:
+                continue
+            if is_event_url(url):
+                event_urls.add(url)
+            elif len(queue) < max_listing_pages and (
+                "pagina" in norm_text(url)
+                or "page" in norm_text(url)
+                or "/event" in norm_text(url)
+                or "/busca" in norm_text(url)
+                or "/pesquisa" in norm_text(url)
+            ):
+                if url not in visited_pages:
+                    queue.append(url)
+
+        # Alguns layouts usam paginação numérica sem links semânticos.
+        for anchor in soup.select("a[href]"):
+            label = norm_text(clean_text(anchor))
+            if label.isdigit() and 1 <= int(label) <= 60:
+                url = internal_url(anchor.get("href"), page_url)
+                if url and url not in visited_pages:
+                    queue.append(url)
+
+    # Se a home já entregou muitos eventos, ainda percorremos as páginas
+    # de catálogo descobertas. Ordenação garante resultado determinístico.
+    for url in sorted(event_urls)[:max_event_pages]:
+        soup = get_soup(url)
+        if not soup:
+            continue
+        item = parse_detail(url, soup)
+        if item:
+            yield item
+
+
 def classify_public_event(text, source):
     lowered = clean_text(text).casefold()
     public_space_keywords = (
@@ -846,6 +1108,8 @@ def main():
             all_items.extend(extract_university_events(source))
         elif source.get("group") == "cinema":
             all_items.extend(extract_cinema_events(source))
+        elif source.get("group") == "diskingressos":
+            all_items.extend(extract_diskingressos_events(source))
         else:
             all_items.extend(extract_items(source))
 
