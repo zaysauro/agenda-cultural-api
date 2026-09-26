@@ -306,3 +306,7 @@ h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.045em}h1{font-size:clamp(4
   outline:2px solid currentColor;
   outline-offset:3px;
 }
+
+.cinema-theater-names{font-size:10px;line-height:1.5;color:rgba(247,242,232,.62);margin:0 0 13px;padding:8px 10px;border:1px solid rgba(255,255,255,.07);border-radius:9px;background:rgba(255,255,255,.025)}
+.cinema-theater-names span{color:rgba(247,242,232,.4);text-transform:uppercase;letter-spacing:.08em;font-size:8px;margin-right:5px}
+@media(max-width:600px){.cinema-theater-names{font-size:8px;padding:7px 8px;margin-bottom:9px}.cinema-theater-names span{font-size:7px}}
