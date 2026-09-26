@@ -142,3 +142,93 @@ h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.045em}h1{font-size:clamp(4
   .weather-weekend-mark{font-size:32px}
   .weather-weekend-grid{grid-template-columns:1fr 1fr}
 }
+
+
+/* Mobile responsive pass */
+@media (max-width: 850px){
+  .container{width:min(100% - 32px,720px)}
+  .nav{gap:16px}
+  .nav nav{gap:14px}
+  .intro-grid{padding:54px 0}
+  .weather-card{width:100%}
+  .section-heading{gap:18px}
+  .section-heading h2{line-height:1}
+  .event-row{min-width:0}
+  .event-info{overflow:hidden}
+  .event-title,.event-meta{overflow-wrap:anywhere}
+}
+@media (max-width: 600px){
+  .container{width:calc(100% - 24px)}
+  .site-header{position:sticky}
+  .nav{height:60px}
+  .brand{gap:4px;min-width:0}
+  .brand-city,.brand-focus{font-size:16px}
+  .nav nav{gap:10px}
+  .nav nav .project{font-size:11px}
+  .intro-grid{padding:40px 0 46px;gap:28px}
+  .intro h1{font-size:clamp(38px,13vw,52px);line-height:.95;margin:14px 0 18px}
+  .intro p{font-size:14px;line-height:1.6;margin-bottom:22px}
+  .intro-meta{font-size:10px;flex-wrap:wrap;row-gap:5px}
+  .weather-card{border-radius:20px;padding:20px;min-height:0}
+  .weather-top{align-items:flex-start}
+  .weather-main{height:112px;gap:12px}
+  .weather-icon{font-size:52px}
+  .weather-main strong{font-size:56px}
+  .weather-forecast{gap:5px}
+  .forecast-day{min-height:46px;padding:6px 5px}
+  .forecast-label{font-size:7px}
+  .forecast-icon{font-size:15px}
+  .forecast-day strong{font-size:11px}
+  .forecast-day small{font-size:8px;margin-left:5px}
+  .weather-bottom{font-size:9px;gap:10px;flex-wrap:wrap}
+  .weather-weekend{margin-top:15px;padding-top:15px}
+  .weather-weekend-head{align-items:flex-start}
+  .weather-weekend-head h2{font-size:18px}
+  .weather-weekend-head p{font-size:8px}
+  .weather-weekend-mark{font-size:28px}
+  .weather-weekend-grid{grid-template-columns:1fr;gap:6px}
+  .weather-weekend-card{min-height:74px}
+  .agenda-section,.calendar-section{padding:54px 0}
+  .section-heading{display:block;margin-bottom:20px}
+  .section-heading h2{font-size:30px;margin-top:6px}
+  .section-heading .ghost,.section-heading .primary{margin-top:12px}
+  .filter-row{gap:10px}
+  .date-tabs{margin-right:-12px;padding-right:12px}
+  .date-tab{padding:8px 11px;font-size:11px}
+  .event-row{grid-template-columns:56px minmax(0,1fr);gap:11px;padding:15px 0}
+  .event-date{width:56px;padding-right:9px}
+  .event-date strong{font-size:23px}
+  .event-date .month{font-size:8px}
+  .event-date small{font-size:8px}
+  .event-title{font-size:16px;line-height:1.12;margin-bottom:6px}
+  .category-badge{font-size:8px;padding:3px 7px;margin-bottom:6px}
+  .event-meta{font-size:10px;line-height:1.35}
+  .event-action{grid-column:2;min-width:0;flex-wrap:wrap;gap:7px}
+  .event-link{font-size:10px}
+  .calendar-layout{gap:12px}
+  .calendar-card{overflow:hidden}
+  .calendar-cell{min-width:0;min-height:58px}
+  .calendar-head strong{font-size:18px}
+  .day-panel{padding:16px}
+  .about-section{padding:56px 0}
+  .about-section h2{font-size:34px}
+  .about-grid{gap:22px}
+  .about-grid p{font-size:14px}
+  .about-points div{gap:12px;font-size:12px}
+  .footer-inner{font-size:10px}
+}
+@media (max-width: 380px){
+  .container{width:calc(100% - 20px)}
+  .brand-city,.brand-focus{font-size:15px}
+  .nav nav .project{font-size:10px}
+  .intro h1{font-size:36px}
+  .weather-card{padding:16px}
+  .weather-main strong{font-size:48px}
+  .weather-icon{font-size:45px}
+  .event-row{grid-template-columns:50px minmax(0,1fr);gap:9px}
+  .event-date{width:50px;padding-right:7px}
+  .event-date strong{font-size:21px}
+  .event-title{font-size:15px}
+  .calendar-cell{min-height:51px;padding:4px 2px}
+  .cell-day{width:22px;height:22px;font-size:9px}
+}
