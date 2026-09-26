@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add docs/agenda.json docs/cinema.json
+          git add docs/agenda.json
           git commit -m "Update agenda data" || echo "No changes to commit"
           git push
