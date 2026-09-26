@@ -1,4 +1,5 @@
 import json
+import re
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone
@@ -58,10 +59,61 @@ def fetch_html(url):
     response.raise_for_status()
     return response.text
 
+def image_from_element(image_element, base_url):
+    if not image_element:
+        return ""
+
+    # Sites modernos frequentemente deixam a imagem real em atributos de lazy loading.
+    for attr in (
+        "src",
+        "data-src",
+        "data-lazy-src",
+        "data-original",
+        "data-image",
+        "data-url",
+        "data-thumb",
+        "data-thumbnail",
+    ):
+        value = image_element.get(attr)
+        if value and not value.startswith("data:image/"):
+            return urljoin(base_url, value)
+
+    # Tenta o primeiro endereço útil do srcset.
+    srcset = image_element.get("srcset") or image_element.get("data-srcset")
+    if srcset:
+        candidates = []
+        for entry in srcset.split(","):
+            url = entry.strip().split(" ")[0]
+            if url and not url.startswith("data:image/"):
+                candidates.append(url)
+        if candidates:
+            return urljoin(base_url, candidates[-1])
+
+    # Alguns cards usam background-image em vez de <img>.
+    style = image_element.get("style", "")
+    match = re.search(r"background-image\s*:\s*url\(['\"]?([^'\")]+)", style, re.I)
+    if match:
+        return urljoin(base_url, match.group(1))
+
+    return ""
+
+def page_preview_image(soup, base_url):
+    # Fallback para a imagem Open Graph da própria página.
+    for selector in (
+        'meta[property="og:image"]',
+        'meta[property="og:image:url"]',
+        'meta[name="twitter:image"]',
+    ):
+        meta = soup.select_one(selector)
+        if meta and meta.get("content"):
+            return urljoin(base_url, meta["content"])
+    return ""
+
 def extract_items(source):
     try:
         html = fetch_html(source["url"])
         soup = BeautifulSoup(html, "html.parser")
+        source_preview = page_preview_image(soup, source["url"])
 
         items = []
         candidates = soup.select("article, .post, .noticia, .evento, .item, .card, li")
@@ -82,9 +134,11 @@ def extract_items(source):
             if link_element and link_element.has_attr("href"):
                 url = urljoin(source["url"], link_element["href"])
 
-            image_url = ""
-            if image_element and image_element.has_attr("src"):
-                image_url = urljoin(source["url"], image_element["src"])
+            image_url = image_from_element(image_element, source["url"])
+
+            # Se o card não expõe a imagem, usa a prévia da página como fallback.
+            if not image_url:
+                image_url = source_preview
 
             items.append({
                 "title": title,
