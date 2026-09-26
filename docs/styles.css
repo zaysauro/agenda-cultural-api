@@ -88,3 +88,48 @@ h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.045em}h1{font-size:clamp(4
 .search-hint{font-size:10px;color:var(--muted);margin-top:8px}
 .search-hint b{color:var(--ink)}
 @media(max-width:600px){.discovery-pills{flex-wrap:nowrap;overflow:auto;padding-bottom:3px}.discovery-pills button{white-space:nowrap}.search-hint{line-height:1.5}}
+
+/* Marca — a mira fica literalmente atrás da palavra Foco */
+.brand-focus{position:relative}
+.focus-word{position:relative;display:inline-block;padding:0 2px}
+.focus-word .focus-ring{position:absolute;z-index:0;left:50%;top:50%;margin:0;width:34px;height:34px;transform:translate(-50%,-50%);opacity:.5}
+.focus-word .focus-ring:before{height:43px}
+.focus-word .focus-ring:after{width:43px}
+.focus-word b{position:relative;z-index:1}
+
+/* Clima — leitura rápida do agora + próximos dias */
+.weather-card{height:auto;min-height:350px}
+.weather-main{height:125px}
+.weather-forecast{margin-top:0;margin-bottom:13px}
+.forecast-day{min-height:48px}
+
+/* Destaque editorial do próximo fim de semana */
+.weekend-section{padding:76px 0;background:var(--dark);color:#fff;position:relative;overflow:hidden}
+.weekend-section:before{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.08);border-radius:50%;right:-180px;top:-180px}
+.weekend-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:28px;position:relative;z-index:1}
+.weekend-heading h2{font-size:clamp(34px,4vw,52px);line-height:.98;margin:8px 0 9px}
+.weekend-heading h2 em{font-style:normal;color:#f1a08b}
+.weekend-heading p{margin:0;color:#9fa1a6;font-size:12px}
+.weekend-mark{font-size:76px;line-height:1;color:var(--accent);opacity:.8;animation:focusPulse 2.6s ease-in-out infinite}
+.weekend-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;position:relative;z-index:1}
+.weekend-card{background:#25272d;border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:18px;min-height:155px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s,border-color .15s}
+.weekend-card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.2)}
+.weekend-card-top{display:flex;justify-content:space-between;gap:10px}
+.weekend-day{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#f1a08b;font-weight:700}
+.weekend-free{font-size:9px;color:#9fe0ae}
+.weekend-card h3{font-size:19px;line-height:1.12;margin:12px 0 7px}
+.weekend-meta{font-size:10px;color:#aeb0b5;line-height:1.55}
+.weekend-link{display:inline-block;margin-top:13px;color:#fff;text-decoration:none;font-size:10px;font-weight:700}
+.weekend-empty{padding:25px;border:1px dashed rgba(255,255,255,.16);border-radius:16px;color:#9fa1a6;font-size:12px;position:relative;z-index:1}
+@media(max-width:850px){.weekend-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){
+  .focus-word .focus-ring{width:31px;height:31px}
+  .focus-word .focus-ring:before{height:39px}.focus-word .focus-ring:after{width:39px}
+  .weather-card{min-height:335px}
+  .weather-main{height:115px}
+  .weekend-section{padding:58px 0}
+  .weekend-heading{align-items:flex-start}
+  .weekend-heading h2{font-size:35px}
+  .weekend-mark{display:none}
+  .weekend-grid{grid-template-columns:1fr}
+}
