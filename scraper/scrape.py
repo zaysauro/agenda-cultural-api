@@ -1017,6 +1017,96 @@ def extract_university_events(source):
 
     return items
 
+def scrape_ingresso_cinema():
+    """Coleta filmes em cartaz, cinemas e sessões de hoje do Ingresso.com."""
+    base_url = "https://api-content.ingresso.com/v0"
+    city_id = "178"
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    def api_get(path):
+        response = requests.get(
+            f"{base_url}{path}",
+            timeout=20,
+            headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
+        )
+        response.raise_for_status()
+        return response.json()
+
+    filmes = []
+    cinemas = []
+    sessoes = []
+
+    try:
+        payload = api_get(f"/movies/now-playing/{city_id}")
+        for f in payload.get("items", []):
+            images = f.get("images") or []
+            poster = (images[0] or {}).get("url") if images else None
+            filmes.append({
+                "titulo": f.get("title") or "",
+                "titulo_original": f.get("originalTitle") or "",
+                "sinopse": f.get("synopsis") or "",
+                "duracao": f.get("duration"),
+                "classificacao": f.get("contentRating") or "",
+                "generos": [g.get("name") for g in (f.get("genres") or []) if g.get("name")],
+                "poster": poster,
+                "id_ingresso": f.get("id"),
+            })
+    except Exception as error:
+        print(f"Erro nos filmes do Ingresso.com: {error}")
+
+    try:
+        theaters_payload = api_get(f"/theaters/city/{city_id}")
+        if isinstance(theaters_payload, list):
+            for theater in theaters_payload:
+                address = theater.get("address") or {}
+                cinemas.append({
+                    "nome": theater.get("name") or "",
+                    "id": theater.get("id"),
+                    "endereco": address.get("address") or "",
+                    "bairro": address.get("neighborhood") or "",
+                })
+    except Exception as error:
+        print(f"Erro nos cinemas do Ingresso.com: {error}")
+
+    for cinema in cinemas:
+        cinema_id = cinema.get("id")
+        if not cinema_id:
+            continue
+        try:
+            payload = api_get(f"/sessions/city/{city_id}/theater/{cinema_id}/date/{today}")
+            for filme in payload.get("items", []):
+                for sessao in filme.get("sessions", []):
+                    poster = next(
+                        (f.get("poster") for f in filmes if f.get("titulo") == filme.get("title")),
+                        None,
+                    )
+                    sessoes.append({
+                        "filme": filme.get("title") or "",
+                        "poster": poster,
+                        "cinema_id": cinema_id,
+                        "cinema": cinema.get("nome") or "",
+                        "endereco": cinema.get("endereco") or "",
+                        "bairro": cinema.get("bairro") or "",
+                        "horario": sessao.get("date") or "",
+                        "sala": sessao.get("room") or "",
+                        "tipo": sessao.get("type") or "",
+                        "idioma": sessao.get("language") or "",
+                        "url_compra": sessao.get("buyLink") or "",
+                    })
+        except Exception as error:
+            print(f"Erro nas sessões de {cinema.get('nome')}: {error}")
+
+    return {
+        "source": "ingresso.com",
+        "cidade": "Curitiba",
+        "gerado_em": datetime.now(timezone.utc).isoformat(),
+        "data_sessoes": today,
+        "filmes_em_cartaz": filmes,
+        "cinemas": cinemas,
+        "sessoes_hoje": sessoes,
+    }
+
+
 def is_sports_candidate(candidate):
     text = clean_text(candidate)
     lowered = text.casefold()
@@ -1099,6 +1189,8 @@ def extract_items(source):
 def main():
     all_items = []
 
+    cinema_data = scrape_ingresso_cinema()
+
     for source in SOURCES:
         print(f"Coletando: {source['title']}")
         if source.get("group") == "prefeitura_eventos":
@@ -1107,8 +1199,6 @@ def main():
             all_items.extend(extract_guia_events(source))
         elif source.get("group") == "universidade":
             all_items.extend(extract_university_events(source))
-        elif source.get("group") == "cinema":
-            all_items.extend(extract_cinema_events(source))
         elif source.get("group") == "diskingressos":
             all_items.extend(extract_diskingressos_events(source))
         else:
@@ -1139,7 +1229,17 @@ def main():
         encoding="utf-8"
     )
 
-    print(f"agenda.json gerado com {len(unique_items)} itens.")
+    cinema_path = Path("docs/cinema.json")
+    cinema_path.write_text(
+        json.dumps(cinema_data, ensure_ascii=False, indent=2),
+        encoding="utf-8"
+    )
+
+    print(
+        f"agenda.json gerado com {len(unique_items)} itens; "
+        f"cinema.json com {len(cinema_data.get('filmes_em_cartaz', []))} filmes e "
+        f"{len(cinema_data.get('sessoes_hoje', []))} sessões."
+    )
 
 if __name__ == "__main__":
     main()
