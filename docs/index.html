@@ -16,7 +16,7 @@
   <div class="container nav">
     <a class="brand" href="./" aria-label="Curitiba em Foco">
       <span class="brand-city">Curitiba</span>
-      <span class="brand-focus">em <b>Foco</b><i class="focus-ring" aria-hidden="true"></i></span>
+      <span class="brand-focus">em <span class="focus-word"><i class="focus-ring" aria-hidden="true"></i><b>Foco</b></span></span>
     </a>
     <nav><a href="#agenda">Agenda</a><a href="#calendario">Calendário</a><a href="#sobre">Sobre</a><a class="project" href="https://github.com/zaysauro/agenda-cultural-api" target="_blank" rel="noreferrer">Projeto ↗</a></nav>
   </div>
@@ -47,6 +47,21 @@
       <div class="weather-bottom"><span>Temperatura atual</span><span id="weather-detail">Carregando clima…</span></div>
       <div class="weather-orbit orbit-one"></div><div class="weather-orbit orbit-two"></div>
     </aside>
+  </div>
+</section>
+
+<section class="weekend-section">
+  <div class="container">
+    <div class="weekend-heading">
+      <div>
+        <span class="kicker">Próximo fim de semana</span>
+        <h2>O que está em foco<br><em>neste final de semana?</em></h2>
+        <p id="weekend-range">Carregando a programação mais próxima…</p>
+      </div>
+      <span class="weekend-mark" aria-hidden="true">◎</span>
+    </div>
+    <div id="weekend-events" class="weekend-grid"></div>
+    <div id="weekend-empty" class="weekend-empty" hidden>Nenhum evento do próximo fim de semana foi encontrado na agenda.</div>
   </div>
 </section>
 
