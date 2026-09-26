@@ -5,7 +5,7 @@ from scrape import scrape_ingresso_cinema
 
 
 def main():
-    output = Path("docs/cinema.json")
+    output = Path("../docs/cinema.json")
     output.parent.mkdir(parents=True, exist_ok=True)
 
     data = scrape_ingresso_cinema()
