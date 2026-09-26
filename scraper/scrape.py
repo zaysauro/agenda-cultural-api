@@ -247,7 +247,7 @@ def extract_month_day(text):
     """Extrai datas em formatos como 'domingo (05)' quando possível."""
     if not text:
         return ""
-    match = re.search(r"\\b(?:segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo)?\\s*\\(?([0-3]?\\d)[/-]([01]?\\d)\\)?\\b", text, re.I)
+    match = re.search(r"\b(?:segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo)?\s*\(?([0-3]?\d)[/-]([01]?\d)\)?\b", text, re.I)
     if not match:
         return ""
     day, month = map(int, match.groups())
@@ -1020,92 +1020,173 @@ def extract_university_events(source):
 def scrape_ingresso_cinema():
     """Coleta filmes em cartaz, cinemas e sessões de hoje do Ingresso.com."""
     base_url = "https://api-content.ingresso.com/v0"
-    city_id = "178"
-    today = datetime.now().strftime("%Y-%m-%d")
+    partnership = "ingresso.com"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36",
+        "Accept": "application/json",
+        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+    }
 
-    def api_get(path):
+    def api_get(path, params=None):
         response = requests.get(
             f"{base_url}{path}",
+            params=params or {},
             timeout=20,
-            headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
+            headers=headers,
         )
         response.raise_for_status()
         return response.json()
 
+    # Resolve Curitiba pelo próprio catálogo do Ingresso.com para não depender
+    # de um ID que possa mudar.
+    city_id = "178"
+    try:
+        state = api_get("/states/PR")
+        for city in state.get("cities", []) if isinstance(state, dict) else []:
+            if norm_text(city.get("name")) == "curitiba":
+                city_id = str(city.get("id") or city_id)
+                break
+    except Exception as error:
+        print(f"Aviso: não foi possível resolver Curitiba no Ingresso.com: {error}")
+
+    today = datetime.now().strftime("%Y-%m-%d")
     filmes = []
     cinemas = []
     sessoes = []
 
+    # O endpoint antigo /movies/now-playing/{city} não está mais disponível.
+    # A API atual documenta templates/nowplaying e events.
     try:
-        payload = api_get(f"/movies/now-playing/{city_id}")
-        for f in payload.get("items", []):
+        payload = api_get(f"/templates/nowplaying/{city_id}", {"partnership": partnership})
+        if isinstance(payload, dict):
+            payload = payload.get("items") or payload.get("events") or []
+        for f in payload if isinstance(payload, list) else []:
             images = f.get("images") or []
-            poster = (images[0] or {}).get("url") if images else None
+            poster = (images[0] or {}).get("url") if images else ""
             filmes.append({
+                "id_ingresso": f.get("id"),
                 "titulo": f.get("title") or "",
                 "titulo_original": f.get("originalTitle") or "",
                 "sinopse": f.get("synopsis") or "",
-                "duracao": f.get("duration"),
+                "duracao": f.get("duration") or "",
                 "classificacao": f.get("contentRating") or "",
-                "generos": [g.get("name") for g in (f.get("genres") or []) if g.get("name")],
+                "generos": [g if isinstance(g, str) else g.get("name", "") for g in (f.get("genres") or [])],
                 "poster": poster,
-                "id_ingresso": f.get("id"),
+                "url": f.get("siteURL") or "",
             })
     except Exception as error:
         print(f"Erro nos filmes do Ingresso.com: {error}")
 
     try:
-        theaters_payload = api_get(f"/theaters/city/{city_id}")
-        if isinstance(theaters_payload, list):
-            for theater in theaters_payload:
-                address = theater.get("address") or {}
-                cinemas.append({
-                    "nome": theater.get("name") or "",
-                    "id": theater.get("id"),
-                    "endereco": address.get("address") or "",
-                    "bairro": address.get("neighborhood") or "",
-                })
+        payload = api_get(f"/theaters/city/{city_id}", {"partnership": partnership})
+        if isinstance(payload, dict):
+            payload = payload.get("items") or payload.get("theaters") or []
+        for theater in payload if isinstance(payload, list) else []:
+            cinemas.append({
+                "nome": theater.get("name") or "",
+                "id": theater.get("id"),
+                "endereco": theater.get("address") or "",
+                "bairro": theater.get("neighborhood") or "",
+                "cidade": theater.get("cityName") or "Curitiba",
+                "url": theater.get("siteURL") or "",
+            })
     except Exception as error:
         print(f"Erro nos cinemas do Ingresso.com: {error}")
 
+    # A API atual entrega as sessões por cinema sem precisar de /date/{YYYY-MM-DD}.
     for cinema in cinemas:
         cinema_id = cinema.get("id")
         if not cinema_id:
             continue
         try:
-            payload = api_get(f"/sessions/city/{city_id}/theater/{cinema_id}/date/{today}")
-            for filme in payload.get("items", []):
-                for sessao in filme.get("sessions", []):
-                    poster = next(
-                        (f.get("poster") for f in filmes if f.get("titulo") == filme.get("title")),
-                        None,
-                    )
-                    sessoes.append({
-                        "filme": filme.get("title") or "",
-                        "poster": poster,
-                        "cinema_id": cinema_id,
-                        "cinema": cinema.get("nome") or "",
-                        "endereco": cinema.get("endereco") or "",
-                        "bairro": cinema.get("bairro") or "",
-                        "horario": sessao.get("date") or "",
-                        "sala": sessao.get("room") or "",
-                        "tipo": sessao.get("type") or "",
-                        "idioma": sessao.get("language") or "",
-                        "url_compra": sessao.get("buyLink") or "",
-                    })
+            payload = api_get(
+                f"/sessions/city/{city_id}/theater/{cinema_id}",
+                {"partnership": partnership},
+            )
+            if not isinstance(payload, list):
+                payload = payload.get("items") or payload.get("movies") or []
+
+            for day in payload if isinstance(payload, list) else []:
+                movies = day.get("movies") or []
+                # Algumas respostas podem vir diretamente como um filme.
+                if not movies and day.get("title"):
+                    movies = [day]
+
+                for filme in movies:
+                    titulo = filme.get("title") or ""
+                    poster = next((f.get("poster") for f in filmes if f.get("titulo") == titulo), None)
+                    if not poster:
+                        images = filme.get("images") or []
+                        poster = (images[0] or {}).get("url") if images else ""
+
+                    for room in filme.get("rooms") or []:
+                        room_name = room.get("name") or room.get("fullName") or ""
+                        room_type = room.get("type") or []
+                        if isinstance(room_type, list):
+                            room_type = ", ".join(str(x) for x in room_type if x)
+                        for sessao in room.get("sessions") or []:
+                            date_info = sessao.get("date") or sessao.get("realDate") or {}
+                            local_date = date_info.get("localDate") if isinstance(date_info, dict) else ""
+                            is_today = bool(date_info.get("isToday")) if isinstance(date_info, dict) else False
+                            if local_date:
+                                session_date = str(local_date)[:10]
+                            else:
+                                session_date = today if is_today else ""
+
+                            if session_date != today and not is_today:
+                                continue
+
+                            session_time = sessao.get("time") or (
+                                date_info.get("hour", "") if isinstance(date_info, dict) else ""
+                            )
+                            types = sessao.get("types") or sessao.get("type") or []
+                            if isinstance(types, list):
+                                type_names = []
+                                for item in types:
+                                    if isinstance(item, dict):
+                                        name = item.get("name") or item.get("alias")
+                                    else:
+                                        name = str(item)
+                                    if name:
+                                        type_names.append(name)
+                                session_type = ", ".join(dict.fromkeys(type_names))
+                            else:
+                                session_type = str(types or "")
+
+                            buy_link = sessao.get("siteURL") or filme.get("siteURLByTheater") or filme.get("siteURL") or ""
+                            sessoes.append({
+                                "filme": titulo,
+                                "filme_id": filme.get("id"),
+                                "poster": poster,
+                                "cinema_id": cinema_id,
+                                "cinema": cinema.get("nome") or "",
+                                "endereco": cinema.get("endereco") or "",
+                                "bairro": cinema.get("bairro") or "",
+                                "horario": session_time,
+                                "data": session_date,
+                                "sala": room_name,
+                                "tipo": session_type or room_type,
+                                "idioma": "",
+                                "url_compra": buy_link,
+                            })
         except Exception as error:
             print(f"Erro nas sessões de {cinema.get('nome')}: {error}")
+
+    # Mantém somente filmes que realmente possuem sessão hoje quando possível.
+    session_titles = {s["filme"] for s in sessoes if s.get("filme")}
+    if session_titles:
+        filmes = [f for f in filmes if f.get("titulo") in session_titles]
 
     return {
         "source": "ingresso.com",
         "cidade": "Curitiba",
+        "cidade_id": city_id,
         "gerado_em": datetime.now(timezone.utc).isoformat(),
         "data_sessoes": today,
         "filmes_em_cartaz": filmes,
         "cinemas": cinemas,
         "sessoes_hoje": sessoes,
     }
-
 
 def is_sports_candidate(candidate):
     text = clean_text(candidate)
@@ -1201,6 +1282,8 @@ def main():
             all_items.extend(extract_university_events(source))
         elif source.get("group") == "diskingressos":
             all_items.extend(extract_diskingressos_events(source))
+        elif source.get("group") == "cinema":
+            continue
         else:
             all_items.extend(extract_items(source))
 
