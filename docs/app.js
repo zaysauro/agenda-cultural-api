@@ -144,8 +144,7 @@ function render(){
     fragment.querySelector(".venue").textContent="⌖ "+e.venue+(e.address?" · "+e.address:"");
     fragment.querySelector(".price").textContent=e.price||"Informações";
     const link=fragment.querySelector(".event-link");
-    link.href=e.url||"#";
-    if(!e.url)link.style.display="none";
+    if(link)link.remove();
     els.events.appendChild(fragment);
   }
   let more=document.getElementById("agenda-more");
@@ -209,7 +208,7 @@ function renderWeekend(){
   box.innerHTML=list.slice(0,9).map(e=>{
     const d=parseDate(e.startDate);
     const day=d.toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit"});
-    return '<article class="weather-weekend-card"><div><div class="weather-weekend-card-top"><span class="weather-weekend-day">'+escapeHtml(day)+'</span>'+(e.free?'<span class="weather-weekend-free">Gratuito</span>':"")+'</div><h3>'+escapeHtml(e.title)+'</h3><div class="weather-weekend-meta">'+escapeHtml([e.startTime,e.venue,e.address].filter(Boolean).join(" · ")||"Curitiba")+'</div></div>'+(e.url?'<a class="weather-weekend-link" href="'+escapeHtml(e.url)+'" target="_blank" rel="noreferrer">Ver evento ↗</a>':"")+'</article>';
+    return '<article class="weather-weekend-card"><div><div class="weather-weekend-card-top"><span class="weather-weekend-day">'+escapeHtml(day)+'</span>'+(e.free?'<span class="weather-weekend-free">Gratuito</span>':"")+'</div><h3>'+escapeHtml(e.title)+'</h3><div class="weather-weekend-meta">'+escapeHtml([e.startTime,e.venue,e.address].filter(Boolean).join(" · ")||"Curitiba")+'</div></div></article>';
   }).join("");
   empty.hidden=list.length>0;
 }
