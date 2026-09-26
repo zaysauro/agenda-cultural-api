@@ -1270,8 +1270,6 @@ def extract_items(source):
 def main():
     all_items = []
 
-    cinema_data = scrape_ingresso_cinema()
-
     for source in SOURCES:
         print(f"Coletando: {source['title']}")
         if source.get("group") == "prefeitura_eventos":
@@ -1312,17 +1310,7 @@ def main():
         encoding="utf-8"
     )
 
-    cinema_path = Path("docs/cinema.json")
-    cinema_path.write_text(
-        json.dumps(cinema_data, ensure_ascii=False, indent=2),
-        encoding="utf-8"
-    )
-
-    print(
-        f"agenda.json gerado com {len(unique_items)} itens; "
-        f"cinema.json com {len(cinema_data.get('filmes_em_cartaz', []))} filmes e "
-        f"{len(cinema_data.get('sessoes_hoje', []))} sessões."
-    )
+    print(f"agenda.json gerado com {len(unique_items)} itens.")
 
 if __name__ == "__main__":
     main()
