@@ -18,13 +18,13 @@ function dateText(v){const d=parseDate(v);return d?d.toLocaleDateString("pt-BR",
 function searchScore(e,q){
   if(!q)return 0;
   const terms=q.split(/\s+/).filter(Boolean);
-  const title=norm(e.title), venue=norm(e.venue), category=norm(e.category), description=norm(e.description), address=norm(e.address), organizer=norm(e.organizer), source=norm(e.source);
-  const hay=[title,venue,category,description,address,organizer,source].join(" ");
+  const title=norm(e.title), venue=norm(e.venue), category=norm(e.category), categorySlug=norm(e.categorySlug), description=norm(e.description), address=norm(e.address), organizer=norm(e.organizer), source=norm(e.source), url=norm(e.url), group=norm(e.group);
+  const hay=[title,venue,category,categorySlug,description,address,organizer,source,url,group].join(" ");
   let score=0;
   for(const term of terms){
     if(title.includes(term))score+=10;
     else if(venue.includes(term))score+=8;
-    else if(category.includes(term)||organizer.includes(term)||source.includes(term))score+=6;
+    else if(category.includes(term)||categorySlug.includes(term)||organizer.includes(term)||source.includes(term)||group.includes(term))score+=6;
     else if(address.includes(term))score+=5;
     else if(description.includes(term))score+=2;
     else if(hay.includes(term))score+=1;
@@ -54,15 +54,15 @@ function renderWeekend(){
   box.innerHTML=list.slice(0,9).map(e=>{
     const d=parseDate(e.startDate);
     const day=d.toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit"});
-    const free=e.free?'<span class="weekend-free">Gratuito</span>':"";
+    const free=e.free?'<span class="weather-weekend-free">Gratuito</span>':"";
     const meta=[e.startTime,e.venue,e.address].filter(Boolean).join(" · ");
-    return '<article class="weekend-card"><div><div class="weekend-card-top"><span class="weekend-day">'+escapeHtml(day)+'</span>'+free+'</div><h3>'+escapeHtml(e.title)+'</h3><div class="weekend-meta">'+escapeHtml(meta||"Curitiba")+'</div></div>'+(e.url?'<a class="weekend-link" href="'+escapeHtml(e.url)+'" target="_blank" rel="noreferrer">Ver evento ↗</a>':"")+'</article>';
+    return '<article class="weather-weekend-card"><div><div class="weather-weekend-card-top"><span class="weather-weekend-day">'+escapeHtml(day)+'</span>'+free+'</div><h3>'+escapeHtml(e.title)+'</h3><div class="weather-weekend-meta">'+escapeHtml(meta||"Curitiba")+'</div></div>'+(e.url?'<a class="weather-weekend-link" href="'+escapeHtml(e.url)+'" target="_blank" rel="noreferrer">Ver evento ↗</a>':"")+'</article>';
   }).join("");
   empty.hidden=list.length!==0;
 }
 function render(){const q=norm(els.search.value),cat=norm(els.category.value);const list=allEvents.filter(e=>inRange(e)&&(cat==="all"||(e.categorySlug?norm(e.categorySlug)===cat:categorySlug(e.category)===cat))&&(!q||searchScore(e,q)>=0));list.sort((a,b)=>{if(q){const diff=searchScore(b,q)-searchScore(a,q);if(diff)return diff}return(parseDate(a.startDate)?.getTime()||Infinity)-(parseDate(b.startDate)?.getTime()||Infinity)});els.events.innerHTML="";els.count.textContent=list.length+" "+(list.length===1?"evento":"eventos");els.empty.hidden=list.length!==0;els.clear.hidden=!(q||cat!=="all"||range!=="all");for(const e of list){const f=els.template.content.cloneNode(true),p=dateParts(e.startDate);f.querySelector(".day").textContent=p.day;f.querySelector(".month").textContent=p.month;f.querySelector(".weekday").textContent=p.weekday;f.querySelector(".category-badge").textContent=categoryLabel(e.category);f.querySelector(".event-title").textContent=e.title;f.querySelector(".time").textContent="◷ "+dateText(e.startDate)+(e.startTime?" · "+e.startTime:"");f.querySelector(".venue").textContent="⌖ "+e.venue+(e.address?" · "+e.address:"");f.querySelector(".price").textContent=e.price||"Informações";const link=f.querySelector(".event-link");link.href=e.url||"#";if(!e.url)link.style.display="none";els.events.appendChild(f)}renderCalendar();renderWeekend()}
 function categorySlug(value){const s=norm(value);if(s.includes("esporte")||s.includes("futebol")||s.includes("coritiba")||s.includes("athletico")||s.includes("couto pereira")||s.includes("ligga arena"))return"esporte";if(s.includes("cinema")||s.includes("filme"))return"cinema";if(s.includes("musica")||s.includes("show"))return"musica";if(s.includes("teatro")||s.includes("circo")||s.includes("danca"))return"teatro";if(s.includes("exposicao")||s.includes("mostra"))return"exposicao";return"cidade"}
-function categoryLabel(value){const s=categorySlug(value);return s==="musica"?"Música":s==="teatro"?"Teatro":s==="cinema"?"Cinema":s==="esporte"?"Esporte":"Cidade"}
+function categoryLabel(value){const s=categorySlug(value);return s==="musica"?"Música":s==="teatro"?"Teatro":s==="cinema"?"Cinema":s==="esporte"?"Esporte":s==="exposicao"?"Exposição":s==="danca"?"Dança":"Cidade"}
 function categories(){els.category.value="all"}
 function sameDay(a,b){return a&&b&&keyDate(a)===keyDate(b)}
 function eventsOn(d){return allEvents.filter(e=>sameDay(parseDate(e.startDate),d)).sort((a,b)=>(a.startTime||"").localeCompare(b.startTime||""))}
