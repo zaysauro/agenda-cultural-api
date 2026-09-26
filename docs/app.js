@@ -198,53 +198,103 @@ function renderWeekend(){
 
 function formatSessionTime(value){
   if(!value)return "";
-  const d=new Date(value);
-  if(Number.isNaN(d.getTime()))return String(value).match(/\\b\\d{1,2}:\\d{2}\\b/)?.[0]||String(value);
-  return d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+  const raw=String(value).trim();
+  const direct=raw.match(/\b([01]?\d|2[0-3]):([0-5]\d)\b/);
+  if(direct)return direct[0];
+  const d=new Date(raw);
+  if(!Number.isNaN(d.getTime())){
+    return d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+  }
+  return raw;
 }
+
 function renderCinema(data){
   if(!els.cinemaFilms)return;
-  const films=data?.filmes_em_cartaz||[];
-  const sessions=data?.sessoes_hoje||[];
-  const byFilm=new Map();
+  const films=Array.isArray(data?.filmes_em_cartaz)?data.filmes_em_cartaz:[];
+  const sessions=Array.isArray(data?.sessoes_hoje)?data.sessoes_hoje:[];
+  const byFilmId=new Map();
+  const byFilmTitle=new Map();
+
   for(const s of sessions){
-    const key=String(s.filme||"").trim();
-    if(!key)continue;
-    if(!byFilm.has(key))byFilm.set(key,[]);
-    byFilm.get(key).push(s);
+    const id=String(s.filme_id||"").trim();
+    const title=String(s.filme||"").trim();
+    if(id){
+      if(!byFilmId.has(id))byFilmId.set(id,[]);
+      byFilmId.get(id).push(s);
+    }
+    if(title){
+      const key=title.toLocaleLowerCase("pt-BR");
+      if(!byFilmTitle.has(key))byFilmTitle.set(key,[]);
+      byFilmTitle.get(key).push(s);
+    }
   }
+
   els.cinemaFilms.innerHTML=films.map((film,index)=>{
-    const title=escapeHtml(film.titulo||"Filme em cartaz");
-    const sessionsForFilm=byFilm.get(film.titulo)||[];
+    const filmId=String(film.id_ingresso||"").trim();
+    const filmTitle=String(film.titulo||"").trim();
+    const sessionsForFilm=(
+      (filmId&&byFilmId.get(filmId)) ||
+      byFilmTitle.get(filmTitle.toLocaleLowerCase("pt-BR")) ||
+      []
+    );
+
     const grouped=new Map();
-    sessionsForFilm.forEach(s=>{
-      const cinema=s.cinema||"Cinema";
+    sessionsForFilm.forEach(session=>{
+      const cinema=session.cinema||"Cinema";
       if(!grouped.has(cinema))grouped.set(cinema,[]);
-      grouped.get(cinema).push(s);
+      grouped.get(cinema).push(session);
     });
-    const sessionHtml=[...grouped.entries()].slice(0,4).map(([cinema,list])=>{
-      const times=list.slice(0,8).map(s=>'<a class="cinema-time" href="'+escapeHtml(s.url_compra||"#")+'" target="_blank" rel="noreferrer">'+escapeHtml(formatSessionTime(s.horario))+'</a>').join("");
+
+    const sessionHtml=[...grouped.entries()].slice(0,5).map(([cinema,list])=>{
+      const times=list.slice(0,10).map(session=>{
+        const label=[
+          formatSessionTime(session.horario),
+          session.tipo,
+          session.sala
+        ].filter(Boolean).join(" · ");
+        const href=session.url_compra||"";
+        return href
+          ? '<a class="cinema-time" href="'+escapeHtml(href)+'" target="_blank" rel="noreferrer">'+escapeHtml(label||"Ver sessão")+' ↗</a>'
+          : '<span class="cinema-time cinema-time-disabled">'+escapeHtml(label||"Horário indisponível")+'</span>';
+      }).join("");
       return '<div class="cinema-theater"><strong>'+escapeHtml(cinema)+'</strong><div class="cinema-times">'+times+'</div></div>';
     }).join("");
+
     const meta=[
       film.classificacao?escapeHtml(film.classificacao):"",
-      film.duracao?escapeHtml(String(film.duracao).replace("min"," min")):"",
-      (film.generos||[]).slice(0,2).map(escapeHtml).join(" · ")
+      film.duracao?escapeHtml(String(film.duracao).replace(/\s*min\b/i," min")):"",
+      (Array.isArray(film.generos)?film.generos:[]).slice(0,2).map(escapeHtml).join(" · ")
     ].filter(Boolean).join(" · ");
-    return '<article class="cinema-card"><div class="cinema-poster-wrap">'+
-      (film.poster?'<img class="cinema-poster" src="'+escapeHtml(film.poster)+'" alt="Pôster de '+title+'" loading="lazy">':'<div class="cinema-poster cinema-poster-empty">Cinema</div>')+
-      '<div class="cinema-card-body"><span class="cinema-index">'+String(index+1).padStart(2,"0")+'</span><h3>'+title+'</h3>'+
+
+    const original=film.titulo_original&&film.titulo_original!==film.titulo
+      ? '<p class="cinema-original">'+escapeHtml(film.titulo_original)+'</p>'
+      : "";
+
+    return '<article class="cinema-card">'+
+      '<div class="cinema-poster-wrap">'+
+      (film.poster
+        ? '<img class="cinema-poster" src="'+escapeHtml(film.poster)+'" alt="Pôster de '+escapeHtml(filmTitle)+'" loading="lazy">'
+        : '<div class="cinema-poster cinema-poster-empty">Cinema</div>')+
+      '<div class="cinema-card-body">'+
+      '<span class="cinema-index">'+String(index+1).padStart(2,"0")+'</span>'+
+      '<h3>'+escapeHtml(filmTitle||"Filme em cartaz")+'</h3>'+
+      original+
       (meta?'<p class="cinema-meta">'+meta+'</p>':"")+
       (film.sinopse?'<p class="cinema-synopsis">'+escapeHtml(film.sinopse)+'</p>':"")+
-      '<div class="cinema-sessions">'+(sessionHtml||'<span class="cinema-no-sessions">Sessões de hoje não encontradas.</span>')+'</div>'+
-      '</div></article>';
+      '<div class="cinema-sessions">'+
+      (sessionHtml||'<span class="cinema-no-sessions">Sem sessões disponíveis para hoje.</span>')+
+      '</div></div></div></article>';
   }).join("");
+
   els.cinemaEmpty.hidden=films.length>0;
   if(els.cinemaDate&&data?.data_sessoes){
     const d=parseDate(data.data_sessoes);
-    els.cinemaDate.textContent=d?"Sessões de "+d.toLocaleDateString("pt-BR",{day:"2-digit",month:"long"}):"Sessões de hoje";
+    els.cinemaDate.textContent=d
+      ?"Sessões de "+d.toLocaleDateString("pt-BR",{day:"2-digit",month:"long"})
+      :"Sessões de hoje";
   }
 }
+
 async function cinema(){
   try{
     const response=await fetch(CINEMA_URL+"?v="+Date.now(),{cache:"no-store"});
