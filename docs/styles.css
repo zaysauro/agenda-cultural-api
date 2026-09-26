@@ -232,3 +232,51 @@ h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.045em}h1{font-size:clamp(4
   .calendar-cell{min-height:51px;padding:4px 2px}
   .cell-day{width:22px;height:22px;font-size:9px}
 }
+
+/* Dedicated cinema section */
+.cinema-section{padding:86px 0;background:#181713;color:#f7f2e8;position:relative;overflow:hidden}
+.cinema-section:before{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.08);border-radius:50%;right:-170px;top:-190px}
+.cinema-heading{position:relative}
+.cinema-section .kicker{color:#d86a4d}
+.cinema-section .section-heading h2{color:#f7f2e8}
+.cinema-date{font-size:11px;color:rgba(247,242,232,.58);text-transform:uppercase;letter-spacing:.12em}
+.cinema-films{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;position:relative}
+.cinema-card{min-width:0;background:#22201b;border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.cinema-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.2)}
+.cinema-poster-wrap{aspect-ratio:2/2.9;background:#111;overflow:hidden}
+.cinema-poster{width:100%;height:100%;display:block;object-fit:cover}
+.cinema-poster-empty{display:grid;place-items:center;color:rgba(247,242,232,.3);font:600 14px "Space Grotesk"}
+.cinema-card-body{padding:18px}
+.cinema-index{font:700 9px "Space Grotesk";color:#d86a4d;letter-spacing:.12em}
+.cinema-card h3{font:600 21px "Space Grotesk";line-height:1.08;margin:7px 0 7px}
+.cinema-meta{font-size:10px;color:rgba(247,242,232,.55);margin:0 0 12px}
+.cinema-synopsis{font-size:11px;line-height:1.55;color:rgba(247,242,232,.62);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:0 0 15px}
+.cinema-sessions{border-top:1px solid rgba(255,255,255,.08);padding-top:13px}
+.cinema-theater{margin-bottom:10px}
+.cinema-theater:last-child{margin-bottom:0}
+.cinema-theater strong{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:rgba(247,242,232,.55);margin-bottom:6px}
+.cinema-times{display:flex;flex-wrap:wrap;gap:5px}
+.cinema-time{display:inline-flex;padding:6px 8px;border-radius:7px;background:rgba(216,106,77,.12);color:#f7c2b2;text-decoration:none;font-size:10px;font-weight:700}
+.cinema-time:hover{background:rgba(216,106,77,.24)}
+.cinema-no-sessions{font-size:10px;color:rgba(247,242,232,.38)}
+.cinema-empty{padding:25px 0;color:rgba(247,242,232,.5);font-size:13px}
+@media(max-width:850px){.cinema-films{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){
+  .cinema-section{padding:58px 0}
+  .cinema-heading{display:flex!important;align-items:flex-end;justify-content:space-between;gap:12px}
+  .cinema-heading h2{font-size:31px!important}
+  .cinema-date{font-size:8px;text-align:right;line-height:1.4}
+  .cinema-films{grid-template-columns:1fr 1fr;gap:10px}
+  .cinema-card{border-radius:13px}
+  .cinema-card-body{padding:12px}
+  .cinema-card h3{font-size:15px;margin-top:5px}
+  .cinema-index{font-size:8px}
+  .cinema-meta{font-size:8px;margin-bottom:8px}
+  .cinema-synopsis{display:none}
+  .cinema-theater strong{font-size:7px}
+  .cinema-time{font-size:9px;padding:5px 6px}
+}
+@media(max-width:380px){
+  .cinema-films{grid-template-columns:1fr}
+  .cinema-poster-wrap{aspect-ratio:2/2.5}
+}
