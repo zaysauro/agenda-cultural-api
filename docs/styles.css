@@ -12,3 +12,69 @@ h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.045em}h1{font-size:clamp(4
 @media(max-width:850px){.intro-grid{grid-template-columns:1fr;gap:35px}.weather-card{height:250px}.weather-main{height:140px}.calendar-layout{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:30px}.event-row{grid-template-columns:82px 1fr}.event-action{grid-column:2;align-items:flex-start;flex-direction:row;align-items:center}.calendar-cell{min-height:65px}}
 @media(max-width:600px){.container{width:calc(100% - 28px)}.nav{height:64px}.nav nav a:not(.project){display:none}.brand-city,.brand-focus{font-size:17px}.intro-grid{padding:50px 0}.intro h1{font-size:50px}.intro p{font-size:15px}.search-box{height:54px}.search-box kbd{display:none}.filter-row{align-items:stretch;flex-direction:column}.date-tabs{overflow:auto;flex-wrap:nowrap;padding-bottom:2px}.date-tab{white-space:nowrap}.filter-row select{width:100%}.event-row{grid-template-columns:65px 1fr;gap:14px;padding:17px 5px}.event-date{width:65px;padding-right:12px}.event-date strong{font-size:25px}.event-title{font-size:17px}.event-meta{gap:6px;flex-direction:column}.event-action{grid-column:2}.section-heading h2{font-size:33px}.calendar-card{padding:13px}.calendar-cell{min-height:57px;padding:5px}.cell-count{display:none}.cell-day{width:24px;height:24px}.calendar-head strong{font-size:20px}.weekdays span{font-size:8px}.about-section{padding:65px 0}.about-section h2{font-size:38px}.footer-inner{flex-direction:column;gap:8px}}
 @media(prefers-reduced-motion:reduce){.focus-ring,.weather-icon,.weather-orbit{animation:none!important}*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Calendário — linguagem visual Curitiba em Foco */
+.calendar-section{position:relative;overflow:hidden}
+.calendar-section:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 82% 18%,rgba(224,91,61,.07),transparent 30%)}
+.calendar-section>.container{position:relative;z-index:1}
+.calendar-layout{grid-template-columns:minmax(0,1.65fr) minmax(260px,.72fr);gap:24px;align-items:start}
+.calendar-card,.day-panel{border-radius:24px}
+.calendar-card{padding:22px 22px 18px}
+.calendar-head{grid-template-columns:44px 1fr 44px;margin:-2px 0 20px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.calendar-head button{width:40px;height:40px;background:var(--bg);color:var(--ink);font-size:23px;transition:background .15s,border-color .15s,transform .15s}
+.calendar-head button:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-1px)}
+.calendar-head strong{font-size:25px}
+.calendar-head span{display:block;margin-top:2px}
+.weekdays{padding:0 2px 8px}
+.weekdays span{font-size:9px;color:#8e8b83}
+.calendar-grid{border-left:1px solid #ebe7de;border-top:1px solid #ebe7de;border-radius:12px;overflow:hidden}
+.calendar-cell{min-height:92px;background:var(--paper);border:0;border-right:1px solid #ebe7de;border-bottom:1px solid #ebe7de;padding:9px;transition:background .15s}
+.calendar-cell:nth-child(7n){border-right:0}
+.calendar-cell:hover{background:#faf4ed}
+.calendar-cell.other{background:#fbf9f4;color:#c7c3ba}
+.calendar-cell.other .cell-day{opacity:.65}
+.calendar-cell.today{background:#fff8f5}
+.calendar-cell.today .cell-day{box-shadow:0 0 0 3px var(--accent-soft)}
+.calendar-cell.selected{background:var(--accent-soft)}
+.cell-day{width:29px;height:29px;font-size:11px;transition:transform .15s}
+.calendar-cell:hover .cell-day{transform:scale(1.06)}
+.calendar-cell.selected .cell-day{background:var(--ink);color:#fff}
+.calendar-cell.today.selected .cell-day{background:var(--accent)}
+.cell-events{margin-top:8px;gap:4px;min-height:10px}
+.cell-event-dot{width:7px;height:7px;box-shadow:0 0 0 2px var(--accent-soft)}
+.cell-count{font-size:9px;font-weight:700}
+.day-panel{padding:22px;position:sticky;top:96px}
+.day-panel-head{padding-bottom:17px;margin-bottom:3px}
+.day-panel-head strong{font-size:25px;line-height:1.08}
+.day-panel .kicker{display:inline-flex;align-items:center;gap:6px}
+.day-panel .kicker:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.mini-event{padding:15px 0}
+.mini-event strong{font-size:16px;line-height:1.2}
+.mini-event span{line-height:1.5}
+.no-day-events{padding:22px 0}
+@media(max-width:850px){
+  .calendar-layout{grid-template-columns:1fr;gap:16px}
+  .day-panel{position:static}
+}
+@media(max-width:600px){
+  .calendar-section{padding:58px 0}
+  .calendar-card{padding:12px 10px 10px;border-radius:18px}
+  .calendar-head{grid-template-columns:40px 1fr 40px;margin:0 0 13px;padding-bottom:13px}
+  .calendar-head button{width:36px;height:36px}
+  .calendar-head strong{font-size:19px}
+  .calendar-head span{font-size:10px}
+  .weekdays{padding:0 0 6px}
+  .weekdays span{font-size:7px;letter-spacing:.04em}
+  .calendar-grid{border-radius:10px}
+  .calendar-cell{min-height:62px;padding:5px 4px}
+  .cell-day{width:25px;height:25px;font-size:10px}
+  .cell-events{margin-top:6px}
+  .cell-event-dot{width:5px;height:5px}
+  .day-panel{padding:18px;border-radius:18px}
+  .day-panel-head strong{font-size:22px}
+}
+@media(max-width:380px){
+  .calendar-cell{min-height:54px;padding:4px 3px}
+  .cell-day{width:23px;height:23px;font-size:9px}
+  .cell-event-dot{width:4px;height:4px}
+}
