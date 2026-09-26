@@ -45,23 +45,22 @@
       <div class="weather-main"><span id="weather-icon" class="weather-icon">☼</span><strong id="weather-temp">—°</strong></div>
       <div id="weather-forecast" class="weather-forecast" aria-label="Previsão para os próximos dias"></div>
       <div class="weather-bottom"><span>Temperatura atual</span><span id="weather-detail">Carregando clima…</span></div>
+
+      <div class="weather-weekend">
+        <div class="weather-weekend-head">
+          <div>
+            <span class="weather-weekend-kicker">Próximo fim de semana</span>
+            <h2>O que está em foco<br><em>neste final de semana?</em></h2>
+            <p id="weekend-range">Carregando a programação mais próxima…</p>
+          </div>
+          <span class="weather-weekend-mark" aria-hidden="true">◎</span>
+        </div>
+        <div id="weekend-events" class="weather-weekend-grid"></div>
+        <div id="weekend-empty" class="weather-weekend-empty" hidden>Nenhum evento do próximo fim de semana foi encontrado na agenda.</div>
+      </div>
+
       <div class="weather-orbit orbit-one"></div><div class="weather-orbit orbit-two"></div>
     </aside>
-  </div>
-</section>
-
-<section class="weekend-section">
-  <div class="container">
-    <div class="weekend-heading">
-      <div>
-        <span class="kicker">Próximo fim de semana</span>
-        <h2>O que está em foco<br><em>neste final de semana?</em></h2>
-        <p id="weekend-range">Carregando a programação mais próxima…</p>
-      </div>
-      <span class="weekend-mark" aria-hidden="true">◎</span>
-    </div>
-    <div id="weekend-events" class="weekend-grid"></div>
-    <div id="weekend-empty" class="weekend-empty" hidden>Nenhum evento do próximo fim de semana foi encontrado na agenda.</div>
   </div>
 </section>
 
@@ -119,6 +118,6 @@
   <div class="event-action"><span class="price"></span><a class="event-link" target="_blank" rel="noreferrer">Ver evento ↗</a></div>
 </article>
 </template>
-<script src="./app.js?v=7" defer></script>
+<script src="./app.js?v=8" defer></script>
 </body>
 </html>
