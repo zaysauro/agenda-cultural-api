@@ -231,7 +231,18 @@ def extract_items(source):
 
             image_url = candidate_image(candidate, source["url"])
 
-            # Se o card não expõe a imagem, usa a prévia original da página.
+            # Se o card não expõe a imagem, tenta a página individual do evento.
+            # Muitos sites deixam a arte oficial apenas em og:image/JSON-LD da página
+            # de detalhe, e não no HTML da listagem.
+            if not image_url and url != source["url"]:
+                try:
+                    detail_html = fetch_html(url)
+                    detail_soup = BeautifulSoup(detail_html, "html.parser")
+                    image_url = page_preview_image(detail_soup, url)
+                except Exception:
+                    pass
+
+            # Último fallback: imagem original declarada pela própria página-fonte.
             if not image_url:
                 image_url = source_preview
 
