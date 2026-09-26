@@ -76,6 +76,6 @@ function weatherIcon(c){if(c===0)return"☼";if([1,2,3].includes(c))return"☁";
 document.querySelectorAll(".date-tab").forEach(b=>b.addEventListener("click",()=>{range=b.dataset.range;document.querySelectorAll(".date-tab").forEach(x=>x.classList.toggle("active",x===b));render()}));
 els.retry.addEventListener("click",load);
 $("#prev-month").addEventListener("click",()=>{calendarDate.setMonth(calendarDate.getMonth()-1);renderCalendar()});$("#next-month").addEventListener("click",()=>{calendarDate.setMonth(calendarDate.getMonth()+1);renderCalendar()});
-document.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();els.search.focus()}});
 
-\nload();weather();\n})();\n
+load();weather();
+})();\n
