@@ -6,7 +6,7 @@ const $=s=>document.querySelector(s);
 const els={events:$("#events"),empty:$("#empty"),error:$("#load-error"),status:$("#status"),search:$("#search"),category:$("#category-filter"),count:$("#event-count"),updated:$("#last-update"),clear:$("#clear-filters"),retry:$("#retry"),template:$("#event-template"),weather:$("#weather-temp"),weatherDetail:$("#weather-detail"),weatherIcon:$("#weather-icon"),weatherForecast:$("#weather-forecast"),calendarMonth:$("#calendar-month"),calendarYear:$("#calendar-year"),calendarGrid:$("#calendar-grid"),selected:$("#selected-date"),dayEvents:$("#day-events")};
 let allEvents=[],range="all",calendarDate=new Date(),selectedDate=new Date();calendarDate.setDate(1);
 function value(o,keys){for(const k of keys){if(o&&o[k]!==undefined&&o[k]!==null&&String(o[k]).trim()!=="")return o[k]}return""}
-function normalize(raw,i){const e=raw||{},title=String(value(e,["title","name","nome"])||"Evento cultural"),summary=String(value(e,["summary","description","descricao","resumo"])||"");const match=summary.match(/(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})/);const date=String(value(e,["startDate","start_date","date","data","data_inicio","start"])||(match?((match[3].length===2?"20":"")+match[3]+"-"+match[2].padStart(2,"0")+"-"+match[1].padStart(2,"0")):""));return{id:String(value(e,["id","slug"])||title+"-"+i),title,description:summary,category:String(value(e,["category","categoria","type","tipo"])||"Cultura"),startDate:date,startTime:String(value(e,["startTime","start_time","time","horario","hora"])||""),venue:String(value(e,["venue","local","location","place","espaco"])||"Curitiba"),address:String(value(e,["address","endereco"])||""),price:String(value(e,["price","preco","valor","ingresso"])||""),url:String(value(e,["sourceUrl","source_url","url","link"])||"")}}
+function normalize(raw,i){const e=raw||{},title=String(value(e,["title","name","nome"])||"Evento cultural"),summary=String(value(e,["summary","description","descricao","resumo"])||"");const match=summary.match(/(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})/);const date=String(value(e,["startDate","start_date","date","data","data_inicio","start"])||(match?((match[3].length===2?"20":"")+match[3]+"-"+match[2].padStart(2,"0")+"-"+match[1].padStart(2,"0")):""));return{id:String(value(e,["id","slug"])||title+"-"+i),title,description:summary,category:String(value(e,["category","categoria","type","tipo"])||"Cultura"),startDate:date,startTime:String(value(e,["startTime","start_time","time","horario","hora"])||""),venue:String(value(e,["venue","local","location","place","espaco"])||"Curitiba"),address:String(value(e,["address","endereco"])||""),price:String(value(e,["price","preco","valor","ingresso"])||""),organizer:String(value(e,["organizer","organizacao","organizacao_responsavel"])||""),source:String(value(e,["source","sourceName","fonte"])||""),free:Boolean(e.free),publicSpace:Boolean(e.publicSpace),outdoor:Boolean(e.outdoor),url:String(value(e,["sourceUrl","source_url","url","link"])||"")}}
 function extract(payload){if(Array.isArray(payload))return{items:payload,updatedAt:null};if(payload&&Array.isArray(payload.items))return{items:payload.items,updatedAt:payload.updatedAt};if(payload&&Array.isArray(payload.events))return{items:payload.events,updatedAt:payload.updatedAt};if(payload&&Array.isArray(payload.data))return{items:payload.data,updatedAt:payload.updatedAt};return{items:[],updatedAt:null}}
 function parseDate(v){if(!v)return null;const d=new Date(/^\d{4}-\d{2}-\d{2}$/.test(v)?v+"T12:00:00":v);return isNaN(d)?null:d}
 function keyDate(d){return d?d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"):""}
@@ -15,7 +15,26 @@ function inRange(e){if(range==="all")return true;const d=parseDate(e.startDate),
 function norm(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
 function dateParts(v){const d=parseDate(v);if(!d)return{day:"—",month:"data",weekday:""};return{day:d.toLocaleDateString("pt-BR",{day:"2-digit"}),month:d.toLocaleDateString("pt-BR",{month:"short"}).replace(".",""),weekday:d.toLocaleDateString("pt-BR",{weekday:"short"})}}
 function dateText(v){const d=parseDate(v);return d?d.toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"long"}):"Data a confirmar"}
-function render(){const q=norm(els.search.value),cat=norm(els.category.value);const list=allEvents.filter(e=>inRange(e)&&(cat==="all"||categorySlug(e.category)===cat)&&(!q||norm([e.title,e.description,e.category,e.venue,e.address].join(" ")).includes(q)));list.sort((a,b)=>(parseDate(a.startDate)?.getTime()||Infinity)-(parseDate(b.startDate)?.getTime()||Infinity));els.events.innerHTML="";els.count.textContent=list.length+" "+(list.length===1?"evento":"eventos");els.empty.hidden=list.length!==0;els.clear.hidden=!(q||cat!=="all"||range!=="all");for(const e of list){const f=els.template.content.cloneNode(true),p=dateParts(e.startDate);f.querySelector(".day").textContent=p.day;f.querySelector(".month").textContent=p.month;f.querySelector(".weekday").textContent=p.weekday;f.querySelector(".category-badge").textContent=categoryLabel(e.category);f.querySelector(".event-title").textContent=e.title;f.querySelector(".time").textContent="◷ "+dateText(e.startDate)+(e.startTime?" · "+e.startTime:"");f.querySelector(".venue").textContent="⌖ "+e.venue+(e.address?" · "+e.address:"");f.querySelector(".price").textContent=e.price||"Informações";const link=f.querySelector(".event-link");link.href=e.url||"#";if(!e.url)link.style.display="none";els.events.appendChild(f)}renderCalendar()}
+function searchScore(e,q){
+  if(!q)return 0;
+  const terms=q.split(/\s+/).filter(Boolean);
+  const title=norm(e.title), venue=norm(e.venue), category=norm(e.category), description=norm(e.description), address=norm(e.address), organizer=norm(e.organizer), source=norm(e.source);
+  const hay=[title,venue,category,description,address,organizer,source].join(" ");
+  let score=0;
+  for(const term of terms){
+    if(title.includes(term))score+=10;
+    else if(venue.includes(term))score+=8;
+    else if(category.includes(term)||organizer.includes(term)||source.includes(term))score+=6;
+    else if(address.includes(term))score+=5;
+    else if(description.includes(term))score+=2;
+    else if(hay.includes(term))score+=1;
+    else return -1;
+  }
+  if(e.free && terms.some(t=>["gratuito","gratuita","gratis","livre"].includes(t)))score+=8;
+  if(e.publicSpace && terms.some(t=>["parque","praca","praça","publico","público","aberto"].includes(t)))score+=8;
+  return score;
+}
+function render(){const q=norm(els.search.value),cat=norm(els.category.value);const list=allEvents.filter(e=>inRange(e)&&(cat==="all"||categorySlug(e.category)===cat)&&(!q||searchScore(e,q)>=0));list.sort((a,b)=>{if(q){const diff=searchScore(b,q)-searchScore(a,q);if(diff)return diff}return(parseDate(a.startDate)?.getTime()||Infinity)-(parseDate(b.startDate)?.getTime()||Infinity)});els.events.innerHTML="";els.count.textContent=list.length+" "+(list.length===1?"evento":"eventos");els.empty.hidden=list.length!==0;els.clear.hidden=!(q||cat!=="all"||range!=="all");for(const e of list){const f=els.template.content.cloneNode(true),p=dateParts(e.startDate);f.querySelector(".day").textContent=p.day;f.querySelector(".month").textContent=p.month;f.querySelector(".weekday").textContent=p.weekday;f.querySelector(".category-badge").textContent=categoryLabel(e.category);f.querySelector(".event-title").textContent=e.title;f.querySelector(".time").textContent="◷ "+dateText(e.startDate)+(e.startTime?" · "+e.startTime:"");f.querySelector(".venue").textContent="⌖ "+e.venue+(e.address?" · "+e.address:"");f.querySelector(".price").textContent=e.price||"Informações";const link=f.querySelector(".event-link");link.href=e.url||"#";if(!e.url)link.style.display="none";els.events.appendChild(f)}renderCalendar()}
 function categorySlug(value){const s=norm(value);if(s.includes("esporte")||s.includes("futebol")||s.includes("coritiba")||s.includes("athletico")||s.includes("couto pereira")||s.includes("ligga arena"))return"esporte";if(s.includes("cinema")||s.includes("filme"))return"cinema";if(s.includes("musica")||s.includes("show"))return"musica";if(s.includes("teatro")||s.includes("circo")||s.includes("danca"))return"teatro";return"cidade"}
 function categoryLabel(value){const s=categorySlug(value);return s==="musica"?"Música":s==="teatro"?"Teatro":s==="cinema"?"Cinema":s==="esporte"?"Esporte":"Cidade"}
 function categories(){els.category.value="all"}
@@ -35,3 +54,21 @@ $("#prev-month").addEventListener("click",()=>{calendarDate.setMonth(calendarDat
 document.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();els.search.focus()}});
 load();weather();
 })();
+document.querySelectorAll("[data-discovery]").forEach(button=>{
+  button.addEventListener("click",()=>{
+    const presets={
+      eventos:"",
+      filmes:"cinema",
+      exposicoes:"exposição",
+      parques:"parque",
+      universidade:"UFPR"
+    };
+    const value=presets[button.dataset.discovery]||"";
+    els.search.value=value;
+    if(button.dataset.discovery==="filmes")els.category.value="cinema";
+    else els.category.value="all";
+    document.querySelectorAll("[data-discovery]").forEach(x=>x.classList.toggle("active",x===button));
+    render();
+    els.search.focus();
+  });
+});
