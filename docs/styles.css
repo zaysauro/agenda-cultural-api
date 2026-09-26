@@ -80,3 +80,11 @@ h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.045em}h1{font-size:clamp(4
 }
 
 @media(max-width:600px){.weather-card{height:auto;min-height:330px}.weather-main{height:145px}.weather-forecast{margin-top:2px;margin-bottom:13px}.forecast-day{padding:6px 5px}.forecast-icon{font-size:16px}.forecast-day strong{font-size:12px}}
+
+/* Descoberta — explica o produto antes da primeira busca */
+.discovery-pills{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px;max-width:760px}
+.discovery-pills button{border:1px solid var(--line);background:rgba(255,253,248,.7);color:var(--ink);border-radius:100px;padding:7px 10px;font:600 10px "DM Sans";cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.discovery-pills button:hover,.discovery-pills button.active{background:var(--ink);border-color:var(--ink);color:#fff;transform:translateY(-1px)}
+.search-hint{font-size:10px;color:var(--muted);margin-top:8px}
+.search-hint b{color:var(--ink)}
+@media(max-width:600px){.discovery-pills{flex-wrap:nowrap;overflow:auto;padding-bottom:3px}.discovery-pills button{white-space:nowrap}.search-hint{line-height:1.5}}
