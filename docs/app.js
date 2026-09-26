@@ -130,7 +130,9 @@ function render(){
   els.events.innerHTML="";
   els.count.textContent=list.length+" "+(list.length===1?"evento":"eventos");
   els.empty.hidden=list.length>0;
-  for(const e of list){
+  const showAll=window.agendaShowAll===true;
+  const visibleEvents=showAll?list:list.slice(0,10);
+  for(const e of visibleEvents){
     const fragment=els.template.content.cloneNode(true);
     const p=dateParts(e.startDate);
     fragment.querySelector(".day").textContent=p.day;
@@ -145,6 +147,22 @@ function render(){
     link.href=e.url||"#";
     if(!e.url)link.style.display="none";
     els.events.appendChild(fragment);
+  }
+  let more=document.getElementById("agenda-more");
+  if(more)more.remove();
+  if(list.length>10){
+    more=document.createElement("button");
+    more.id="agenda-more";
+    more.type="button";
+    more.className="agenda-more";
+    more.textContent=showAll?"Mostrar menos":"Ver mais";
+    more.setAttribute("aria-expanded",String(showAll));
+    more.addEventListener("click",()=>{
+      window.agendaShowAll=!showAll;
+      render();
+      document.getElementById("agenda-more")?.scrollIntoView({behavior:"smooth",block:"center"});
+    });
+    els.events.insertAdjacentElement("afterend",more);
   }
   renderCalendar();
   renderWeekend();
