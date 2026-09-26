@@ -52,8 +52,7 @@ document.querySelectorAll(".date-tab").forEach(b=>b.addEventListener("click",()=
 els.search.addEventListener("input",render);els.category.addEventListener("change",render);els.clear.addEventListener("click",()=>{els.search.value="";els.category.value="all";range="all";document.querySelectorAll(".date-tab").forEach(x=>x.classList.toggle("active",x.dataset.range==="all"));render()});els.retry.addEventListener("click",load);
 $("#prev-month").addEventListener("click",()=>{calendarDate.setMonth(calendarDate.getMonth()-1);renderCalendar()});$("#next-month").addEventListener("click",()=>{calendarDate.setMonth(calendarDate.getMonth()+1);renderCalendar()});
 document.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();els.search.focus()}});
-load();weather();
-})();
+
 document.querySelectorAll("[data-discovery]").forEach(button=>{
   button.addEventListener("click",()=>{
     const presets={
@@ -72,3 +71,6 @@ document.querySelectorAll("[data-discovery]").forEach(button=>{
     els.search.focus();
   });
 });
+
+load();weather();
+})();
