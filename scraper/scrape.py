@@ -31,6 +31,7 @@ SOURCES = [
     {"title": "Prefeitura de Curitiba", "slug": "prefeitura-curitiba", "group": "informacoes_prefeitura", "url": "https://www.curitiba.pr.gov.br/"},
     # Guia Curitiba — fonte geral. A categoria é extraída do próprio card do evento.
     {"title": "Prefeitura — Guia de Eventos", "slug": "prefeitura-guia", "group": "prefeitura_guia", "images_enabled": False, "url": "https://guia.curitiba.pr.gov.br/Evento/Listar/"},
+    {"title": "Festival Primavera Curitiba", "slug": "festival-primavera-curitiba", "group": "primavera", "category": "Festival", "categorySlug": "festival", "images_enabled": False, "url": "https://primavera.curitiba.pr.gov.br/"},
 
     # DiskIngressos — catálogo de eventos e sessões vendidos pela plataforma.\n    # O scraper percorre a vitrine, paginações e páginas individuais para capturar\n    # os eventos publicados, incluindo título, data, horário, local, cidade, categoria e URL de ingresso.\n    {"title": "DiskIngressos — Eventos", "slug": "diskingressos", "group": "diskingressos", "images_enabled": False, "url": "https://www.diskingressos.com.br/"},\n\n    # Cinemas — filmes em cartaz e programação local.
     {"title": "Cine Passeio — Programação", "slug": "cine-passeio", "group": "cinema", "category": "Cinema", "categorySlug": "cinema", "venue": "Cine Passeio", "cinema": True, "images_enabled": False, "url": "https://www.cinepasseio.org/programacao"},
@@ -920,6 +921,94 @@ def extract_prefeitura_events(source):
 
     return items
 
+def extract_primavera_events(source):
+    """Coleta eventos do Festival Primavera a partir do portal oficial."""
+    items = []
+    seen = set()
+    base_url = source["url"]
+
+    try:
+        html = fetch_html(base_url)
+        soup = BeautifulSoup(html, "html.parser")
+    except Exception as error:
+        print(f"Erro no Festival Primavera ({base_url}): {error}")
+        return items
+
+    # O portal oficial publica cards que apontam para o Guia Curitiba.
+    # Visitamos também a página individual para recuperar data, horário e local
+    # quando essas informações não aparecem no card.
+    candidates = soup.select("article, .card, .evento, .event, li, [class*='evento'], [class*='event']")
+    links = []
+    for candidate in candidates:
+        for link in candidate.select("a[href]"):
+            href = urljoin(base_url, link.get("href", ""))
+            if "guia.curitiba.pr.gov.br" in href:
+                links.append((candidate, link, href))
+
+    # Fallback: procura diretamente todos os links do portal que levam ao Guia.
+    if not links:
+        for link in soup.select("a[href]"):
+            href = urljoin(base_url, link.get("href", ""))
+            if "guia.curitiba.pr.gov.br" in href:
+                links.append((link.parent or link, link, href))
+
+    for candidate, link, url in links:
+        if url in seen:
+            continue
+
+        title = clean_text(link)
+        if not title or len(title) < 4:
+            title_element = candidate.select_one("h1, h2, h3, h4, h5, .titulo, .title")
+            title = clean_text(title_element)
+
+        if not title or len(title) < 4:
+            continue
+
+        text = clean_text(candidate)
+        event_date, event_time = extract_date_time(text)
+        detail_text = ""
+
+        # A página do Guia costuma ter os dados completos do evento.
+        try:
+            detail_html = fetch_html(url)
+            detail_soup = BeautifulSoup(detail_html, "html.parser")
+            detail_text = clean_text(detail_soup.body)
+            if not event_date:
+                event_date, event_time = extract_date_time(detail_text)
+            if not event_date:
+                event_date = extract_month_day(detail_text)
+        except Exception:
+            pass
+
+        combined = detail_text or text
+        lower = combined.casefold()
+        free = any(word in lower for word in (
+            "gratuito", "gratuita", "grátis", "gratis",
+            "entrada franca", "acesso livre", "aberto ao público",
+            "aberta ao público"
+        ))
+
+        items.append({
+            "title": title,
+            "summary": combined[:500] if combined else text[:500],
+            "category": source.get("category", "Festival"),
+            "categorySlug": source.get("categorySlug", "festival"),
+            "startDate": event_date,
+            "startTime": event_time,
+            "venue": "",
+            "group": source["group"],
+            "url": url,
+            "imageUrl": "",
+            "sourceUrl": source["url"],
+            "publicSpace": True,
+            "outdoor": True,
+            "free": free,
+            "organizer": "Festival Primavera Curitiba"
+        })
+        seen.add(url)
+
+    return items
+
 def extract_university_events(source):
     """Coleta agendas oficiais das universidades, sem baixar imagens."""
     items = []
@@ -1278,6 +1367,8 @@ def main():
             all_items.extend(extract_guia_events(source))
         elif source.get("group") == "universidade":
             all_items.extend(extract_university_events(source))
+        elif source.get("group") == "primavera":
+            all_items.extend(extract_primavera_events(source))
         elif source.get("group") == "diskingressos":
             all_items.extend(extract_diskingressos_events(source))
         elif source.get("group") == "cinema":
