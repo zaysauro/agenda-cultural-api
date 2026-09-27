@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-09-27T08:24:03.889010+00:00",
+  "gerado_em": "2026-09-27T14:08:39.446617+00:00",
   "data_sessoes": "2026-09-27",
   "filmes_em_cartaz": [
     {
@@ -346,21 +346,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87144449&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=nem-toda-historia-de-amor-acaba-em-morte"
     },
     {
-      "filme": "Coyote Vs. Acme",
-      "filme_id": "30666",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/coyote-vs-acme/6d8c7366-d4cb-408c-b3c8-43f2eabcf709.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "11:00",
-      "data": "2026-09-27",
-      "sala": "Sala 1",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87125687&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=coyote-vs-acme"
-    },
-    {
       "filme": "Virtuosas",
       "filme_id": "30922",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/virtuosas/f772071c-5852-4017-8303-c1316c54c785.webp",
@@ -449,21 +434,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87125260&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=acampamento-miasma-adolescencia-sexo-e-morte"
-    },
-    {
-      "filme": "Os Trapaceiros De Garibaldi",
-      "filme_id": "33390",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/os-trapaceiros-de-garibaldi/c696bc2d-c9d1-416c-be73-f76dfc5edb1c.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "10:30",
-      "data": "2026-09-27",
-      "sala": "Sala 2",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87125311&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-trapaceiros-de-garibaldi"
     },
     {
       "filme": "Aloha, Malandro",
