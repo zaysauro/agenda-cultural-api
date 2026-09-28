@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-09-28T00:06:25.717486+00:00",
+  "gerado_em": "2026-09-28T05:37:47.469616+00:00",
   "data_sessoes": "2026-09-28",
   "filmes_em_cartaz": [
     {
@@ -3418,6 +3418,21 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87110248&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=marido-de-aluguel"
+    },
+    {
+      "filme": "Nem Toda História De Amor Acaba Em Morte",
+      "filme_id": "26134",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/nem-toda-historia-de-amor-acaba-em-morte/267bbf3c-29af-4899-8a0f-3cfde4b237ab.webp",
+      "cinema_id": "448",
+      "cinema": "Cinesystem Ventura - Curitiba",
+      "endereco": "R. Itacolomi",
+      "bairro": "Portão",
+      "horario": "13:10",
+      "data": "2026-09-28",
+      "sala": "Sala 5",
+      "tipo": "Normal, Nacional",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87110250&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=nem-toda-historia-de-amor-acaba-em-morte"
     },
     {
       "filme": "Resident Evil",
