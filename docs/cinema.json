@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-09-30T00:39:41.039438+00:00",
+  "gerado_em": "2026-09-30T06:06:53.052449+00:00",
   "data_sessoes": "2026-09-30",
   "filmes_em_cartaz": [
     {
@@ -1920,21 +1920,6 @@
       "tipo": "Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87172427&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minions-e-monstros"
-    },
-    {
-      "filme": "Digger",
-      "filme_id": "31932",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/digger/48747770-efa2-4a89-b275-675963700ac1.webp",
-      "cinema_id": "805",
-      "cinema": "Cineplus Jardim das Américas",
-      "endereco": "Av. Nossa Senhora de Lourdes",
-      "bairro": "Jardim das Américas",
-      "horario": "18:10",
-      "data": "2026-09-30",
-      "sala": "Sala 01",
-      "tipo": "Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87172571&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=digger"
     },
     {
       "filme": "Minha Melhor Amiga",
