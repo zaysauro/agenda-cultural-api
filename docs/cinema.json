@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-01T07:20:18.665426+00:00",
+  "gerado_em": "2026-10-01T14:37:37.001322+00:00",
   "data_sessoes": "2026-10-01",
   "filmes_em_cartaz": [
     {
@@ -41,7 +41,7 @@
       "titulo_original": "Fall 2: Deadpoint",
       "sinopse": "As melhores amigas Grace Caroline Currey e Virginia Gardner reprisam seus papéis. Seu conhecimento de escalada e sua determinação em sobreviver são testados em situações de risco no topo de uma torre de rádio.",
       "duracao": "100",
-      "classificacao": "Verifique a Classificação",
+      "classificacao": "16 anos",
       "generos": [
         "Aventura",
         "Drama",
