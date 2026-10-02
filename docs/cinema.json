@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-02T09:17:26.207071+00:00",
+  "gerado_em": "2026-10-02T15:54:35.298001+00:00",
   "data_sessoes": "2026-10-02",
   "filmes_em_cartaz": [
     {
@@ -850,21 +850,6 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-02",
-      "sala": "Sala 1",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87223217&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "15:20",
       "data": "2026-10-02",
       "sala": "Sala 1",
@@ -901,21 +886,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87223189&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=vingadores-ultimato-encore-relancamento"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-10-02",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87223167&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "Verity",
@@ -976,21 +946,6 @@
       "tipo": "Vip, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87223118&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:40",
-      "data": "2026-10-02",
-      "sala": "Sala 5",
-      "tipo": "XD, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87223208&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
     },
     {
       "filme": "Verity",
@@ -1135,21 +1090,6 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "12:20",
-      "data": "2026-10-02",
-      "sala": "Sala 1",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87199972&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=resident-evil"
-    },
-    {
-      "filme": "Resident Evil",
-      "filme_id": "29835",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/resident-evil/e99616a3-f45b-4144-8b08-d70f8777de3d.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "17:30",
       "data": "2026-10-02",
       "sala": "Sala 1",
@@ -1186,21 +1126,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87199946&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=protocolo-de-exterminio"
-    },
-    {
-      "filme": "Protocolo De Extermínio",
-      "filme_id": "31311",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/protocolo-de-exterminio/87ad1844-4457-4a18-8836-46401accbe90.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-02",
-      "sala": "Sala 2",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87203691&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=protocolo-de-exterminio"
     },
     {
       "filme": "Digger",
@@ -1516,21 +1441,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87199945&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-02",
-      "sala": "Sala 8",
-      "tipo": "XD, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87199938&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
     },
     {
       "filme": "Verity",
