@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-03T08:41:08.538791+00:00",
+  "gerado_em": "2026-10-03T14:02:43.940900+00:00",
   "data_sessoes": "2026-10-03",
   "filmes_em_cartaz": [
     {
@@ -51,23 +51,6 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-queda-2-no-limite/a1dc3002-05f3-4ccb-ad98-5ed4d322a414.webp",
       "url": "https://www.ingresso.com/filme/a-queda-2-no-limite?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=a-queda-2-no-limite"
-    },
-    {
-      "id_ingresso": "33297",
-      "titulo": "Acampamento Miasma: Adolescência, Sexo E Morte",
-      "titulo_original": "Teenage Sex and Death At Camp Miasma",
-      "sinopse": "Um cineasta queer é contratado para dirigir uma nova parte de uma franquia de terror. Ele fica obcecado com a possibilidade de escolher a \"garota final\" do filme original, e as duas mulheres caem em um frenesi de mania psicossexual.",
-      "duracao": "112",
-      "classificacao": "18 anos",
-      "generos": [
-        "Drama",
-        "Horror",
-        "Romance",
-        "Suspense",
-        "Terror"
-      ],
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/acampamento-miasma-adolescencia-sexo-e-morte/eadadbfe-95a7-4bc2-b38e-8f9d245ff4d0.webp",
-      "url": "https://www.ingresso.com/filme/acampamento-miasma-adolescencia-sexo-e-morte?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=acampamento-miasma-adolescencia-sexo-e-morte"
     },
     {
       "id_ingresso": "33386",
@@ -321,21 +304,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87208241&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=tres-vezes-adeus"
     },
     {
-      "filme": "O Convite",
-      "filme_id": "31307",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-convite/3a995167-285e-4446-9504-b0a808fe5336.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "10:45",
-      "data": "2026-10-03",
-      "sala": "Sala 1",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87208213&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-convite"
-    },
-    {
       "filme": "Digger",
       "filme_id": "31932",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/digger/48747770-efa2-4a89-b275-675963700ac1.webp",
@@ -379,21 +347,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87233675&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-grande-arco-de-paris"
-    },
-    {
-      "filme": "Acampamento Miasma: Adolescência, Sexo E Morte",
-      "filme_id": "33297",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/acampamento-miasma-adolescencia-sexo-e-morte/eadadbfe-95a7-4bc2-b38e-8f9d245ff4d0.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "10:30",
-      "data": "2026-10-03",
-      "sala": "Sala 2",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87208218&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=acampamento-miasma-adolescencia-sexo-e-morte"
     },
     {
       "filme": "Ran (Relançamento)",
