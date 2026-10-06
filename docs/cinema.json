@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-06T06:39:17.774497+00:00",
+  "gerado_em": "2026-10-06T13:44:53.084712+00:00",
   "data_sessoes": "2026-10-06",
   "filmes_em_cartaz": [
     {
@@ -65,20 +65,6 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/antartida/45a7ab88-0893-4e50-9546-8089f57c0a80.webp",
       "url": "https://www.ingresso.com/filme/antartida?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=antartida"
-    },
-    {
-      "id_ingresso": "30807",
-      "titulo": "As Cores Do Tempo",
-      "titulo_original": "La Venue De L'avenir",
-      "sinopse": "Ao herdar uma antiga casa deixada intocada desde 1940, quatro primos distantes se reencontram e mergulham nos segredos há muito esquecidos de sua família. Ao explorarem o local, descobrem vestígios da vida de Adèle, uma jovem de 20 anos que viveu ali em 1895, antes de partir para Paris. À medida que percorre os passos dessa enigmática ancestral, o passado ganha vida e começa a ecoar no presente, desafiando suas certezas e revelando paralelos inesperados entre 2025 e o fim do século XIX.",
-      "duracao": "124",
-      "classificacao": "14 anos",
-      "generos": [
-        "Comédia",
-        "Drama"
-      ],
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-cores-do-tempo/9c67e711-3f66-4bf2-89f3-58959eaf9eb9.webp",
-      "url": "https://www.ingresso.com/filme/as-cores-do-tempo?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=as-cores-do-tempo"
     }
   ],
   "cinemas": [
