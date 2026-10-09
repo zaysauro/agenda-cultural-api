@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-08T16:11:30.240956+00:00",
-  "count": 83,
+  "updatedAt": "2026-10-09T01:02:23.375309+00:00",
+  "count": 84,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -256,6 +256,23 @@
       "outdoor": true,
       "free": false,
       "organizer": "Festival Primavera Curitiba"
+    },
+    {
+      "title": "Eventos",
+      "summary": "Ir para o conteúdo Ir para a navegação Ir para o rodapé Portal do Governo Brasileiro Meu portal personalizado Eu sou Futuro aluno Estudante Egresso Servidor Pesquisador Cidade Apucarana Campo Mourão Cornélio Procópio Curitiba Dois Vizinhos Francisco Beltrão Guarapuava Londrina Medianeira Pato Branco Ponta Grossa Santa Helena Toledo PT EN ES FR Entrar Ensino Estude na UTFPR Graduação Especialização Programas de Pós-Graduação Educação a distância Outros cursos Pesquisa Pesquisa na UTFPR Iniciação ",
+      "category": "Cidade",
+      "categorySlug": "cidade",
+      "startDate": "",
+      "startTime": "",
+      "venue": "",
+      "group": "universidade",
+      "url": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos#view",
+      "imageUrl": "",
+      "sourceUrl": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos",
+      "publicSpace": false,
+      "outdoor": false,
+      "free": false,
+      "organizer": "UTFPR"
     },
     {
       "title": "Ir para o conteúdo [1]",
@@ -1669,6 +1686,23 @@
       "outdoor": true,
       "free": false,
       "organizer": "Festival Primavera Curitiba"
+    },
+    {
+      "title": "Eventos",
+      "summary": "Ir para o conteúdo Ir para a navegação Ir para o rodapé Portal do Governo Brasileiro Meu portal personalizado Eu sou Futuro aluno Estudante Egresso Servidor Pesquisador Cidade Apucarana Campo Mourão Cornélio Procópio Curitiba Dois Vizinhos Francisco Beltrão Guarapuava Londrina Medianeira Pato Branco Ponta Grossa Santa Helena Toledo PT EN ES FR Entrar Ensino Estude na UTFPR Graduação Especialização Programas de Pós-Graduação Educação a distância Outros cursos Pesquisa Pesquisa na UTFPR Iniciação ",
+      "category": "Cidade",
+      "categorySlug": "cidade",
+      "startDate": "",
+      "startTime": "",
+      "venue": "",
+      "group": "universidade",
+      "url": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos#view",
+      "imageUrl": "",
+      "sourceUrl": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos",
+      "publicSpace": false,
+      "outdoor": false,
+      "free": false,
+      "organizer": "UTFPR"
     },
     {
       "title": "Ir para o conteúdo [1]",
