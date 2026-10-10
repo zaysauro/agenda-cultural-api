@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-10T02:29:04.323549+00:00",
+  "gerado_em": "2026-10-10T08:48:08.116918+00:00",
   "data_sessoes": "2026-10-10",
   "filmes_em_cartaz": [
     {
@@ -5446,21 +5446,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=86499932&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=queen-budapest"
-    },
-    {
-      "filme": "Hope - O Primeiro Impacto",
-      "filme_id": "33494",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/hope-o-primeiro-impacto/e1c15383-7499-4cb1-949d-e30bac7ee32e.webp",
-      "cinema_id": "767",
-      "cinema": "UCI Palladium",
-      "endereco": "Av. Presidente Kennedy",
-      "bairro": "Portão",
-      "horario": "20:55",
-      "data": "2026-10-10",
-      "sala": "Sala 6",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87266477&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=hope-o-primeiro-impacto"
     }
   ]
 }
