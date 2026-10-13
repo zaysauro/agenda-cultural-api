@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-13T08:39:25.588183+00:00",
+  "gerado_em": "2026-10-13T16:33:49.294463+00:00",
   "data_sessoes": "2026-10-13",
   "filmes_em_cartaz": [
     {
@@ -198,21 +198,6 @@
   ],
   "sessoes_hoje": [
     {
-      "filme": "Resident Evil",
-      "filme_id": "29835",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/resident-evil/e99616a3-f45b-4144-8b08-d70f8777de3d.webp",
-      "cinema_id": "1612",
-      "cinema": "Cine Guarani",
-      "endereco": "AV. REPUBLICA ARGENTINA",
-      "bairro": "Portão",
-      "horario": "13:20",
-      "data": "2026-10-13",
-      "sala": "Cine Guarani",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87270469&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=resident-evil"
-    },
-    {
       "filme": "Hope - O Primeiro Impacto",
       "filme_id": "33494",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/hope-o-primeiro-impacto/e1c15383-7499-4cb1-949d-e30bac7ee32e.webp",
@@ -316,21 +301,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87293493&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=coracao-selvagem"
-    },
-    {
-      "filme": "O Grande Arco De Paris",
-      "filme_id": "32858",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-grande-arco-de-paris/fa7af9f5-4cb2-4297-8247-5b3ec788c94e.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "13:10",
-      "data": "2026-10-13",
-      "sala": "Sala 1",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87293291&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-grande-arco-de-paris"
     },
     {
       "filme": "Ran (Relançamento)",
@@ -760,42 +730,12 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "12:50",
-      "data": "2026-10-13",
-      "sala": "Sala 1",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87299889&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "15:00",
       "data": "2026-10-13",
       "sala": "Sala 1",
       "tipo": "Vip, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87299959&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-10-13",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87300133&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Se Eu Fosse Você 3",
@@ -865,21 +805,6 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-13",
-      "sala": "Sala 8",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87300066&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "22:30",
       "data": "2026-10-13",
       "sala": "Sala 8",
@@ -916,21 +841,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87300308&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-10-13",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87300310&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "Verity",
@@ -1225,42 +1135,12 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "13:10",
-      "data": "2026-10-13",
-      "sala": "Sala 1",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87284196&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "22:20",
       "data": "2026-10-13",
       "sala": "Sala 1",
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87284238&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-13",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87284224&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Se Eu Fosse Você 3",
@@ -1336,21 +1216,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87284233&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=digger"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-13",
-      "sala": "Sala 5",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87284178&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
     },
     {
       "filme": "Minha Melhor Amiga",
@@ -1441,21 +1306,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87284218&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-13",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87284175&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "Verity",
@@ -1621,21 +1471,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87284180&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=carros-20-aniversario"
-    },
-    {
-      "filme": "As Aventuras De Tadeo E A Lâmpada Mágica",
-      "filme_id": "32986",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-aventuras-de-tadeo-e-a-lampada-magica/9a977df4-ebdd-4d47-8a3b-1867e2a89f8e.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "13:20",
-      "data": "2026-10-13",
-      "sala": "Sala 3",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87284182&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
     },
     {
       "filme": "As Aventuras De Tadeo E A Lâmpada Mágica",
@@ -2740,21 +2575,6 @@
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
       "bairro": "Batel",
-      "horario": "13:20",
-      "data": "2026-10-13",
-      "sala": "Sala 1 - VIP Lounge",
-      "tipo": "Normal, Vip, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87261498&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "1168",
-      "cinema": "Cinépolis Batel",
-      "endereco": "AV DO BATEL",
-      "bairro": "Batel",
       "horario": "16:10",
       "data": "2026-10-13",
       "sala": "Sala 1 - VIP Lounge",
@@ -2791,21 +2611,6 @@
       "tipo": "Normal, Vip, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87261506&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "1168",
-      "cinema": "Cinépolis Batel",
-      "endereco": "AV DO BATEL",
-      "bairro": "Batel",
-      "horario": "13:00",
-      "data": "2026-10-13",
-      "sala": "Sala 2 - VIP Lounge ",
-      "tipo": "Normal, Vip, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87261289&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
     },
     {
       "filme": "Verity",
@@ -3138,21 +2943,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87299133&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
     },
     {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "12:45",
-      "data": "2026-10-13",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87279936&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
-    },
-    {
       "filme": "Verity",
       "filme_id": "32603",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
@@ -3211,21 +3001,6 @@
       "tipo": "Normal, Macro XE, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87279925&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "13:00",
-      "data": "2026-10-13",
-      "sala": "Sala 4",
-      "tipo": "Normal, Vip, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87279914&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
     },
     {
       "filme": "Verity",
@@ -3340,21 +3115,6 @@
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
       "bairro": "Tarumã",
-      "horario": "13:15",
-      "data": "2026-10-13",
-      "sala": "Sala 8",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87279890&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
-    },
-    {
-      "filme": "As Aventuras De Tadeo E A Lâmpada Mágica",
-      "filme_id": "32986",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-aventuras-de-tadeo-e-a-lampada-magica/9a977df4-ebdd-4d47-8a3b-1867e2a89f8e.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
       "horario": "15:45",
       "data": "2026-10-13",
       "sala": "Sala 8",
@@ -3436,21 +3196,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87279956&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=hope-o-primeiro-impacto"
-    },
-    {
-      "filme": "Toquinho - Encontros E Um Violão",
-      "filme_id": "29293",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/toquinho-encontros-e-um-violao/b45aff08-e926-4b4c-bd04-19ec0a7695d3.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "13:00",
-      "data": "2026-10-13",
-      "sala": "Sala 5",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87274369&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=toquinho-encontros-e-um-violao"
     },
     {
       "filme": "Resident Evil",
@@ -3646,21 +3391,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87274386&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=vingadores-ultimato-encore-relancamento"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "13:00",
-      "data": "2026-10-13",
-      "sala": "Sala 2",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87274368&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "Verity",
@@ -3933,21 +3663,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=86752592&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
-      "filme": "Trago Seu Amor",
-      "filme_id": "30926",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/trago-seu-amor/43725bfa-5cc0-4975-bffd-50c4e253b955.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "13:00",
-      "data": "2026-10-13",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87274485&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=trago-seu-amor"
-    },
-    {
       "filme": "Minha Melhor Amiga",
       "filme_id": "31942",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
@@ -4036,21 +3751,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87274486&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
-    },
-    {
-      "filme": "Máfia De Pelúcia",
-      "filme_id": "32358",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/mafia-de-pelucia/8c61473f-3de8-45e4-9160-0f8d24d3d416.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "13:00",
-      "data": "2026-10-13",
-      "sala": "Sala 2",
-      "tipo": "CINEPIC, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87274492&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=mafia-de-pelucia"
     },
     {
       "filme": "Verity",
