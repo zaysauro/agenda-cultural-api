@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-14T00:43:28.267311+00:00",
+  "gerado_em": "2026-10-14T05:35:57.735422+00:00",
   "data_sessoes": "2026-10-14",
   "filmes_em_cartaz": [
     {
@@ -20,6 +20,23 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-odisseia/91713f7f-195b-4d60-89c2-8c94588f7aa5.webp",
       "url": "https://www.ingresso.com/filme/a-odisseia?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=a-odisseia"
+    },
+    {
+      "id_ingresso": "33073",
+      "titulo": "A Queda 2: No Limite",
+      "titulo_original": "Fall 2: Deadpoint",
+      "sinopse": "As melhores amigas Grace Caroline Currey e Virginia Gardner reprisam seus papéis. Seu conhecimento de escalada e sua determinação em sobreviver são testados em situações de risco no topo de uma torre de rádio.",
+      "duracao": "100",
+      "classificacao": "16 anos",
+      "generos": [
+        "Aventura",
+        "Drama",
+        "Mistério",
+        "Suspense",
+        "Thriller"
+      ],
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-queda-2-no-limite/a1dc3002-05f3-4ccb-ad98-5ed4d322a414.webp",
+      "url": "https://www.ingresso.com/filme/a-queda-2-no-limite?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=a-queda-2-no-limite"
     },
     {
       "id_ingresso": "33572",
@@ -2954,36 +2971,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87160866&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
     },
     {
-      "filme": "Cara De Um, Focinho De Outro",
-      "filme_id": "29076",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cara-de-um-focinho-de-outro/8a86d677-007f-4ae4-8d12-f61c0621e799.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "09:00",
-      "data": "2026-10-14",
-      "sala": "Sala 1",
-      "tipo": "Normal, Macro XE, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87323474&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-um-focinho-de-outro"
-    },
-    {
-      "filme": "Cara De Um, Focinho De Outro",
-      "filme_id": "29076",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cara-de-um-focinho-de-outro/8a86d677-007f-4ae4-8d12-f61c0621e799.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "14:00",
-      "data": "2026-10-14",
-      "sala": "Sala 1",
-      "tipo": "Normal, Macro XE, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87323472&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-um-focinho-de-outro"
-    },
-    {
       "filme": "Se Eu Fosse Você 3",
       "filme_id": "30640",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
@@ -5099,6 +5086,51 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87258127&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
     },
     {
+      "filme": "Verity",
+      "filme_id": "32603",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
+      "cinema_id": "767",
+      "cinema": "UCI Palladium",
+      "endereco": "Av. Presidente Kennedy",
+      "bairro": "Portão",
+      "horario": "15:00",
+      "data": "2026-10-14",
+      "sala": "Sala 4",
+      "tipo": "Normal, Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87384513&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
+    },
+    {
+      "filme": "Verity",
+      "filme_id": "32603",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
+      "cinema_id": "767",
+      "cinema": "UCI Palladium",
+      "endereco": "Av. Presidente Kennedy",
+      "bairro": "Portão",
+      "horario": "17:25",
+      "data": "2026-10-14",
+      "sala": "Sala 4",
+      "tipo": "Normal, Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87384742&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
+    },
+    {
+      "filme": "Verity",
+      "filme_id": "32603",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
+      "cinema_id": "767",
+      "cinema": "UCI Palladium",
+      "endereco": "Av. Presidente Kennedy",
+      "bairro": "Portão",
+      "horario": "19:50",
+      "data": "2026-10-14",
+      "sala": "Sala 4",
+      "tipo": "Normal, Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87384739&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
+    },
+    {
       "filme": "Coração Selvagem",
       "filme_id": "32825",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/coracao-selvagem/33ad141b-4e55-42f5-bd43-7cde886bc6a7.webp",
@@ -5142,6 +5174,21 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87266651&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
+    },
+    {
+      "filme": "A Queda 2: No Limite",
+      "filme_id": "33073",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-queda-2-no-limite/a1dc3002-05f3-4ccb-ad98-5ed4d322a414.webp",
+      "cinema_id": "767",
+      "cinema": "UCI Palladium",
+      "endereco": "Av. Presidente Kennedy",
+      "bairro": "Portão",
+      "horario": "22:15",
+      "data": "2026-10-14",
+      "sala": "Sala 4",
+      "tipo": "Normal, Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87384743&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=a-queda-2-no-limite"
     },
     {
       "filme": "Outra Mamãe",
