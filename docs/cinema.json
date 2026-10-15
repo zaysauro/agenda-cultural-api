@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-15T01:03:31.300608+00:00",
+  "gerado_em": "2026-10-15T06:01:19.113439+00:00",
   "data_sessoes": "2026-10-15",
   "filmes_em_cartaz": [
     {
@@ -3554,21 +3554,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87359398&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=outra-mamae"
     },
     {
-      "filme": "Space Jam - O Jogo Do Século (Relançamento)",
-      "filme_id": "33410",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/space-jam-o-jogo-do-seculo-relancamento/04addd6f-8ea2-4382-86a4-b479c1168638.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "19:30",
-      "data": "2026-10-15",
-      "sala": "Sala 5",
-      "tipo": "Relançamento, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87388041&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=space-jam-o-jogo-do-seculo-relancamento"
-    },
-    {
       "filme": "Street Fighter",
       "filme_id": "28449",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/street-fighter/58df0e0d-df27-4f21-b9b8-ace1773d5fd3.webp",
@@ -3642,21 +3627,6 @@
       "tipo": "CINEPIC, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87359592&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
-    },
-    {
-      "filme": "Toquinho - Encontros E Um Violão",
-      "filme_id": "29293",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/toquinho-encontros-e-um-violao/b45aff08-e926-4b4c-bd04-19ec0a7695d3.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "13:00",
-      "data": "2026-10-15",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87359490&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=toquinho-encontros-e-um-violao"
     },
     {
       "filme": "Resident Evil",
