@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-15T11:47:30.609170+00:00",
+  "gerado_em": "2026-10-15T15:54:30.046293+00:00",
   "data_sessoes": "2026-10-15",
   "filmes_em_cartaz": [
     {
@@ -30,21 +30,6 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-aventuras-de-tadeo-e-a-lampada-magica/9a977df4-ebdd-4d47-8a3b-1867e2a89f8e.webp",
       "url": "https://www.ingresso.com/filme/as-aventuras-de-tadeo-e-a-lampada-magica?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
-    },
-    {
-      "id_ingresso": "28462",
-      "titulo": "Authentic Games No Império Desconectado",
-      "titulo_original": "Authentic Games No Império Desconectado",
-      "sinopse": "Após anos comandando um mundo offline, o Império Desconectado decide se vingar. O Imperador planeja sequestrar Marco Túlio, criador do Authentic Games, para levar alegria ao seu reino sombrio. Ao entrar nesse universo, Marco Túlio se transforma em Authentic, um simpático boneco, e embarca em uma grande aventura para resgatar a Família Craft e enfrentar o Império. Quando tudo parece perdido, uma ajuda inesperada surge no confronto final.",
-      "duracao": "71",
-      "classificacao": "6 anos",
-      "generos": [
-        "Ação",
-        "Animação",
-        "Aventura"
-      ],
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/authentic-games-no-imperio-desconectado/336226b6-94cf-4bd3-8fb8-19a32bcfae51.webp",
-      "url": "https://www.ingresso.com/filme/authentic-games-no-imperio-desconectado?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=authentic-games-no-imperio-desconectado"
     }
   ],
   "cinemas": [
@@ -794,21 +779,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87229650&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
     },
     {
-      "filme": "O Diário De Pilar Na Amazônia",
-      "filme_id": "29689",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-diario-de-pilar-na-amazonia/68467616-9183-42a5-9b2e-24bb597e28d1.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 5",
-      "tipo": "XD, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350270&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-diario-de-pilar-na-amazonia"
-    },
-    {
       "filme": "Dentro Da Baleia",
       "filme_id": "30635",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/dentro-da-baleia/24622c7f-b887-4a26-946c-5def0114c300.webp",
@@ -852,21 +822,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87371512&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=dentro-da-baleia"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350959&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Se Eu Fosse Você 3",
@@ -927,36 +882,6 @@
       "tipo": "Vip, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87350013&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-10-15",
-      "sala": "Sala 2",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350553&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350280&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
     },
     {
       "filme": "Um Tio Quase Perfeito 3",
@@ -1139,21 +1064,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87350960&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=outra-mamae"
     },
     {
-      "filme": "Era Uma Vez Minha 1ª Vez",
-      "filme_id": "33452",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/era-uma-vez-minha-1-vez/888854a6-123a-47bf-a89e-f261721e75ea.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 7",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350955&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=era-uma-vez-minha-1-vez"
-    },
-    {
       "filme": "A Bruxa",
       "filme_id": "12495",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-bruxa/72f1fc34-f9ce-40aa-8aa3-5c49f36d3da3.webp",
@@ -1244,36 +1154,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87229641&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
     },
     {
-      "filme": "Authentic Games No Império Desconectado",
-      "filme_id": "28462",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/authentic-games-no-imperio-desconectado/336226b6-94cf-4bd3-8fb8-19a32bcfae51.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 8",
-      "tipo": "XD, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350253&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=authentic-games-no-imperio-desconectado"
-    },
-    {
-      "filme": "O Diário De Pilar Na Amazônia",
-      "filme_id": "29689",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-diario-de-pilar-na-amazonia/68467616-9183-42a5-9b2e-24bb597e28d1.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 1",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350450&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-diario-de-pilar-na-amazonia"
-    },
-    {
       "filme": "Resident Evil",
       "filme_id": "29835",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/resident-evil/e99616a3-f45b-4144-8b08-d70f8777de3d.webp",
@@ -1317,21 +1197,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87371546&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=dentro-da-baleia"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 7",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87351138&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Se Eu Fosse Você 3",
@@ -1409,51 +1274,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87387223&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=sacrificio"
     },
     {
-      "filme": "Colegas E O Herdeiro",
-      "filme_id": "31916",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/colegas-e-o-herdeiro/f4a88278-a1f4-4311-84ff-bdb6ce141ae8.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350128&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=colegas-e-o-herdeiro"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 2",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87351153&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-15",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350120&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
       "filme": "Minha Melhor Amiga",
       "filme_id": "31942",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
@@ -1491,42 +1311,12 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-15",
-      "sala": "Sala 5",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350446&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "17:30",
       "data": "2026-10-15",
       "sala": "Sala 6",
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87351151&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-15",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350121&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "Galinha Pintadinha - O Filme",
@@ -2997,21 +2787,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87346019&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "12:45",
-      "data": "2026-10-15",
-      "sala": "Sala 7",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87345953&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
     },
     {
       "filme": "Verity",
