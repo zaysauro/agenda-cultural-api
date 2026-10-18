@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-18T11:26:51.430736+00:00",
+  "gerado_em": "2026-10-18T14:43:14.216114+00:00",
   "data_sessoes": "2026-10-18",
   "filmes_em_cartaz": [
     {
@@ -225,36 +225,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87377199&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=virtuosas"
-    },
-    {
-      "filme": "Virtuosas",
-      "filme_id": "30922",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/virtuosas/f772071c-5852-4017-8303-c1316c54c785.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "11:00",
-      "data": "2026-10-18",
-      "sala": "Sala 2",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87377197&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=virtuosas"
-    },
-    {
-      "filme": "O Convite",
-      "filme_id": "31307",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-convite/3a995167-285e-4446-9504-b0a808fe5336.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "10:30",
-      "data": "2026-10-18",
-      "sala": "Sala 1",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87377211&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-convite"
     },
     {
       "filme": "Sacrifício",
@@ -1710,21 +1680,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87350488&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=outra-mamae"
-    },
-    {
-      "filme": "Space Jam - O Jogo Do Século (Relançamento)",
-      "filme_id": "33410",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/space-jam-o-jogo-do-seculo-relancamento/04addd6f-8ea2-4382-86a4-b479c1168638.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "11:15",
-      "data": "2026-10-18",
-      "sala": "Sala 3",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87387147&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=space-jam-o-jogo-do-seculo-relancamento"
     },
     {
       "filme": "Space Jam - O Jogo Do Século (Relançamento)",
