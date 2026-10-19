@@ -2,9 +2,23 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-19T00:16:44.021483+00:00",
+  "gerado_em": "2026-10-19T04:57:59.779719+00:00",
   "data_sessoes": "2026-10-19",
-  "filmes_em_cartaz": [],
+  "filmes_em_cartaz": [
+    {
+      "id_ingresso": "32986",
+      "titulo": "As Aventuras De Tadeo E A Lâmpada Mágica",
+      "titulo_original": "Tad And The Magic Lamp",
+      "sinopse": "Tadeo, sua namorada Sara e seus amigos Múmia, Jeff e Belzoni embarcam em uma aventura depois que Tadeo acidentalmente desencadeia um feitiço antigo.",
+      "duracao": "95",
+      "classificacao": "10 anos",
+      "generos": [
+        "Animação"
+      ],
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-aventuras-de-tadeo-e-a-lampada-magica/9a977df4-ebdd-4d47-8a3b-1867e2a89f8e.webp",
+      "url": "https://www.ingresso.com/filme/as-aventuras-de-tadeo-e-a-lampada-magica?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
+    }
+  ],
   "cinemas": [
     {
       "nome": "Cine Guarani",
