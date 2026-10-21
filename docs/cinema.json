@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-21T10:46:19.290822+00:00",
+  "gerado_em": "2026-10-21T15:43:17.610789+00:00",
   "data_sessoes": "2026-10-21",
   "filmes_em_cartaz": [
     {
@@ -17,20 +17,6 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-aventuras-de-tadeo-e-a-lampada-magica/9a977df4-ebdd-4d47-8a3b-1867e2a89f8e.webp",
       "url": "https://www.ingresso.com/filme/as-aventuras-de-tadeo-e-a-lampada-magica?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
-    },
-    {
-      "id_ingresso": "30807",
-      "titulo": "As Cores Do Tempo",
-      "titulo_original": "La Venue De L'avenir",
-      "sinopse": "Ao herdar uma antiga casa deixada intocada desde 1940, quatro primos distantes se reencontram e mergulham nos segredos há muito esquecidos de sua família. Ao explorarem o local, descobrem vestígios da vida de Adèle, uma jovem de 20 anos que viveu ali em 1895, antes de partir para Paris. À medida que percorre os passos dessa enigmática ancestral, o passado ganha vida e começa a ecoar no presente, desafiando suas certezas e revelando paralelos inesperados entre 2025 e o fim do século XIX.",
-      "duracao": "124",
-      "classificacao": "14 anos",
-      "generos": [
-        "Comédia",
-        "Drama"
-      ],
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-cores-do-tempo/9c67e711-3f66-4bf2-89f3-58959eaf9eb9.webp",
-      "url": "https://www.ingresso.com/filme/as-cores-do-tempo?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=as-cores-do-tempo"
     }
   ],
   "cinemas": [
@@ -900,21 +886,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87350076&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
     },
     {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-10-21",
-      "sala": "Sala 2",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87350411&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
       "filme": "Um Tio Quase Perfeito 3",
       "filme_id": "32104",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
@@ -1432,21 +1403,6 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-21",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87351255&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "14:35",
       "data": "2026-10-21",
       "sala": "Sala 6",
@@ -1498,21 +1454,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87350578&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-21",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87351219&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "Galinha Pintadinha - O Filme",
@@ -2542,21 +2483,6 @@
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
       "bairro": "Batel",
-      "horario": "13:20",
-      "data": "2026-10-21",
-      "sala": "Sala 2 - VIP Lounge ",
-      "tipo": "Normal, Vip, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87233061&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
-    },
-    {
-      "filme": "Street Fighter",
-      "filme_id": "28449",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/street-fighter/58df0e0d-df27-4f21-b9b8-ace1773d5fd3.webp",
-      "cinema_id": "1168",
-      "cinema": "Cinépolis Batel",
-      "endereco": "AV DO BATEL",
-      "bairro": "Batel",
       "horario": "16:15",
       "data": "2026-10-21",
       "sala": "Sala 2 - VIP Lounge ",
@@ -2833,21 +2759,6 @@
       "tipo": "Normal, Vip, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87357821&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "1168",
-      "cinema": "Cinépolis Batel",
-      "endereco": "AV DO BATEL",
-      "bairro": "Batel",
-      "horario": "13:30",
-      "data": "2026-10-21",
-      "sala": "Sala 7 - VIP Sala de arte",
-      "tipo": "Normal, Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87357337&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
     },
     {
       "filme": "Verity",
