@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-22T01:04:16.094531+00:00",
+  "gerado_em": "2026-10-22T06:14:15.896413+00:00",
   "data_sessoes": "2026-10-22",
   "filmes_em_cartaz": [
     {
@@ -3598,21 +3598,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87423838&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "13:20",
-      "data": "2026-10-22",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87423752&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "Verity",
