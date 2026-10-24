@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-24T12:08:40.757236+00:00",
+  "gerado_em": "2026-10-24T16:07:48.212177+00:00",
   "data_sessoes": "2026-10-24",
   "filmes_em_cartaz": [
     {
@@ -315,21 +315,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87450791&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=rosebush-pruning"
     },
     {
-      "filme": "Coração Selvagem",
-      "filme_id": "32825",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/coracao-selvagem/33ad141b-4e55-42f5-bd43-7cde886bc6a7.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "10:30",
-      "data": "2026-10-24",
-      "sala": "Sala 1",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87450769&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=coracao-selvagem"
-    },
-    {
       "filme": "Ran (Relançamento)",
       "filme_id": "33518",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/ran-relancamento/3a9c488d-c6d1-4a8c-8ba2-56111f08926e.webp",
@@ -343,21 +328,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87450500&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=ran-relancamento"
-    },
-    {
-      "filme": "Naza",
-      "filme_id": "33960",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/naza/b1f99274-df26-4339-8b52-ed6e06e52a03.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "11:00",
-      "data": "2026-10-24",
-      "sala": "Sala 2",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87450711&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=naza"
     },
     {
       "filme": "Street Fighter",
@@ -765,21 +735,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87459051&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
     },
     {
-      "filme": "Street Fighter",
-      "filme_id": "28449",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/street-fighter/58df0e0d-df27-4f21-b9b8-ace1773d5fd3.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:50",
-      "data": "2026-10-24",
-      "sala": "Sala 5",
-      "tipo": "XD, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87459137&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
-    },
-    {
       "filme": "Dentro Da Baleia",
       "filme_id": "30635",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/dentro-da-baleia/24622c7f-b887-4a26-946c-5def0114c300.webp",
@@ -793,21 +748,6 @@
       "tipo": "Vip, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87459037&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=dentro-da-baleia"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-24",
-      "sala": "Sala 7",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87459217&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Se Eu Fosse Você 3",
@@ -877,21 +817,6 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "13:00",
-      "data": "2026-10-24",
-      "sala": "Sala 8",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87316235&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Cara-De-Barro",
-      "filme_id": "31533",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cara-de-barro/b7735a9d-3a90-4db1-bb10-a4eb65d213e9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "15:30",
       "data": "2026-10-24",
       "sala": "Sala 8",
@@ -928,21 +853,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87316192&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-24",
-      "sala": "Sala 1",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87458998&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
     },
     {
       "filme": "Minha Melhor Amiga",
@@ -1245,21 +1155,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87447397&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=dentro-da-baleia"
     },
     {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-24",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87447719&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
-    },
-    {
       "filme": "I Want Your Sex",
       "filme_id": "31314",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/i-want-your-sex/8adb8e11-4c3d-478b-bdb9-436e310629e1.webp",
@@ -1333,21 +1228,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87447466&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Cara-De-Barro",
-      "filme_id": "31533",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cara-de-barro/b7735a9d-3a90-4db1-bb10-a4eb65d213e9.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "13:00",
-      "data": "2026-10-24",
-      "sala": "Sala 7",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87316987&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
     },
     {
       "filme": "Cara-De-Barro",
@@ -1513,21 +1393,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87447706&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=zona-zero"
-    },
-    {
-      "filme": "As Aventuras De Tadeo E A Lâmpada Mágica",
-      "filme_id": "32986",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-aventuras-de-tadeo-e-a-lampada-magica/9a977df4-ebdd-4d47-8a3b-1867e2a89f8e.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-24",
-      "sala": "Sala 2",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87447515&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
     },
     {
       "filme": "BTS World Tour 'Arirang' In Buenos Aires: Live Viewing",
@@ -2910,51 +2775,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87470820&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
     },
     {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "12:45",
-      "data": "2026-10-24",
-      "sala": "Sala 2",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87470572&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "13:00",
-      "data": "2026-10-24",
-      "sala": "Sala 7",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87470586&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
-    },
-    {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "13:00",
-      "data": "2026-10-24",
-      "sala": "Sala 3",
-      "tipo": "Normal, Vip, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87470690&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
       "filme": "Verity",
       "filme_id": "32603",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
@@ -3148,21 +2968,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87423379&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cordelicos-a-origem-do-cabra-da-peste"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "13:00",
-      "data": "2026-10-24",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87423962&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Se Eu Fosse Você 3",
@@ -3613,36 +3418,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87423967&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "13:00",
-      "data": "2026-10-24",
-      "sala": "Sala 2",
-      "tipo": "CINEPIC, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87424088&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Máfia De Pelúcia",
-      "filme_id": "32358",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/mafia-de-pelucia/8c61473f-3de8-45e4-9160-0f8d24d3d416.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "13:00",
-      "data": "2026-10-24",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87423500&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=mafia-de-pelucia"
     },
     {
       "filme": "Verity",
