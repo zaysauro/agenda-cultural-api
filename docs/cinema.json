@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-25T01:23:32.165885+00:00",
+  "gerado_em": "2026-10-25T06:22:40.324475+00:00",
   "data_sessoes": "2026-10-25",
   "filmes_em_cartaz": [
     {
@@ -2638,6 +2638,21 @@
       "tipo": "Normal, Vip, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87062627&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=bts-world-tour-arirang-in-buenos-aires-live-viewing"
+    },
+    {
+      "filme": "Godzilla Minus One (Relançamento)",
+      "filme_id": "34245",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-one-relancamento/a7794834-6fc0-4da6-8ff3-d5935119e425.webp",
+      "cinema_id": "1168",
+      "cinema": "Cinépolis Batel",
+      "endereco": "AV DO BATEL",
+      "bairro": "Batel",
+      "horario": "21:00",
+      "data": "2026-10-25",
+      "sala": "Sala 7 - VIP Sala de arte",
+      "tipo": "Normal, Vip, Legendado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87389258&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=godzilla-minus-one-relancamento"
     },
     {
       "filme": "Street Fighter",
