@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-25T11:50:55.269117+00:00",
+  "gerado_em": "2026-10-25T15:12:08.509211+00:00",
   "data_sessoes": "2026-10-25",
   "filmes_em_cartaz": [
     {
@@ -1468,21 +1468,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87447496&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=zona-zero"
-    },
-    {
-      "filme": "As Aventuras De Tadeo E A Lâmpada Mágica",
-      "filme_id": "32986",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-aventuras-de-tadeo-e-a-lampada-magica/9a977df4-ebdd-4d47-8a3b-1867e2a89f8e.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-10-25",
-      "sala": "Sala 2",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87447815&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
     },
     {
       "filme": "BTS World Tour 'Arirang' In Buenos Aires: Live Viewing",
