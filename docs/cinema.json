@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-26T01:24:54.763269+00:00",
+  "gerado_em": "2026-10-26T06:32:32.221875+00:00",
   "data_sessoes": "2026-10-26",
   "filmes_em_cartaz": [
     {
@@ -2865,21 +2865,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87471757&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "18:00",
-      "data": "2026-10-26",
-      "sala": "Sala 5",
-      "tipo": "Normal, Cine Inclusivo, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87471669&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
-    },
-    {
       "filme": "Cara-De-Barro",
       "filme_id": "31533",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cara-de-barro/b7735a9d-3a90-4db1-bb10-a4eb65d213e9.webp",
@@ -3193,6 +3178,36 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87471598&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=a-caixa-do-demonio"
+    },
+    {
+      "filme": "Daniel E A Fornalha Ardente",
+      "filme_id": "33691",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/daniel-e-a-fornalha-ardente/f8eb4510-cee3-4a8e-a8cb-a5a3bf476108.webp",
+      "cinema_id": "1529",
+      "cinema": "Cinépolis Jockey Plaza Curitiba",
+      "endereco": "Av. Victor Ferreira do Amaral",
+      "bairro": "Tarumã",
+      "horario": "17:45",
+      "data": "2026-10-26",
+      "sala": "Sala 5",
+      "tipo": "Normal, Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87491962&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=daniel-e-a-fornalha-ardente"
+    },
+    {
+      "filme": "Daniel E A Fornalha Ardente",
+      "filme_id": "33691",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/daniel-e-a-fornalha-ardente/f8eb4510-cee3-4a8e-a8cb-a5a3bf476108.webp",
+      "cinema_id": "1529",
+      "cinema": "Cinépolis Jockey Plaza Curitiba",
+      "endereco": "Av. Victor Ferreira do Amaral",
+      "bairro": "Tarumã",
+      "horario": "20:15",
+      "data": "2026-10-26",
+      "sala": "Sala 5",
+      "tipo": "Normal, Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87491967&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=daniel-e-a-fornalha-ardente"
     },
     {
       "filme": "Daniel E A Fornalha Ardente",
