@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-26T06:32:32.221875+00:00",
+  "gerado_em": "2026-10-26T13:41:56.567035+00:00",
   "data_sessoes": "2026-10-26",
   "filmes_em_cartaz": [
     {
@@ -733,6 +733,21 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87316202&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
+    },
+    {
+      "filme": "Minha Melhor Amiga",
+      "filme_id": "31942",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
+      "cinema_id": "193",
+      "cinema": "Cinemark Barigui",
+      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
+      "bairro": "Mossungue",
+      "horario": "12:31",
+      "data": "2026-10-26",
+      "sala": "Sala 1",
+      "tipo": "Vip, Sessão Azul, Nacional",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87492090&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
     },
     {
       "filme": "Minha Melhor Amiga",
