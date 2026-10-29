@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-29T00:30:35.654217+00:00",
+  "gerado_em": "2026-10-29T06:36:19.459364+00:00",
   "data_sessoes": "2026-10-29",
   "filmes_em_cartaz": [
     {
@@ -44,6 +44,22 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-ilustre-desconhecida/e7272cf6-ff45-4ea4-91bb-74c62c949ab9.webp",
       "url": "https://www.ingresso.com/filme/a-ilustre-desconhecida?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=a-ilustre-desconhecida"
+    },
+    {
+      "id_ingresso": "30413",
+      "titulo": "A Odisseia",
+      "titulo_original": "The Odyssey",
+      "sinopse": "Após a Guerra de Troia, Odisseu enfrenta uma perigosa jornada de volta para Ítaca, encontrando criaturas como o Ciclope Polifemo, as Sereias e Calipso pelo caminho.",
+      "duracao": "172",
+      "classificacao": "14 anos",
+      "generos": [
+        "Ação",
+        "Aventura",
+        "Épico",
+        "Fantasia"
+      ],
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-odisseia/91713f7f-195b-4d60-89c2-8c94588f7aa5.webp",
+      "url": "https://www.ingresso.com/filme/a-odisseia?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=a-odisseia"
     }
   ],
   "cinemas": [
@@ -3358,21 +3374,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87509887&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-dez-vantagens-de-morrer-depois-de-voce"
     },
     {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "13:00",
-      "data": "2026-10-29",
-      "sala": "Sala 3",
-      "tipo": "Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87509875&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
-    },
-    {
       "filme": "O Bosque Selvagem",
       "filme_id": "32814",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-bosque-selvagem/1d825e95-c772-46ef-96c2-6d656a63d118.webp",
@@ -3761,6 +3762,51 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87507724&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-bosque-selvagem"
+    },
+    {
+      "filme": "Resident Evil",
+      "filme_id": "29835",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/resident-evil/e99616a3-f45b-4144-8b08-d70f8777de3d.webp",
+      "cinema_id": "795",
+      "cinema": "IMAX Shopping Palladium",
+      "endereco": "Av. Presidente Kennedy",
+      "bairro": "Portão",
+      "horario": "20:20",
+      "data": "2026-10-29",
+      "sala": "Sala 1",
+      "tipo": "IMAX, Legendado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87550615&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=resident-evil"
+    },
+    {
+      "filme": "A Odisseia",
+      "filme_id": "30413",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-odisseia/91713f7f-195b-4d60-89c2-8c94588f7aa5.webp",
+      "cinema_id": "795",
+      "cinema": "IMAX Shopping Palladium",
+      "endereco": "Av. Presidente Kennedy",
+      "bairro": "Portão",
+      "horario": "16:50",
+      "data": "2026-10-29",
+      "sala": "Sala 1",
+      "tipo": "IMAX, Legendado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87550611&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=a-odisseia"
+    },
+    {
+      "filme": "Everest - O Outro Lado",
+      "filme_id": "33584",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/everest-o-outro-lado/5eb72cbf-40f7-4013-8810-8cfd56493f99.webp",
+      "cinema_id": "795",
+      "cinema": "IMAX Shopping Palladium",
+      "endereco": "Av. Presidente Kennedy",
+      "bairro": "Portão",
+      "horario": "14:30",
+      "data": "2026-10-29",
+      "sala": "Sala 1",
+      "tipo": "IMAX, Legendado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87550689&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=everest-o-outro-lado"
     },
     {
       "filme": "Street Fighter",
