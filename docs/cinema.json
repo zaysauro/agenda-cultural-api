@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-29T06:36:19.459364+00:00",
+  "gerado_em": "2026-10-29T13:48:39.789250+00:00",
   "data_sessoes": "2026-10-29",
   "filmes_em_cartaz": [
     {
@@ -554,36 +554,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87545105&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
     },
     {
-      "filme": "O Diário De Pilar Na Amazônia",
-      "filme_id": "29689",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-diario-de-pilar-na-amazonia/68467616-9183-42a5-9b2e-24bb597e28d1.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-10-29",
-      "sala": "Sala 5",
-      "tipo": "XD, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545013&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-diario-de-pilar-na-amazonia"
-    },
-    {
-      "filme": "100 Dias",
-      "filme_id": "30636",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/100-dias/566367c3-5e8b-4330-b1c9-57cf7faca732.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-29",
-      "sala": "Sala 1",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545102&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
       "filme": "100 Dias",
       "filme_id": "30636",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/100-dias/566367c3-5e8b-4330-b1c9-57cf7faca732.webp",
@@ -612,21 +582,6 @@
       "tipo": "Vip, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87545109&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-29",
-      "sala": "Sala 2",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545101&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "O Outro Lado Das Redes",
@@ -726,21 +681,6 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-29",
-      "sala": "Sala 7",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545010&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "18:50",
       "data": "2026-10-29",
       "sala": "Sala 7",
@@ -777,21 +717,6 @@
       "tipo": "Vip, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87545115&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-29",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87544986&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
     },
     {
       "filme": "As Dez Vantagens De Morrer Depois De Você",
@@ -1017,21 +942,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87545111&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-aventuras-de-tadeo-e-a-lampada-magica"
-    },
-    {
-      "filme": "Era Uma Vez Minha 1ª Vez",
-      "filme_id": "33452",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/era-uma-vez-minha-1-vez/888854a6-123a-47bf-a89e-f261721e75ea.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-10-29",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545000&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=era-uma-vez-minha-1-vez"
     },
     {
       "filme": "Street Fighter",
