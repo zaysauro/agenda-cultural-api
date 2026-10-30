@@ -1,0 +1,138 @@
+{
+  "updatedAt": "2026-10-30",
+  "posts": [
+    {
+      "slug": "roteiro-cultural-centro-curitiba",
+      "category": "Roteiros",
+      "title": "Um passeio cultural pelo Centro de Curitiba",
+      "excerpt": "Um roteiro a pé para descobrir arquitetura, memória e espaços culturais no coração da cidade.",
+      "cover": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1600&q=80",
+      "coverAlt": "Arquitetura urbana vista ao entardecer, imagem ilustrativa",
+      "date": "2026-10-30",
+      "readMinutes": 4,
+      "featured": true,
+      "content": [
+        {
+          "type": "p",
+          "text": "O Centro de Curitiba concentra espaços que ajudam a contar a história da cidade. Um passeio sem pressa permite combinar praças, arquitetura e programação cultural."
+        },
+        {
+          "type": "h2",
+          "text": "Comece pela Praça Tiradentes"
+        },
+        {
+          "type": "p",
+          "text": "A praça é uma referência histórica do centro urbano. Observe os edifícios do entorno e aproveite para caminhar pelas ruas próximas."
+        },
+        {
+          "type": "h2",
+          "text": "Passe pelo Paço da Liberdade"
+        },
+        {
+          "type": "p",
+          "text": "O Paço da Liberdade é um marco arquitetônico e cultural. Consulte a programação oficial antes de planejar uma visita interna."
+        },
+        {
+          "type": "h2",
+          "text": "Termine no Largo da Ordem"
+        },
+        {
+          "type": "p",
+          "text": "As ruas do setor histórico oferecem construções antigas, cafés e espaços culturais. Aos domingos, a região costuma receber a tradicional feira do Largo da Ordem; confirme a programação antes de sair."
+        },
+        {
+          "type": "p",
+          "text": "Dica: confira também a agenda do Curitiba em Foco para combinar o roteiro com uma exposição, apresentação ou sessão de cinema."
+        }
+      ]
+    },
+    {
+      "slug": "espacos-culturais-curitiba",
+      "category": "Cultura",
+      "title": "Espaços culturais de Curitiba para conhecer",
+      "excerpt": "Do cinema de rua aos grandes museus: lugares para colocar no radar e acompanhar durante o ano.",
+      "cover": "https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=1600&q=80",
+      "coverAlt": "Galeria com obras de arte, imagem ilustrativa",
+      "date": "2026-10-30",
+      "readMinutes": 3,
+      "content": [
+        {
+          "type": "p",
+          "text": "Curitiba tem uma cena cultural distribuída por museus, teatros, cinemas e centros de convivência. A programação muda ao longo do ano, mas alguns endereços merecem estar sempre na sua lista."
+        },
+        {
+          "type": "h2",
+          "text": "Museu Oscar Niemeyer"
+        },
+        {
+          "type": "p",
+          "text": "Conhecido por sua arquitetura marcante, o museu é uma referência para exposições de arte e design. Consulte o site oficial para exposições, ingressos e horários."
+        },
+        {
+          "type": "h2",
+          "text": "Cine Passeio"
+        },
+        {
+          "type": "p",
+          "text": "O cinema de rua no Centro é uma opção para quem procura programação cinematográfica além dos grandes complexos. Verifique as sessões e os horários nos canais oficiais."
+        },
+        {
+          "type": "h2",
+          "text": "Teatro Guaíra"
+        },
+        {
+          "type": "p",
+          "text": "O complexo recebe espetáculos e apresentações variadas. A agenda e a venda de ingressos dependem de cada produção."
+        },
+        {
+          "type": "p",
+          "text": "Ao montar o roteiro, considere deslocamento, acessibilidade e confirmação prévia de funcionamento."
+        }
+      ]
+    },
+    {
+      "slug": "como-aproveitar-agenda-cultural",
+      "category": "Guias",
+      "title": "Como aproveitar melhor a agenda cultural da cidade",
+      "excerpt": "Um guia prático para encontrar atividades, organizar o fim de semana e evitar surpresas.",
+      "cover": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80",
+      "coverAlt": "Público em evento cultural, imagem ilustrativa",
+      "date": "2026-10-30",
+      "readMinutes": 3,
+      "content": [
+        {
+          "type": "p",
+          "text": "Escolher um programa cultural fica mais fácil quando você organiza a busca por data, região e tipo de atividade. Pequenas verificações ajudam a evitar deslocamentos desnecessários."
+        },
+        {
+          "type": "h2",
+          "text": "Comece pela data"
+        },
+        {
+          "type": "p",
+          "text": "Use o calendário para descobrir o que está previsto no dia desejado e separar alternativas. Se a agenda estiver vazia, consulte diretamente os organizadores."
+        },
+        {
+          "type": "h2",
+          "text": "Confira os detalhes na fonte"
+        },
+        {
+          "type": "p",
+          "text": "Antes de sair, confirme local, horário, política de ingressos, classificação indicativa e possíveis alterações. Informações de eventos podem mudar."
+        },
+        {
+          "type": "h2",
+          "text": "Monte um roteiro flexível"
+        },
+        {
+          "type": "p",
+          "text": "Separe uma atividade principal e uma alternativa próxima. Para eventos ao ar livre, confira a previsão do tempo e as recomendações dos organizadores."
+        },
+        {
+          "type": "p",
+          "text": "A proposta do Curitiba em Foco é facilitar essa descoberta, reunindo guias editoriais e links para a programação da cidade."
+        }
+      ]
+    }
+  ]
+}
