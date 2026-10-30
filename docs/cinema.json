@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-30T09:14:04.694868+00:00",
+  "gerado_em": "2026-10-30T16:05:15.346733+00:00",
   "data_sessoes": "2026-10-30",
   "filmes_em_cartaz": [
     {
@@ -521,7 +521,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1670",
       "cinema": "Cineflix Park Boulevard Curitiba (CWB)",
       "endereco": "Rua Francisco Derosso",
@@ -536,7 +536,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1670",
       "cinema": "Cineflix Park Boulevard Curitiba (CWB)",
       "endereco": "Rua Francisco Derosso",
@@ -856,21 +856,6 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-10-30",
-      "sala": "Sala 1",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545117&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "100 Dias",
-      "filme_id": "30636",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/100-dias/566367c3-5e8b-4330-b1c9-57cf7faca732.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "18:00",
       "data": "2026-10-30",
       "sala": "Sala 1",
@@ -926,7 +911,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "193",
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
@@ -941,7 +926,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "193",
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
@@ -1117,21 +1102,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87545004&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
-      "filme": "O Bosque Selvagem",
-      "filme_id": "32814",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-bosque-selvagem/1d825e95-c772-46ef-96c2-6d656a63d118.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "13:00",
-      "data": "2026-10-30",
-      "sala": "Sala 2",
-      "tipo": "Vip, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545120&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-bosque-selvagem"
     },
     {
       "filme": "O Bosque Selvagem",
@@ -1342,21 +1312,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87523497&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-10-30",
-      "sala": "Sala 2",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87523488&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
     },
     {
       "filme": "As Dez Vantagens De Morrer Depois De Você",
@@ -1961,7 +1916,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "805",
       "cinema": "Cineplus Jardim das Américas",
       "endereco": "Av. Nossa Senhora de Lourdes",
@@ -2246,7 +2201,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1311",
       "cinema": "Cineplus Xaxim",
       "endereco": "R. Francisco Derosso",
@@ -2486,7 +2441,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1168",
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
@@ -2501,7 +2456,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1168",
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
@@ -2516,7 +2471,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1168",
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
@@ -2851,21 +2806,6 @@
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
       "bairro": "Tarumã",
-      "horario": "13:00",
-      "data": "2026-10-30",
-      "sala": "Sala 3",
-      "tipo": "Normal, Vip, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87540142&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "100 Dias",
-      "filme_id": "30636",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/100-dias/566367c3-5e8b-4330-b1c9-57cf7faca732.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
       "horario": "15:45",
       "data": "2026-10-30",
       "sala": "Sala 3",
@@ -2891,7 +2831,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1529",
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
@@ -2906,7 +2846,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "1529",
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
@@ -2947,21 +2887,6 @@
       "tipo": "Normal, Macro XE, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87539063&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "13:00",
-      "data": "2026-10-30",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87539007&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
     },
     {
       "filme": "Minha Melhor Amiga",
@@ -3326,7 +3251,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "447",
       "cinema": "Cinesystem Cidade - Curitiba",
       "endereco": "Av. Marechal Floriano Peixoto",
@@ -3442,21 +3367,6 @@
       "tipo": "Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87509884&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-dez-vantagens-de-morrer-depois-de-voce"
-    },
-    {
-      "filme": "Galinha Pintadinha - O Filme",
-      "filme_id": "32271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/galinha-pintadinha-o-filme/a44646c8-3579-42a8-be47-c78f72602c0d.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "13:00",
-      "data": "2026-10-30",
-      "sala": "Sala 3",
-      "tipo": "Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87509889&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=galinha-pintadinha-o-filme"
     },
     {
       "filme": "O Bosque Selvagem",
@@ -3656,7 +3566,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "448",
       "cinema": "Cinesystem Ventura - Curitiba",
       "endereco": "R. Itacolomi",
@@ -3926,7 +3836,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "155",
       "cinema": "UCI Estação",
       "endereco": "R. Sete de Setembro",
@@ -3941,7 +3851,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "155",
       "cinema": "UCI Estação",
       "endereco": "R. Sete de Setembro",
@@ -3956,7 +3866,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "155",
       "cinema": "UCI Estação",
       "endereco": "R. Sete de Setembro",
@@ -4451,7 +4361,7 @@
     {
       "filme": "Três Horas Para Viver",
       "filme_id": "31308",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/acf2186a-b117-446d-a045-6ea104ede736.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/tres-horas-para-viver/050bfb33-6ea0-4841-915a-0397bc7a2585.webp",
       "cinema_id": "767",
       "cinema": "UCI Palladium",
       "endereco": "Av. Presidente Kennedy",
