@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-31T00:28:18.817741+00:00",
-  "count": 1,
+  "updatedAt": "2026-10-31T15:16:46.144390+00:00",
+  "count": 0,
   "sources": [
     {
       "title": "Artes Visuais",
@@ -239,42 +239,6 @@
       "url": "http://www.fundacaoculturaldecuritiba.com.br/contato/"
     }
   ],
-  "items": [
-    {
-      "title": "Eventos",
-      "summary": "Ir para o conteúdo Ir para a navegação Ir para o rodapé Portal do Governo Brasileiro Meu portal personalizado Eu sou Futuro aluno Estudante Egresso Servidor Pesquisador Cidade Apucarana Campo Mourão Cornélio Procópio Curitiba Dois Vizinhos Francisco Beltrão Guarapuava Londrina Medianeira Pato Branco Ponta Grossa Santa Helena Toledo PT EN ES FR Entrar Ensino Estude na UTFPR Graduação Especialização Programas de Pós-Graduação Educação a distância Outros cursos Pesquisa Pesquisa na UTFPR Iniciação ",
-      "category": "Cidade",
-      "categorySlug": "cidade",
-      "startDate": "",
-      "startTime": "",
-      "venue": "",
-      "group": "universidade",
-      "url": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos#view",
-      "imageUrl": "",
-      "sourceUrl": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos",
-      "publicSpace": false,
-      "outdoor": false,
-      "free": false,
-      "organizer": "UTFPR"
-    }
-  ],
-  "events": [
-    {
-      "title": "Eventos",
-      "summary": "Ir para o conteúdo Ir para a navegação Ir para o rodapé Portal do Governo Brasileiro Meu portal personalizado Eu sou Futuro aluno Estudante Egresso Servidor Pesquisador Cidade Apucarana Campo Mourão Cornélio Procópio Curitiba Dois Vizinhos Francisco Beltrão Guarapuava Londrina Medianeira Pato Branco Ponta Grossa Santa Helena Toledo PT EN ES FR Entrar Ensino Estude na UTFPR Graduação Especialização Programas de Pós-Graduação Educação a distância Outros cursos Pesquisa Pesquisa na UTFPR Iniciação ",
-      "category": "Cidade",
-      "categorySlug": "cidade",
-      "startDate": "",
-      "startTime": "",
-      "venue": "",
-      "group": "universidade",
-      "url": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos#view",
-      "imageUrl": "",
-      "sourceUrl": "https://www.utfpr.edu.br/campus/curitiba/agenda-eventos",
-      "publicSpace": false,
-      "outdoor": false,
-      "free": false,
-      "organizer": "UTFPR"
-    }
-  ]
+  "items": [],
+  "events": []
 }
