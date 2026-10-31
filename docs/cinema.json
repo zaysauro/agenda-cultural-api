@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-10-31T00:15:33.623329+00:00",
+  "gerado_em": "2026-10-31T06:00:22.207103+00:00",
   "data_sessoes": "2026-10-31",
   "filmes_em_cartaz": [
     {
@@ -60,6 +60,32 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-odisseia/91713f7f-195b-4d60-89c2-8c94588f7aa5.webp",
       "url": "https://www.ingresso.com/filme/a-odisseia?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=a-odisseia"
+    },
+    {
+      "id_ingresso": "33331",
+      "titulo": "A Terra Do Meu Pai",
+      "titulo_original": "Fatherland",
+      "sinopse": "A Terra do Meu Pai acompanha a complexa relação entre o vencedor do Prêmio Nobel de Literatura Thomas Mann (Hanns Zischler) e sua filha Erika (Sandra Hüller), uma multifacetada atriz, escritora e pilota de rali. No verão de 1949, durante o ápice da Guerra Fria, pai e filha embarcam em uma densa e emocionante road trip a bordo de um Buick preto pelas ruínas da Alemanha, partindo de Frankfurt sob domínio estadunidense até a Weimar sob controle soviético. De volta ao lar após 16 anos de exílio nos EUA, o icônico autor é forçado a confrontar não apenas os destroços de uma nação dividida, mas também as feridas irremediáveis de sua própria família.",
+      "duracao": "82",
+      "classificacao": "12 anos",
+      "generos": [
+        "Drama"
+      ],
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/a-terra-do-meu-pai/8b720f07-03ac-42ba-9091-c4cf1300e892.webp",
+      "url": "https://www.ingresso.com/filme/a-terra-do-meu-pai?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=a-terra-do-meu-pai"
+    },
+    {
+      "id_ingresso": "32109",
+      "titulo": "As Dez Vantagens De Morrer Depois De Você",
+      "titulo_original": "As Dez Vantagens De Morrer Depois De Você",
+      "sinopse": "Arrasada após a morte trágica de sua melhor amiga, Gabriela descobre que ela deixou um presente de despedida inesperado: dez cartas com desafios para ajudá-la a superar o luto.",
+      "duracao": "106",
+      "classificacao": "14 anos",
+      "generos": [
+        "Drama"
+      ],
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-dez-vantagens-de-morrer-depois-de-voce/6bd9d52e-8cd5-4e0b-baaf-20381fc41462.webp",
+      "url": "https://www.ingresso.com/filme/as-dez-vantagens-de-morrer-depois-de-voce?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=as-dez-vantagens-de-morrer-depois-de-voce"
     }
   ],
   "cinemas": [
