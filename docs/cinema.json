@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-11-01T02:59:32.536783+00:00",
+  "gerado_em": "2026-11-01T10:09:33.421983+00:00",
   "data_sessoes": "2026-11-01",
   "filmes_em_cartaz": [
     {
@@ -2931,36 +2931,6 @@
       "tipo": "Normal, Vip, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87501910&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=razao-e-sensibilidade"
-    },
-    {
-      "filme": "Bem-vindos À La Comédie-Française",
-      "filme_id": "34271",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/bem-vindos-a-la-comedie-francaise/2dd85f72-1c61-4473-87d6-1cc33c5a061b.webp",
-      "cinema_id": "1168",
-      "cinema": "Cinépolis Batel",
-      "endereco": "AV DO BATEL",
-      "bairro": "Batel",
-      "horario": "17:20",
-      "data": "2026-11-01",
-      "sala": "Sala 7 - VIP Sala de arte",
-      "tipo": "Normal, Vip, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87504029&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=bem-vindos-a-la-comedie-francaise"
-    },
-    {
-      "filme": "De Gaulle: A França Livre - Parte 1",
-      "filme_id": "34291",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/de-gaulle-a-franca-livre-parte-1/c8b630b7-b668-4069-b017-2c53cab8d3a4.webp",
-      "cinema_id": "1168",
-      "cinema": "Cinépolis Batel",
-      "endereco": "AV DO BATEL",
-      "bairro": "Batel",
-      "horario": "19:20",
-      "data": "2026-11-01",
-      "sala": "Sala 7 - VIP Sala de arte",
-      "tipo": "Normal, Vip, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87503948&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=de-gaulle-a-franca-livre-parte-1"
     },
     {
       "filme": "Street Fighter",
