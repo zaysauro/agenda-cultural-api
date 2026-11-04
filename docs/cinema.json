@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-11-04T06:45:20.184771+00:00",
+  "gerado_em": "2026-11-04T14:56:26.300342+00:00",
   "data_sessoes": "2026-11-04",
   "filmes_em_cartaz": [
     {
@@ -802,21 +802,6 @@
       "tipo": "Vip, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87545099&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-11-04",
-      "sala": "Sala 2",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87545046&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "O Outro Lado Das Redes",
