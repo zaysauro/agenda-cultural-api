@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-11-05T01:20:12.533470+00:00",
+  "gerado_em": "2026-11-05T08:00:21.320957+00:00",
   "data_sessoes": "2026-11-05",
   "filmes_em_cartaz": [
     {
@@ -2580,21 +2580,6 @@
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
       "bairro": "Batel",
-      "horario": "14:00",
-      "data": "2026-11-05",
-      "sala": "Sala 4 - VIP",
-      "tipo": "Normal, Vip, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87560190&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
-    },
-    {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "1168",
-      "cinema": "Cinépolis Batel",
-      "endereco": "AV DO BATEL",
-      "bairro": "Batel",
       "horario": "17:10",
       "data": "2026-11-05",
       "sala": "Sala 4 - VIP",
@@ -3726,36 +3711,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87571193&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
-    },
-    {
-      "filme": "Os Farofeiros 3",
-      "filme_id": "30202",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/os-farofeiros-3/f94f0c48-b544-42ce-8830-e0bff88acd85.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "13:00",
-      "data": "2026-11-05",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87571535&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-farofeiros-3"
-    },
-    {
-      "filme": "Os Farofeiros 3",
-      "filme_id": "30202",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/os-farofeiros-3/f94f0c48-b544-42ce-8830-e0bff88acd85.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "15:15",
-      "data": "2026-11-05",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87571306&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-farofeiros-3"
     },
     {
       "filme": "Os Farofeiros 3",
