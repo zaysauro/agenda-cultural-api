@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-11-05T08:00:21.320957+00:00",
+  "gerado_em": "2026-11-05T16:35:42.048531+00:00",
   "data_sessoes": "2026-11-05",
   "filmes_em_cartaz": [
     {
@@ -84,21 +84,6 @@
       ],
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/assalto-a-brasileira/11e23d4a-bab8-4e4c-b7f5-b8f3807525bd.webp",
       "url": "https://www.ingresso.com/filme/assalto-a-brasileira?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=assalto-a-brasileira"
-    },
-    {
-      "id_ingresso": "31533",
-      "titulo": "Cara-De-Barro",
-      "titulo_original": "Clayface",
-      "sinopse": "Matt Hagen é um jovem de Gotham cuja rápida ascensão como astro de Hollywood é interrompida quando um criminoso o deixa gravemente desfigurado. Abandonado e desesperado, ele procura um tratamento experimental capaz de restaurar sua aparência. O procedimento funciona, mas provoca consequências inesperadas que afetam sua percepção da realidade e o conduzem por um caminho destrutivo de vingança.",
-      "duracao": "108",
-      "classificacao": "18 anos",
-      "generos": [
-        "Ação",
-        "Aventura",
-        "Terror"
-      ],
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cara-de-barro/b7735a9d-3a90-4db1-bb10-a4eb65d213e9.webp",
-      "url": "https://www.ingresso.com/filme/cara-de-barro?city=curitiba&partnership=ingresso.com&ing_source=api&ing_medium=link-filme&ing_campaign=ingresso.com&ing_content=cara-de-barro"
     }
   ],
   "cinemas": [
@@ -250,7 +235,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1612",
       "cinema": "Cine Guarani",
       "endereco": "AV. REPUBLICA ARGENTINA",
@@ -355,7 +340,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1518",
       "cinema": "Cine Passeio",
       "endereco": "R. Riachuelo",
@@ -535,7 +520,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1670",
       "cinema": "Cineflix Park Boulevard Curitiba (CWB)",
       "endereco": "Rua Francisco Derosso",
@@ -715,7 +700,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1677",
       "cinema": "Cineflix Shopping Curitiba (CWC) ",
       "endereco": "Rua Brigadeiro Franco",
@@ -726,21 +711,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87586286&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=godzilla-minus-zero"
-    },
-    {
-      "filme": "O Diário De Pilar Na Amazônia",
-      "filme_id": "29689",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-diario-de-pilar-na-amazonia/68467616-9183-42a5-9b2e-24bb597e28d1.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-11-05",
-      "sala": "Sala 4",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611934&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-diario-de-pilar-na-amazonia"
     },
     {
       "filme": "Os Farofeiros 3",
@@ -885,42 +855,12 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-11-05",
-      "sala": "Sala 5",
-      "tipo": "XD, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611927&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "100 Dias",
-      "filme_id": "30636",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/100-dias/566367c3-5e8b-4330-b1c9-57cf7faca732.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "19:00",
       "data": "2026-11-05",
       "sala": "Sala 8",
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87611954&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-11-05",
-      "sala": "Sala 1",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611956&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Três Horas Para Viver",
@@ -966,66 +906,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87611953&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-11-05",
-      "sala": "Sala 2",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611935&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-11-05",
-      "sala": "Sala 8",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611943&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:30",
-      "data": "2026-11-05",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611951&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
-    },
-    {
-      "filme": "As Dez Vantagens De Morrer Depois De Você",
-      "filme_id": "32109",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-dez-vantagens-de-morrer-depois-de-voce/6bd9d52e-8cd5-4e0b-baaf-20381fc41462.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-11-05",
-      "sala": "Sala 7",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611955&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-dez-vantagens-de-morrer-depois-de-voce"
     },
     {
       "filme": "As Dez Vantagens De Morrer Depois De Você",
@@ -1165,7 +1045,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "193",
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
@@ -1180,7 +1060,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "193",
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
@@ -1195,7 +1075,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "193",
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
@@ -1206,36 +1086,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87611961&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=godzilla-minus-zero"
-    },
-    {
-      "filme": "Era Uma Vez Minha 1ª Vez",
-      "filme_id": "33452",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/era-uma-vez-minha-1-vez/888854a6-123a-47bf-a89e-f261721e75ea.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-11-05",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611928&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=era-uma-vez-minha-1-vez"
-    },
-    {
-      "filme": "O Diário De Pilar Na Amazônia",
-      "filme_id": "29689",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-diario-de-pilar-na-amazonia/68467616-9183-42a5-9b2e-24bb597e28d1.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-11-05",
-      "sala": "Sala 2",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87582874&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-diario-de-pilar-na-amazonia"
     },
     {
       "filme": "Os Farofeiros 3",
@@ -1335,21 +1185,6 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "13:15",
-      "data": "2026-11-05",
-      "sala": "Sala 5",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87582881&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
-    },
-    {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "15:55",
       "data": "2026-11-05",
       "sala": "Sala 5",
@@ -1388,36 +1223,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87582898&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
     },
     {
-      "filme": "100 Dias",
-      "filme_id": "30636",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/100-dias/566367c3-5e8b-4330-b1c9-57cf7faca732.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-11-05",
-      "sala": "Sala 8",
-      "tipo": "XD, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87603032&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:30",
-      "data": "2026-11-05",
-      "sala": "Sala 1",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87582901&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
-    },
-    {
       "filme": "Cara-De-Barro",
       "filme_id": "31533",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cara-de-barro/b7735a9d-3a90-4db1-bb10-a4eb65d213e9.webp",
@@ -1431,36 +1236,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87582895&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cara-de-barro"
-    },
-    {
-      "filme": "Minha Melhor Amiga",
-      "filme_id": "31942",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/minha-melhor-amiga/744ead14-7a69-4a43-8812-7792e5d9c9c9.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-11-05",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87582875&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=minha-melhor-amiga"
-    },
-    {
-      "filme": "Um Tio Quase Perfeito 3",
-      "filme_id": "32104",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/um-tio-quase-perfeito-3/426a9776-15ee-43c3-91dc-3e9e16b410a1.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-11-05",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87582880&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=um-tio-quase-perfeito-3"
     },
     {
       "filme": "As Dez Vantagens De Morrer Depois De Você",
@@ -1675,7 +1450,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "285",
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
@@ -1690,7 +1465,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "285",
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
@@ -1705,7 +1480,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "285",
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
@@ -2245,7 +2020,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "805",
       "cinema": "Cineplus Jardim das Américas",
       "endereco": "Av. Nossa Senhora de Lourdes",
@@ -2260,7 +2035,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "805",
       "cinema": "Cineplus Jardim das Américas",
       "endereco": "Av. Nossa Senhora de Lourdes",
@@ -2485,7 +2260,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1311",
       "cinema": "Cineplus Xaxim",
       "endereco": "R. Francisco Derosso",
@@ -2500,7 +2275,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1311",
       "cinema": "Cineplus Xaxim",
       "endereco": "R. Francisco Derosso",
@@ -2515,7 +2290,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1311",
       "cinema": "Cineplus Xaxim",
       "endereco": "R. Francisco Derosso",
@@ -2815,7 +2590,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1168",
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
@@ -2830,7 +2605,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1168",
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
@@ -2845,7 +2620,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1168",
       "cinema": "Cinépolis Batel",
       "endereco": "AV DO BATEL",
@@ -2886,21 +2661,6 @@
       "tipo": "Normal, Vip, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87504343&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-sentido-da-vida"
-    },
-    {
-      "filme": "Toy Story 5",
-      "filme_id": "28256",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/toy-story-5/2a9f7d1e-400c-4caa-b989-c1fb513dd416.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "09:00",
-      "data": "2026-11-05",
-      "sala": "Sala 6",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87554263&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=toy-story-5"
     },
     {
       "filme": "Street Fighter",
@@ -3000,42 +2760,12 @@
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
       "bairro": "Tarumã",
-      "horario": "13:15",
-      "data": "2026-11-05",
-      "sala": "Sala 5",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87564184&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
-    },
-    {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
       "horario": "15:50",
       "data": "2026-11-05",
       "sala": "Sala 5",
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87564183&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
-    },
-    {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "12:45",
-      "data": "2026-11-05",
-      "sala": "Sala 8",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87564078&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
     },
     {
       "filme": "O Gatola Da Cartola",
@@ -3180,21 +2910,6 @@
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
       "bairro": "Tarumã",
-      "horario": "13:15",
-      "data": "2026-11-05",
-      "sala": "Sala 3",
-      "tipo": "Normal, Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87564072&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=feito-pipa"
-    },
-    {
-      "filme": "Feito Pipa",
-      "filme_id": "32251",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/feito-pipa/e4ee7d7f-10a5-4e58-b48e-bbb772f2787d.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
       "horario": "15:45",
       "data": "2026-11-05",
       "sala": "Sala 3",
@@ -3310,22 +3025,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "13:00",
-      "data": "2026-11-05",
-      "sala": "Sala 1",
-      "tipo": "Normal, Macro XE, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87341906&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=godzilla-minus-zero"
-    },
-    {
-      "filme": "Godzilla Minus Zero",
-      "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1529",
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
@@ -3340,7 +3040,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1529",
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
@@ -3355,7 +3055,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "1529",
       "cinema": "Cinépolis Jockey Plaza Curitiba",
       "endereco": "Av. Victor Ferreira do Amaral",
@@ -3381,21 +3081,6 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87572677&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=street-fighter"
-    },
-    {
-      "filme": "Os Farofeiros 3",
-      "filme_id": "30202",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/os-farofeiros-3/f94f0c48-b544-42ce-8830-e0bff88acd85.webp",
-      "cinema_id": "447",
-      "cinema": "Cinesystem Cidade - Curitiba",
-      "endereco": "Av. Marechal Floriano Peixoto",
-      "bairro": "Vila Hauer",
-      "horario": "13:00",
-      "data": "2026-11-05",
-      "sala": "Sala 1",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87572667&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-farofeiros-3"
     },
     {
       "filme": "Os Farofeiros 3",
@@ -3670,7 +3355,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "447",
       "cinema": "Cinesystem Cidade - Curitiba",
       "endereco": "Av. Marechal Floriano Peixoto",
@@ -3970,7 +3655,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "795",
       "cinema": "IMAX Shopping Palladium",
       "endereco": "Av. Presidente Kennedy",
@@ -3985,7 +3670,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "795",
       "cinema": "IMAX Shopping Palladium",
       "endereco": "Av. Presidente Kennedy",
@@ -4000,7 +3685,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "795",
       "cinema": "IMAX Shopping Palladium",
       "endereco": "Av. Presidente Kennedy",
@@ -4015,7 +3700,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "795",
       "cinema": "IMAX Shopping Palladium",
       "endereco": "Av. Presidente Kennedy",
@@ -4555,7 +4240,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "155",
       "cinema": "UCI Estação",
       "endereco": "R. Sete de Setembro",
@@ -4570,7 +4255,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "155",
       "cinema": "UCI Estação",
       "endereco": "R. Sete de Setembro",
@@ -4585,7 +4270,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "155",
       "cinema": "UCI Estação",
       "endereco": "R. Sete de Setembro",
@@ -5080,7 +4765,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "767",
       "cinema": "UCI Palladium",
       "endereco": "Av. Presidente Kennedy",
@@ -5095,7 +4780,7 @@
     {
       "filme": "Godzilla Minus Zero",
       "filme_id": "33172",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/319dbfd8-133f-48d3-9122-18a8c042faf8.webp",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/godzilla-minus-zero/b5b95493-c6e9-4c86-ada4-351e4b39f68a.webp",
       "cinema_id": "767",
       "cinema": "UCI Palladium",
       "endereco": "Av. Presidente Kennedy",
