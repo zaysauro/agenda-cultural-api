@@ -1,6 +1,43 @@
 {
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-06",
   "posts": [
+    {
+      "slug": "orquestra-harmonias-curitiba-opera-de-arame-novembro-2026",
+      "category": "Show & Música",
+      "title": "Orquestra Harmonias de Curitiba & Convidados Especiais",
+      "excerpt": "Turnê Primavera Cultural na Ópera de Arame em Curitiba. Confira datas, horários e ingressos.",
+      "cover": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1600&q=80",
+      "coverAlt": "Orquestra Harmonias de Curitiba & Convidados Especiais",
+      "date": "2026-11-06",
+      "readMinutes": 5,
+      "featured": false,
+      "content": [
+        {
+          "type": "h2",
+          "text": "Orquestra Harmonias de Curitiba & Convidados Especiais"
+        },
+        {
+          "type": "p",
+          "text": "Uma celebração sinfônica emocionante no icônico palco sobre o lago da Ópera de Arame. O concerto une clássicos da MPB a arranjos orquestrais inéditos, homenageando compositores paranaenses e grandes nomes da música brasileira em uma experiência audiovisual imersiva."
+        },
+        {
+          "type": "h2",
+          "text": "Ficha Técnica do Evento"
+        },
+        {
+          "type": "h2",
+          "text": "Como Garantir seu Ingresso CTA"
+        },
+        {
+          "type": "p",
+          "text": "Venda Online: Adquira seus ingressos oficiais através da plataforma [Disk Ingressos e Bilheteria Oficial da Ópera de Arame](https://www.diskingressos.com.br/evento/orquestra-harmonias-curitiba)."
+        },
+        {
+          "type": "p",
+          "text": "👉 [Clique aqui para mais informações](https://www.diskingressos.com.br/evento/orquestra-harmonias-curitiba) e não deixe de incluir esse evento no seu roteiro em Curitiba!"
+        }
+      ]
+    },
     {
       "slug": "roteiro-cultural-centro-curitiba",
       "category": "Roteiros",
