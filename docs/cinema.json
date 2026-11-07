@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-11-07T08:58:41.649696+00:00",
+  "gerado_em": "2026-11-07T15:24:43.175354+00:00",
   "data_sessoes": "2026-11-07",
   "filmes_em_cartaz": [
     {
@@ -315,21 +315,6 @@
       "cinema": "Cine Passeio",
       "endereco": "R. Riachuelo",
       "bairro": "Centro",
-      "horario": "11:00",
-      "data": "2026-11-07",
-      "sala": "Sala 1",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87599797&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cavalo-selvagem-nove"
-    },
-    {
-      "filme": "Cavalo Selvagem Nove",
-      "filme_id": "32597",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/cavalo-selvagem-nove/0028ed8d-72cf-472f-a740-1c5037f245f2.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
       "horario": "17:00",
       "data": "2026-11-07",
       "sala": "Sala 1",
@@ -366,21 +351,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87394671&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=godzilla-minus-zero"
-    },
-    {
-      "filme": "O Beijo Elétrico",
-      "filme_id": "34270",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-beijo-eletrico/f1d650f0-8190-4ee1-9ec1-b6924ce03caf.webp",
-      "cinema_id": "1518",
-      "cinema": "Cine Passeio",
-      "endereco": "R. Riachuelo",
-      "bairro": "Centro",
-      "horario": "10:30",
-      "data": "2026-11-07",
-      "sala": "Sala 2",
-      "tipo": "Normal, Legendado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87412335&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-beijo-eletrico"
     },
     {
       "filme": "A Ilustre Desconhecida",
@@ -750,21 +720,6 @@
       "cinema": "Cinemark Barigui",
       "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
       "bairro": "Mossungue",
-      "horario": "11:55",
-      "data": "2026-11-07",
-      "sala": "Sala 3",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611995&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-farofeiros-3"
-    },
-    {
-      "filme": "Os Farofeiros 3",
-      "filme_id": "30202",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/os-farofeiros-3/36c1b0fa-425a-456b-803f-c43906152ffe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
       "horario": "14:20",
       "data": "2026-11-07",
       "sala": "Sala 3",
@@ -816,21 +771,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87612058&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-farofeiros-3"
-    },
-    {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:00",
-      "data": "2026-11-07",
-      "sala": "Sala 4",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611996&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
     },
     {
       "filme": "O Gatola Da Cartola",
@@ -906,21 +846,6 @@
       "tipo": "Normal, Nacional",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87612012&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "Se Eu Fosse Você 3",
-      "filme_id": "30640",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/se-eu-fosse-voce-3/7eaabb7f-36a2-4bb7-88a6-f775ac114efe.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:20",
-      "data": "2026-11-07",
-      "sala": "Sala 1",
-      "tipo": "Vip, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87612003&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=se-eu-fosse-voce-3"
     },
     {
       "filme": "Três Horas Para Viver",
@@ -1043,21 +968,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87612054&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
     },
     {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:20",
-      "data": "2026-11-07",
-      "sala": "Sala 6",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87611997&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
-    },
-    {
       "filme": "O Bosque Selvagem",
       "filme_id": "32814",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-bosque-selvagem/2d99712c-5378-4390-a2ad-942d17c03719.webp",
@@ -1101,21 +1011,6 @@
       "tipo": "Vip, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87612027&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-bosque-selvagem"
-    },
-    {
-      "filme": "O Bosque Selvagem",
-      "filme_id": "32814",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-bosque-selvagem/2d99712c-5378-4390-a2ad-942d17c03719.webp",
-      "cinema_id": "193",
-      "cinema": "Cinemark Barigui",
-      "endereco": "R. Prof. Pedro Viriato Parigot de Souza",
-      "bairro": "Mossungue",
-      "horario": "12:10",
-      "data": "2026-11-07",
-      "sala": "Sala 5",
-      "tipo": "XD, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87612026&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-bosque-selvagem"
     },
     {
       "filme": "O Bosque Selvagem",
@@ -1245,21 +1140,6 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-11-07",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87582929&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=os-farofeiros-3"
-    },
-    {
-      "filme": "Os Farofeiros 3",
-      "filme_id": "30202",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/os-farofeiros-3/36c1b0fa-425a-456b-803f-c43906152ffe.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "14:25",
       "data": "2026-11-07",
       "sala": "Sala 6",
@@ -1320,36 +1200,6 @@
       "cinema": "Cinemark Mueller",
       "endereco": "Av. Candido de Abreu",
       "bairro": "Centro",
-      "horario": "12:10",
-      "data": "2026-11-07",
-      "sala": "Sala 3",
-      "tipo": "3D, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87602278&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
-    },
-    {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "17:30",
-      "data": "2026-11-07",
-      "sala": "Sala 3",
-      "tipo": "3D, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87601840&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
-    },
-    {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
       "horario": "14:50",
       "data": "2026-11-07",
       "sala": "Sala 3",
@@ -1371,6 +1221,21 @@
       "tipo": "Normal, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87582924&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
+    },
+    {
+      "filme": "O Gatola Da Cartola",
+      "filme_id": "30406",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
+      "cinema_id": "285",
+      "cinema": "Cinemark Mueller",
+      "endereco": "Av. Candido de Abreu",
+      "bairro": "Centro",
+      "horario": "17:30",
+      "data": "2026-11-07",
+      "sala": "Sala 3",
+      "tipo": "3D, Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87601840&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
     },
     {
       "filme": "O Gatola Da Cartola",
@@ -1521,21 +1386,6 @@
       "tipo": "Normal, Legendado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87599674&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=cavalo-selvagem-nove"
-    },
-    {
-      "filme": "Verity",
-      "filme_id": "32603",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/verity/83e6e325-9e47-49f4-8834-ab9340548ce8.webp",
-      "cinema_id": "285",
-      "cinema": "Cinemark Mueller",
-      "endereco": "Av. Candido de Abreu",
-      "bairro": "Centro",
-      "horario": "12:00",
-      "data": "2026-11-07",
-      "sala": "Sala 8",
-      "tipo": "XD, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87582922&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=verity"
     },
     {
       "filme": "O Bosque Selvagem",
@@ -2993,21 +2843,6 @@
       "url_compra": "https://checkout.ingresso.com/?sessionId=87564133&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
     },
     {
-      "filme": "O Gatola Da Cartola",
-      "filme_id": "30406",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "12:00",
-      "data": "2026-11-07",
-      "sala": "Sala 8",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87564196&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
-    },
-    {
       "filme": "100 Dias",
       "filme_id": "30636",
       "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/100-dias/566367c3-5e8b-4330-b1c9-57cf7faca732.webp",
@@ -3021,21 +2856,6 @@
       "tipo": "Normal, Vip, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87563837&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=100-dias"
-    },
-    {
-      "filme": "As Dez Vantagens De Morrer Depois De Você",
-      "filme_id": "32109",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-dez-vantagens-de-morrer-depois-de-voce/6bd9d52e-8cd5-4e0b-baaf-20381fc41462.webp",
-      "cinema_id": "1529",
-      "cinema": "Cinépolis Jockey Plaza Curitiba",
-      "endereco": "Av. Victor Ferreira do Amaral",
-      "bairro": "Tarumã",
-      "horario": "12:15",
-      "data": "2026-11-07",
-      "sala": "Sala 6",
-      "tipo": "Normal, Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87563878&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-dez-vantagens-de-morrer-depois-de-voce"
     },
     {
       "filme": "Feito Pipa",
