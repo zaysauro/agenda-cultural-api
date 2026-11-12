@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-11-12T02:35:25.673775+00:00",
+  "gerado_em": "2026-11-12T10:26:54.160089+00:00",
   "data_sessoes": "2026-11-12",
   "filmes_em_cartaz": [
     {
@@ -1788,6 +1788,21 @@
       "cinema": "Cineplus Jardim das Américas",
       "endereco": "Av. Nossa Senhora de Lourdes",
       "bairro": "Jardim das Américas",
+      "horario": "14:05",
+      "data": "2026-11-12",
+      "sala": "Sala 03",
+      "tipo": "Dublado",
+      "idioma": "",
+      "url_compra": "https://checkout.ingresso.com/?sessionId=87689611&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=o-gatola-da-cartola"
+    },
+    {
+      "filme": "O Gatola Da Cartola",
+      "filme_id": "30406",
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/o-gatola-da-cartola/a29a486b-7fef-4c08-96d8-986f3387838a.webp",
+      "cinema_id": "805",
+      "cinema": "Cineplus Jardim das Américas",
+      "endereco": "Av. Nossa Senhora de Lourdes",
+      "bairro": "Jardim das Américas",
       "horario": "16:40",
       "data": "2026-11-12",
       "sala": "Sala 03",
@@ -1884,21 +1899,6 @@
       "tipo": "Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87669636&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=ebenezer-e-os-fantasmas-do-natal"
-    },
-    {
-      "filme": "As Dez Vantagens De Morrer Depois De Você",
-      "filme_id": "32109",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/as-dez-vantagens-de-morrer-depois-de-voce/6bd9d52e-8cd5-4e0b-baaf-20381fc41462.webp",
-      "cinema_id": "805",
-      "cinema": "Cineplus Jardim das Américas",
-      "endereco": "Av. Nossa Senhora de Lourdes",
-      "bairro": "Jardim das Américas",
-      "horario": "14:40",
-      "data": "2026-11-12",
-      "sala": "Sala 04",
-      "tipo": "Nacional",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87669694&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=as-dez-vantagens-de-morrer-depois-de-voce"
     },
     {
       "filme": "Feito Pipa",
