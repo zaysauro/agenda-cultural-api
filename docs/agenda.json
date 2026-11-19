@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T02:20:03.128759+00:00",
+  "updatedAt": "2026-11-19T18:01:29.202304+00:00",
   "count": 83,
   "sources": [
     {
@@ -240,6 +240,23 @@
     }
   ],
   "items": [
+    {
+      "title": "Programação",
+      "summary": "Programação",
+      "category": "Festival",
+      "categorySlug": "festival",
+      "startDate": "",
+      "startTime": "",
+      "venue": "",
+      "group": "primavera",
+      "url": "https://guia.curitiba.pr.gov.br/primavera",
+      "imageUrl": "",
+      "sourceUrl": "https://primavera.curitiba.pr.gov.br/",
+      "publicSpace": true,
+      "outdoor": true,
+      "free": false,
+      "organizer": "Festival Primavera Curitiba"
+    },
     {
       "title": "Eventos",
       "summary": "Ir para o conteúdo Ir para a navegação Ir para o rodapé Portal do Governo Brasileiro Meu portal personalizado Eu sou Futuro aluno Estudante Egresso Servidor Pesquisador Cidade Apucarana Campo Mourão Cornélio Procópio Curitiba Dois Vizinhos Francisco Beltrão Guarapuava Londrina Medianeira Pato Branco Ponta Grossa Santa Helena Toledo PT EN ES FR Entrar Ensino Estude na UTFPR Graduação Especialização Programas de Pós-Graduação Educação a distância Outros cursos Pesquisa Pesquisa na UTFPR Iniciação ",
@@ -1253,23 +1270,6 @@
       "venue": "",
       "group": "universidade",
       "url": "https://ufpr.br/agtic/",
-      "imageUrl": "",
-      "sourceUrl": "https://ufpr.br/agenda-eventos/",
-      "publicSpace": false,
-      "outdoor": false,
-      "free": false,
-      "organizer": "UFPR"
-    },
-    {
-      "title": "Diretoria Disciplinar",
-      "summary": "Diretoria Disciplinar",
-      "category": "Cidade",
-      "categorySlug": "cidade",
-      "startDate": "",
-      "startTime": "",
-      "venue": "",
-      "group": "universidade",
-      "url": "http://www.diretoriadisciplinar.ufpr.br/portal/",
       "imageUrl": "",
       "sourceUrl": "https://ufpr.br/agenda-eventos/",
       "publicSpace": false,
@@ -1654,6 +1654,23 @@
   ],
   "events": [
     {
+      "title": "Programação",
+      "summary": "Programação",
+      "category": "Festival",
+      "categorySlug": "festival",
+      "startDate": "",
+      "startTime": "",
+      "venue": "",
+      "group": "primavera",
+      "url": "https://guia.curitiba.pr.gov.br/primavera",
+      "imageUrl": "",
+      "sourceUrl": "https://primavera.curitiba.pr.gov.br/",
+      "publicSpace": true,
+      "outdoor": true,
+      "free": false,
+      "organizer": "Festival Primavera Curitiba"
+    },
+    {
       "title": "Eventos",
       "summary": "Ir para o conteúdo Ir para a navegação Ir para o rodapé Portal do Governo Brasileiro Meu portal personalizado Eu sou Futuro aluno Estudante Egresso Servidor Pesquisador Cidade Apucarana Campo Mourão Cornélio Procópio Curitiba Dois Vizinhos Francisco Beltrão Guarapuava Londrina Medianeira Pato Branco Ponta Grossa Santa Helena Toledo PT EN ES FR Entrar Ensino Estude na UTFPR Graduação Especialização Programas de Pós-Graduação Educação a distância Outros cursos Pesquisa Pesquisa na UTFPR Iniciação ",
       "category": "Cidade",
@@ -2666,23 +2683,6 @@
       "venue": "",
       "group": "universidade",
       "url": "https://ufpr.br/agtic/",
-      "imageUrl": "",
-      "sourceUrl": "https://ufpr.br/agenda-eventos/",
-      "publicSpace": false,
-      "outdoor": false,
-      "free": false,
-      "organizer": "UFPR"
-    },
-    {
-      "title": "Diretoria Disciplinar",
-      "summary": "Diretoria Disciplinar",
-      "category": "Cidade",
-      "categorySlug": "cidade",
-      "startDate": "",
-      "startTime": "",
-      "venue": "",
-      "group": "universidade",
-      "url": "http://www.diretoriadisciplinar.ufpr.br/portal/",
       "imageUrl": "",
       "sourceUrl": "https://ufpr.br/agenda-eventos/",
       "publicSpace": false,
