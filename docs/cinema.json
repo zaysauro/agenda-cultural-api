@@ -2,7 +2,7 @@
   "source": "ingresso.com",
   "cidade": "Curitiba",
   "cidade_id": "18",
-  "gerado_em": "2026-11-27T00:09:04.842482+00:00",
+  "gerado_em": "2026-11-27T08:51:36.138088+00:00",
   "data_sessoes": "2026-11-27",
   "filmes_em_cartaz": [
     {
@@ -3610,51 +3610,6 @@
       "tipo": "CINEPIC, Dolby Atmos, Dublado",
       "idioma": "",
       "url_compra": "https://checkout.ingresso.com/?sessionId=87760578&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=jogos-vorazes-amanhecer-na-colheita"
-    },
-    {
-      "filme": "Jogos Vorazes: Amanhecer Na Colheita",
-      "filme_id": "29919",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/jogos-vorazes-amanhecer-na-colheita/e2aa2ec6-035a-41bf-834a-389a9dd01f4b.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "14:00",
-      "data": "2026-11-27",
-      "sala": "Sala 5",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87760776&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=jogos-vorazes-amanhecer-na-colheita"
-    },
-    {
-      "filme": "Jogos Vorazes: Amanhecer Na Colheita",
-      "filme_id": "29919",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/jogos-vorazes-amanhecer-na-colheita/e2aa2ec6-035a-41bf-834a-389a9dd01f4b.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "17:15",
-      "data": "2026-11-27",
-      "sala": "Sala 5",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87760609&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=jogos-vorazes-amanhecer-na-colheita"
-    },
-    {
-      "filme": "Jogos Vorazes: Amanhecer Na Colheita",
-      "filme_id": "29919",
-      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/jogos-vorazes-amanhecer-na-colheita/e2aa2ec6-035a-41bf-834a-389a9dd01f4b.webp",
-      "cinema_id": "448",
-      "cinema": "Cinesystem Ventura - Curitiba",
-      "endereco": "R. Itacolomi",
-      "bairro": "Portão",
-      "horario": "20:30",
-      "data": "2026-11-27",
-      "sala": "Sala 5",
-      "tipo": "Normal, Dublado",
-      "idioma": "",
-      "url_compra": "https://checkout.ingresso.com/?sessionId=87760326&partnership=ingresso.com&ing_source=api&ing_medium=link-checkout&ing_campaign=ingresso.com&ing_content=jogos-vorazes-amanhecer-na-colheita"
     },
     {
       "filme": "Entrando Numa Grande Fria",
